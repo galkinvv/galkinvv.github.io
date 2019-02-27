@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# Copyright (C) 2017, 2018 Vasily Galkin (galkinvv.github.io)
+# This file may be used and  redistributed accorindg to GPLv3 licance.
 import sys, os, mmap, random, datetime, time
 random.seed(12111)
 passed = []
