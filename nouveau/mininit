@@ -1,0 +1,340 @@
+modprobe nouveau config=NvForcePost=1 modeset=2 nofbaccel=1 runpm=0 noaccel=1 debug=BUS=spam,DRM=spam,BIOS=spam,DEVICE=spam,DMAOBJ=spam,PBSP=spam,PCE0=spam,PCE1=spam,PCE2=spam,PCRYPT=spam,PDISP=spam,PFIFO=spam,PGRAPH=spam,PMPEG=spam,PPM=spam,PPPP=spam,PVP=spam,SW=spam,BARCTL=spam,DEVINIT=spam,GPIO=spam,I2C=spam,INSTMEM=spam,MXM=spam,PBUS=spam,PIBUS=spam,PLTCG=spam,PTHERM=spam,PTIMER=spam,VBIOS=spam
+
+1080ti gamerock, no monitor, second card:
+[  158.546953] nouveau 0000:05:00.0: enabling device (0000 -> 0003)
+[  158.547398] nouveau 0000:05:00.0: NVIDIA GP102 (132000a1)
+[  158.548777] nouveau 0000:05:00.0: bios: trying PRAMIN...
+[  158.548856] nouveau 0000:05:00.0: bios: ... not enabled
+[  158.548922] nouveau 0000:05:00.0: bios: trying PROM...
+[  158.551818] nouveau 0000:05:00.0: bios: 00000000: type 00, 61952 bytes
+[  158.593865] nouveau 0000:05:00.0: bios: 0000f200: type 03, 67584 bytes
+[  158.639743] nouveau 0000:05:00.0: bios: 0001fa00: type e0, 56832 bytes
+[  158.678281] nouveau 0000:05:00.0: bios: 0002d800: type e0, 46592 bytes
+[  158.709870] nouveau 0000:05:00.0: bios: 00038e00: type 70, 2560 bytes
+[  158.709936] nouveau 0000:05:00.0: bios: scored 20
+[  158.709995] nouveau 0000:05:00.0: bios: trying ACPI...
+[  158.710054] nouveau 0000:05:00.0: bios: using image from PROM
+[  158.711096] nouveau 0000:05:00.0: bios: BIT signature found
+[  158.711160] nouveau 0000:05:00.0: bios: version 86.02.39.00.77
+[  158.711247] nouveau 0000:05:00.0: i2c: ccb 00: type ff drive ff sense ff share ff auxch ff
+[  158.711334] nouveau 0000:05:00.0: i2c: pad 0100: ctor
+[  158.711396] nouveau 0000:05:00.0: i2c: ccb 01: type 80 drive 01 sense ff share ff auxch ff
+[  158.711481] nouveau 0000:05:00.0: i2c: pad 0101: ctor
+[  158.711543] nouveau 0000:05:00.0: i2c: bus 0001: ctor
+[  158.711722] nouveau 0000:05:00.0: i2c: ccb 02: type 80 drive 02 sense ff share ff auxch ff
+[  158.711809] nouveau 0000:05:00.0: i2c: pad 0102: ctor
+[  158.711872] nouveau 0000:05:00.0: i2c: bus 0002: ctor
+[  158.711989] nouveau 0000:05:00.0: i2c: ccb 03: type ff drive ff sense ff share ff auxch ff
+[  158.712076] nouveau 0000:05:00.0: i2c: pad 0103: ctor
+[  158.712138] nouveau 0000:05:00.0: i2c: ccb 04: type 80 drive 04 sense ff share 05 auxch 05
+[  158.712224] nouveau 0000:05:00.0: i2c: pad 0005: ctor
+[  158.712286] nouveau 0000:05:00.0: i2c: bus 0004: ctor
+[  158.712392] nouveau 0000:05:00.0: i2c: aux 0004: ctor
+[  158.712501] nouveau 0000:05:00.0: i2c: ccb 05: type 80 drive 05 sense ff share 06 auxch 06
+[  158.712590] nouveau 0000:05:00.0: i2c: pad 0006: ctor
+[  158.712651] nouveau 0000:05:00.0: i2c: bus 0005: ctor
+[  158.712756] nouveau 0000:05:00.0: i2c: aux 0005: ctor
+[  158.712863] nouveau 0000:05:00.0: i2c: ccb 06: type 80 drive 06 sense ff share 00 auxch 00
+[  158.712950] nouveau 0000:05:00.0: i2c: pad 0000: ctor
+[  158.713011] nouveau 0000:05:00.0: i2c: bus 0006: ctor
+[  158.713117] nouveau 0000:05:00.0: i2c: aux 0006: ctor
+[  158.713224] nouveau 0000:05:00.0: i2c: ccb 07: type 80 drive 07 sense ff share 01 auxch 01
+[  158.713311] nouveau 0000:05:00.0: i2c: pad 0001: ctor
+[  158.713372] nouveau 0000:05:00.0: i2c: bus 0007: ctor
+[  158.713477] nouveau 0000:05:00.0: i2c: aux 0007: ctor
+[  158.713583] nouveau 0000:05:00.0: i2c: ccb 08: type 80 drive 08 sense ff share 02 auxch 02
+[  158.713671] nouveau 0000:05:00.0: i2c: pad 0002: ctor
+[  158.713733] nouveau 0000:05:00.0: i2c: bus 0008: ctor
+[  158.713837] nouveau 0000:05:00.0: i2c: aux 0008: ctor
+[  158.713952] nouveau 0000:05:00.0: i2c: ccb 09: type 80 drive 09 sense ff share 03 auxch 03
+[  158.714039] nouveau 0000:05:00.0: i2c: pad 0003: ctor
+[  158.714129] nouveau 0000:05:00.0: i2c: bus 0009: ctor
+[  158.714239] nouveau 0000:05:00.0: i2c: aux 0009: ctor
+[  158.714347] nouveau 0000:05:00.0: i2c: ccb 0a: type ff drive ff sense ff share ff auxch ff
+[  158.714434] nouveau 0000:05:00.0: i2c: pad 010a: ctor
+[  158.714496] nouveau 0000:05:00.0: i2c: ccb 0b: type ff drive ff sense ff share ff auxch ff
+[  158.714582] nouveau 0000:05:00.0: i2c: pad 010b: ctor
+[  158.714643] nouveau 0000:05:00.0: i2c: ccb 0c: type ff drive ff sense ff share ff auxch ff
+[  158.714728] nouveau 0000:05:00.0: i2c: pad 010c: ctor
+[  158.714789] nouveau 0000:05:00.0: i2c: ccb 0d: type ff drive ff sense ff share ff auxch ff
+[  158.714876] nouveau 0000:05:00.0: i2c: pad 010d: ctor
+[  158.714937] nouveau 0000:05:00.0: i2c: ccb 0e: type ff drive ff sense ff share ff auxch ff
+[  158.715022] nouveau 0000:05:00.0: i2c: pad 010e: ctor
+[  158.731861] nouveau 0000:05:00.0: preinit running...
+[  158.731936] nouveau 0000:05:00.0: bios: preinit running...
+[  158.732000] nouveau 0000:05:00.0: bios: preinit completed in 1us
+[  158.732064] nouveau 0000:05:00.0: devinit: preinit running...
+[  158.732137] nouveau 0000:05:00.0: devinit: preinit completed in 10us
+[  158.732202] nouveau 0000:05:00.0: gpio: preinit running...
+[  158.732272] nouveau 0000:05:00.0: gpio: preinit completed in 0us
+[  158.732339] nouveau 0000:05:00.0: i2c: preinit running...
+[  158.732402] nouveau 0000:05:00.0: i2c: preinit completed in 0us
+[  158.732465] nouveau 0000:05:00.0: bus: preinit running...
+[  158.732528] nouveau 0000:05:00.0: bus: preinit completed in 0us
+[  158.732658] nouveau 0000:05:00.0: sw: preinit running...
+[  158.732722] nouveau 0000:05:00.0: sw: preinit completed in 0us
+[  158.753125] nouveau 0000:05:00.0: preinit completed in 21183us
+[  158.753199] nouveau 0000:05:00.0: fini running...
+[  158.753262] nouveau 0000:05:00.0: sw: fini running...
+[  158.753328] nouveau 0000:05:00.0: sw: fini completed in 2us
+[  158.753427] nouveau 0000:05:00.0: bus: fini running...
+[  158.753492] nouveau 0000:05:00.0: bus: fini completed in 0us
+[  158.753560] nouveau 0000:05:00.0: i2c: fini running...
+[  158.753639] nouveau 0000:05:00.0: i2c: pad 0100: fini
+[  158.753705] nouveau 0000:05:00.0: i2c: pad 0100: -> off
+[  158.753769] nouveau 0000:05:00.0: i2c: pad 0101: fini
+[  158.753835] nouveau 0000:05:00.0: i2c: pad 0101: -> off
+[  158.753896] nouveau 0000:05:00.0: i2c: pad 0102: fini
+[  158.753956] nouveau 0000:05:00.0: i2c: pad 0102: -> off
+[  158.754020] nouveau 0000:05:00.0: i2c: pad 0103: fini
+[  158.754089] nouveau 0000:05:00.0: i2c: pad 0103: -> off
+[  158.754203] nouveau 0000:05:00.0: i2c: pad 0005: fini
+[  158.754274] nouveau 0000:05:00.0: i2c: pad 0005: -> off
+[  158.754342] nouveau 0000:05:00.0: i2c: pad 0006: fini
+[  158.754405] nouveau 0000:05:00.0: i2c: pad 0006: -> off
+[  158.754470] nouveau 0000:05:00.0: i2c: pad 0000: fini
+[  158.754535] nouveau 0000:05:00.0: i2c: pad 0000: -> off
+[  158.754606] nouveau 0000:05:00.0: i2c: pad 0001: fini
+[  158.754672] nouveau 0000:05:00.0: i2c: pad 0001: -> off
+[  158.754746] nouveau 0000:05:00.0: i2c: pad 0002: fini
+[  158.754808] nouveau 0000:05:00.0: i2c: pad 0002: -> off
+[  158.754872] nouveau 0000:05:00.0: i2c: pad 0003: fini
+[  158.754933] nouveau 0000:05:00.0: i2c: pad 0003: -> off
+[  158.754998] nouveau 0000:05:00.0: i2c: pad 010a: fini
+[  158.755059] nouveau 0000:05:00.0: i2c: pad 010a: -> off
+[  158.755121] nouveau 0000:05:00.0: i2c: pad 010b: fini
+[  158.755181] nouveau 0000:05:00.0: i2c: pad 010b: -> off
+[  158.755242] nouveau 0000:05:00.0: i2c: pad 010c: fini
+[  158.755303] nouveau 0000:05:00.0: i2c: pad 010c: -> off
+[  158.755363] nouveau 0000:05:00.0: i2c: pad 010d: fini
+[  158.755424] nouveau 0000:05:00.0: i2c: pad 010d: -> off
+[  158.755485] nouveau 0000:05:00.0: i2c: pad 010e: fini
+[  158.755546] nouveau 0000:05:00.0: i2c: pad 010e: -> off
+[  158.755608] nouveau 0000:05:00.0: i2c: fini completed in 1982us
+[  158.755670] nouveau 0000:05:00.0: gpio: fini running...
+[  158.755757] nouveau 0000:05:00.0: gpio: fini completed in 27us
+[  158.755821] nouveau 0000:05:00.0: devinit: fini running...
+[  158.755881] nouveau 0000:05:00.0: devinit: fini completed in 1us
+[  158.755942] nouveau 0000:05:00.0: bios: fini running...
+[  158.756003] nouveau 0000:05:00.0: bios: fini completed in 1us
+[  158.756067] nouveau 0000:05:00.0: fini completed in 2808us...
+[  158.756128] nouveau 0000:05:00.0: init running...
+[  158.756227] nouveau 0000:05:00.0: bios: init running...
+[  158.756289] nouveau 0000:05:00.0: bios: init completed in 1us
+[  158.756350] nouveau 0000:05:00.0: devinit: init running...
+[  158.756428] nouveau 0000:05:00.0: devinit: 0x00006581[0]: DONE
+[  158.756491] nouveau 0000:05:00.0: devinit: 0x00005d11[0]: DONE
+[  158.756559] nouveau 0000:05:00.0: devinit: 0x00006581[0]: DONE
+[  158.756623] nouveau 0000:05:00.0: devinit: 0x00005d11[0]: DONE
+[  158.756686] nouveau 0000:05:00.0: devinit: 0x00005d11[0]: DONE
+[  158.756751] nouveau 0000:05:00.0: devinit: 0x00006581[0]: DONE
+[  158.756811] nouveau 0000:05:00.0: devinit: 0x00005d11[0]: DONE
+[  158.756918] nouveau 0000:05:00.0: devinit: init completed in 507us
+[  158.757087] nouveau 0000:05:00.0: gpio: init running...
+[  158.757149] nouveau 0000:05:00.0: gpio: init completed in 1us
+[  158.757211] nouveau 0000:05:00.0: i2c: init running...
+[  158.757273] nouveau 0000:05:00.0: i2c: pad 0100: init
+[  158.757333] nouveau 0000:05:00.0: i2c: pad 0100: -> off
+[  158.757394] nouveau 0000:05:00.0: i2c: pad 0101: init
+[  158.757539] nouveau 0000:05:00.0: i2c: pad 0101: -> off
+[  158.757603] nouveau 0000:05:00.0: i2c: pad 0102: init
+[  158.757664] nouveau 0000:05:00.0: i2c: pad 0102: -> off
+[  158.757725] nouveau 0000:05:00.0: i2c: pad 0103: init
+[  158.757786] nouveau 0000:05:00.0: i2c: pad 0103: -> off
+[  158.757847] nouveau 0000:05:00.0: i2c: pad 0005: init
+[  158.757909] nouveau 0000:05:00.0: i2c: pad 0005: -> off
+[  158.757972] nouveau 0000:05:00.0: i2c: pad 0006: init
+[  158.758032] nouveau 0000:05:00.0: i2c: pad 0006: -> off
+[  158.758095] nouveau 0000:05:00.0: i2c: pad 0000: init
+[  158.758156] nouveau 0000:05:00.0: i2c: pad 0000: -> off
+[  158.758219] nouveau 0000:05:00.0: i2c: pad 0001: init
+[  158.758279] nouveau 0000:05:00.0: i2c: pad 0001: -> off
+[  158.758343] nouveau 0000:05:00.0: i2c: pad 0002: init
+[  158.758402] nouveau 0000:05:00.0: i2c: pad 0002: -> off
+[  158.758466] nouveau 0000:05:00.0: i2c: pad 0003: init
+[  158.758526] nouveau 0000:05:00.0: i2c: pad 0003: -> off
+[  158.758588] nouveau 0000:05:00.0: i2c: pad 010a: init
+[  158.758649] nouveau 0000:05:00.0: i2c: pad 010a: -> off
+[  158.758710] nouveau 0000:05:00.0: i2c: pad 010b: init
+[  158.758770] nouveau 0000:05:00.0: i2c: pad 010b: -> off
+[  158.758832] nouveau 0000:05:00.0: i2c: pad 010c: init
+[  158.758893] nouveau 0000:05:00.0: i2c: pad 010c: -> off
+[  158.758954] nouveau 0000:05:00.0: i2c: pad 010d: init
+[  158.759015] nouveau 0000:05:00.0: i2c: pad 010d: -> off
+[  158.759075] nouveau 0000:05:00.0: i2c: pad 010e: init
+[  158.759134] nouveau 0000:05:00.0: i2c: pad 010e: -> off
+[  158.759196] nouveau 0000:05:00.0: i2c: bus 0001: init
+[  158.759256] nouveau 0000:05:00.0: i2c: bus 0002: init
+[  158.759317] nouveau 0000:05:00.0: i2c: bus 0004: init
+[  158.759378] nouveau 0000:05:00.0: i2c: bus 0005: init
+[  158.759966] nouveau 0000:05:00.0: i2c: bus 0006: init
+[  158.760027] nouveau 0000:05:00.0: i2c: bus 0007: init
+[  158.760089] nouveau 0000:05:00.0: i2c: bus 0008: init
+[  158.760149] nouveau 0000:05:00.0: i2c: bus 0009: init
+[  158.760211] nouveau 0000:05:00.0: i2c: init completed in 2938us
+[  158.760275] nouveau 0000:05:00.0: bus: init running...
+[  158.760361] nouveau 0000:05:00.0: bus: init completed in 1us
+[  158.760501] nouveau 0000:05:00.0: fb: 11264 MiB GDDR5X
+[  158.785246] nouveau 0000:05:00.0: i2c: bus 0002: probing monitoring devices
+[  158.785314] nouveau 0000:05:00.0: i2c: bus 0002: acquire
+[  158.785375] nouveau 0000:05:00.0: i2c: pad 0102: acquire
+[  158.785435] nouveau 0000:05:00.0: i2c: pad 0102: -> i2c
+[  158.789238] nouveau 0000:05:00.0: i2c: bus 0002: release
+[  158.789299] nouveau 0000:05:00.0: i2c: pad 0102: release
+[  158.789360] nouveau 0000:05:00.0: i2c: pad 0102: -> off
+[  158.789421] nouveau 0000:05:00.0: i2c: bus 0002: acquire
+[  158.789482] nouveau 0000:05:00.0: i2c: pad 0102: acquire
+[  158.789543] nouveau 0000:05:00.0: i2c: pad 0102: -> i2c
+[  158.793337] nouveau 0000:05:00.0: i2c: bus 0002: release
+[  158.793399] nouveau 0000:05:00.0: i2c: pad 0102: release
+[  158.793461] nouveau 0000:05:00.0: i2c: pad 0102: -> off
+[  158.793522] nouveau 0000:05:00.0: i2c: bus 0002: 40ms delay instead of 10ms
+[  158.793584] nouveau 0000:05:00.0: i2c: bus 0002: acquire
+[  158.793645] nouveau 0000:05:00.0: i2c: pad 0102: acquire
+[  158.793705] nouveau 0000:05:00.0: i2c: pad 0102: -> i2c
+[  158.798913] nouveau 0000:05:00.0: i2c: bus 0002: release
+[  158.798973] nouveau 0000:05:00.0: i2c: pad 0102: release
+[  158.799033] nouveau 0000:05:00.0: i2c: pad 0102: -> off
+[  158.799092] nouveau 0000:05:00.0: i2c: bus 0002: 40ms delay instead of 10ms
+[  158.799153] nouveau 0000:05:00.0: i2c: bus 0002: acquire
+[  158.799213] nouveau 0000:05:00.0: i2c: pad 0102: acquire
+[  158.799273] nouveau 0000:05:00.0: i2c: pad 0102: -> i2c
+[  158.804489] nouveau 0000:05:00.0: i2c: bus 0002: release
+[  158.804558] nouveau 0000:05:00.0: i2c: pad 0102: release
+[  158.804619] nouveau 0000:05:00.0: i2c: pad 0102: -> off
+[  158.804679] nouveau 0000:05:00.0: i2c: bus 0002: 40ms delay instead of 10ms
+[  158.804740] nouveau 0000:05:00.0: i2c: bus 0002: acquire
+[  158.804800] nouveau 0000:05:00.0: i2c: pad 0102: acquire
+[  158.804861] nouveau 0000:05:00.0: i2c: pad 0102: -> i2c
+[  158.810059] nouveau 0000:05:00.0: i2c: bus 0002: release
+[  158.810119] nouveau 0000:05:00.0: i2c: pad 0102: release
+[  158.810180] nouveau 0000:05:00.0: i2c: pad 0102: -> off
+[  158.810241] nouveau 0000:05:00.0: i2c: bus 0002: acquire
+[  158.810302] nouveau 0000:05:00.0: i2c: pad 0102: acquire
+[  158.810361] nouveau 0000:05:00.0: i2c: pad 0102: -> i2c
+[  158.814173] nouveau 0000:05:00.0: i2c: bus 0002: release
+[  158.814233] nouveau 0000:05:00.0: i2c: pad 0102: release
+[  158.814293] nouveau 0000:05:00.0: i2c: pad 0102: -> off
+[  158.814352] nouveau 0000:05:00.0: i2c: bus 0002: acquire
+[  158.814411] nouveau 0000:05:00.0: i2c: pad 0102: acquire
+[  158.814469] nouveau 0000:05:00.0: i2c: pad 0102: -> i2c
+[  158.818261] nouveau 0000:05:00.0: i2c: bus 0002: release
+[  158.818322] nouveau 0000:05:00.0: i2c: pad 0102: release
+[  158.818384] nouveau 0000:05:00.0: i2c: pad 0102: -> off
+[  158.818445] nouveau 0000:05:00.0: i2c: bus 0002: acquire
+[  158.818505] nouveau 0000:05:00.0: i2c: pad 0102: acquire
+[  158.818565] nouveau 0000:05:00.0: i2c: pad 0102: -> i2c
+[  158.822354] nouveau 0000:05:00.0: i2c: bus 0002: release
+[  158.822414] nouveau 0000:05:00.0: i2c: pad 0102: release
+[  158.822474] nouveau 0000:05:00.0: i2c: pad 0102: -> off
+[  158.822534] nouveau 0000:05:00.0: i2c: bus 0002: acquire
+[  158.822594] nouveau 0000:05:00.0: i2c: pad 0102: acquire
+[  158.822653] nouveau 0000:05:00.0: i2c: pad 0102: -> i2c
+[  158.826433] nouveau 0000:05:00.0: i2c: bus 0002: release
+[  158.826492] nouveau 0000:05:00.0: i2c: pad 0102: release
+[  158.826552] nouveau 0000:05:00.0: i2c: pad 0102: -> off
+[  158.826611] nouveau 0000:05:00.0: i2c: bus 0002: acquire
+[  158.826670] nouveau 0000:05:00.0: i2c: pad 0102: acquire
+[  158.826730] nouveau 0000:05:00.0: i2c: pad 0102: -> i2c
+[  158.830523] nouveau 0000:05:00.0: i2c: bus 0002: release
+[  158.830582] nouveau 0000:05:00.0: i2c: pad 0102: release
+[  158.830641] nouveau 0000:05:00.0: i2c: pad 0102: -> off
+[  158.830700] nouveau 0000:05:00.0: i2c: bus 0002: acquire
+[  158.830760] nouveau 0000:05:00.0: i2c: pad 0102: acquire
+[  158.830831] nouveau 0000:05:00.0: i2c: pad 0102: -> i2c
+[  158.834637] nouveau 0000:05:00.0: i2c: bus 0002: release
+[  158.834697] nouveau 0000:05:00.0: i2c: pad 0102: release
+[  158.834757] nouveau 0000:05:00.0: i2c: pad 0102: -> off
+[  158.834817] nouveau 0000:05:00.0: i2c: bus 0002: acquire
+[  158.834877] nouveau 0000:05:00.0: i2c: pad 0102: acquire
+[  158.834937] nouveau 0000:05:00.0: i2c: pad 0102: -> i2c
+[  158.838725] nouveau 0000:05:00.0: i2c: bus 0002: release
+[  158.838785] nouveau 0000:05:00.0: i2c: pad 0102: release
+[  158.838845] nouveau 0000:05:00.0: i2c: pad 0102: -> off
+[  158.838905] nouveau 0000:05:00.0: i2c: bus 0002: acquire
+[  158.838965] nouveau 0000:05:00.0: i2c: pad 0102: acquire
+[  158.839026] nouveau 0000:05:00.0: i2c: pad 0102: -> i2c
+[  158.842809] nouveau 0000:05:00.0: i2c: bus 0002: release
+[  158.842869] nouveau 0000:05:00.0: i2c: pad 0102: release
+[  158.842929] nouveau 0000:05:00.0: i2c: pad 0102: -> off
+[  158.842988] nouveau 0000:05:00.0: i2c: bus 0002: acquire
+[  158.843047] nouveau 0000:05:00.0: i2c: pad 0102: acquire
+[  158.843107] nouveau 0000:05:00.0: i2c: pad 0102: -> i2c
+[  158.846895] nouveau 0000:05:00.0: i2c: bus 0002: release
+[  158.846956] nouveau 0000:05:00.0: i2c: pad 0102: release
+[  158.847016] nouveau 0000:05:00.0: i2c: pad 0102: -> off
+[  158.847076] nouveau 0000:05:00.0: i2c: bus 0002: acquire
+[  158.847136] nouveau 0000:05:00.0: i2c: pad 0102: acquire
+[  158.847196] nouveau 0000:05:00.0: i2c: pad 0102: -> i2c
+[  158.850988] nouveau 0000:05:00.0: i2c: bus 0002: release
+[  158.851048] nouveau 0000:05:00.0: i2c: pad 0102: release
+[  158.851108] nouveau 0000:05:00.0: i2c: pad 0102: -> off
+[  158.851167] nouveau 0000:05:00.0: i2c: bus 0002: acquire
+[  158.851226] nouveau 0000:05:00.0: i2c: pad 0102: acquire
+[  158.851287] nouveau 0000:05:00.0: i2c: pad 0102: -> i2c
+[  158.855067] nouveau 0000:05:00.0: i2c: bus 0002: release
+[  158.855128] nouveau 0000:05:00.0: i2c: pad 0102: release
+[  158.855188] nouveau 0000:05:00.0: i2c: pad 0102: -> off
+[  158.855252] nouveau 0000:05:00.0: i2c: bus 0002: acquire
+[  158.855312] nouveau 0000:05:00.0: i2c: pad 0102: acquire
+[  158.855372] nouveau 0000:05:00.0: i2c: pad 0102: -> i2c
+[  158.858742] nouveau 0000:05:00.0: i2c: bus 0002: release
+[  158.858810] nouveau 0000:05:00.0: i2c: pad 0102: release
+[  158.858870] nouveau 0000:05:00.0: i2c: pad 0102: -> off
+[  158.858930] nouveau 0000:05:00.0: i2c: bus 0002: acquire
+[  158.858991] nouveau 0000:05:00.0: i2c: pad 0102: acquire
+[  158.859051] nouveau 0000:05:00.0: i2c: pad 0102: -> i2c
+[  158.860695] nouveau 0000:05:00.0: i2c: bus 0002: release
+[  158.860782] nouveau 0000:05:00.0: i2c: pad 0102: release
+[  158.860845] nouveau 0000:05:00.0: i2c: pad 0102: -> off
+[  158.860907] nouveau 0000:05:00.0: i2c: bus 0002: acquire
+[  158.860968] nouveau 0000:05:00.0: i2c: pad 0102: acquire
+[  158.861032] nouveau 0000:05:00.0: i2c: pad 0102: -> i2c
+[  158.862685] nouveau 0000:05:00.0: i2c: bus 0002: release
+[  158.862754] nouveau 0000:05:00.0: i2c: pad 0102: release
+[  158.862814] nouveau 0000:05:00.0: i2c: pad 0102: -> off
+[  158.862875] nouveau 0000:05:00.0: i2c: bus 0002: acquire
+[  158.862935] nouveau 0000:05:00.0: i2c: pad 0102: acquire
+[  158.862995] nouveau 0000:05:00.0: i2c: pad 0102: -> i2c
+[  158.864650] nouveau 0000:05:00.0: i2c: bus 0002: release
+[  158.864719] nouveau 0000:05:00.0: i2c: pad 0102: release
+[  158.864778] nouveau 0000:05:00.0: i2c: pad 0102: -> off
+[  158.864839] nouveau 0000:05:00.0: i2c: bus 0002: no devices found.
+[  158.865209] nouveau 0000:05:00.0: sw: init running...
+[  158.865272] nouveau 0000:05:00.0: sw: init skipped, engine has no users
+[  158.865333] nouveau 0000:05:00.0: sw: init completed in 60us
+[  158.865394] nouveau 0000:05:00.0: init completed in 109205us
+[  158.881449] [TTM] Zone  kernel: Available graphics memory: 503102 kiB
+[  158.881526] [TTM] Initializing pool allocator
+[  158.881605] [TTM] Initializing DMA pool allocator
+[  158.881702] nouveau 0000:05:00.0: DRM: VRAM: 11264 MiB
+[  158.881773] nouveau 0000:05:00.0: DRM: GART: 536870912 MiB
+[  158.881847] nouveau 0000:05:00.0: DRM: BIT table 'A' not found
+[  158.881908] nouveau 0000:05:00.0: DRM: BIT table 'L' not found
+[  158.881969] nouveau 0000:05:00.0: DRM: TMDS table version 2.0
+[  158.882029] nouveau 0000:05:00.0: DRM: DCB version 4.1
+[  158.882090] nouveau 0000:05:00.0: DRM: DCB outp 00: 01000f42 00020030
+[  158.882151] nouveau 0000:05:00.0: DRM: DCB outp 01: 04811f96 04600020
+[  158.882211] nouveau 0000:05:00.0: DRM: DCB outp 02: 04011f92 00020020
+[  158.882272] nouveau 0000:05:00.0: DRM: DCB outp 03: 04822f86 04600010
+[  158.882333] nouveau 0000:05:00.0: DRM: DCB outp 04: 04022f82 00020010
+[  158.882394] nouveau 0000:05:00.0: DRM: DCB outp 05: 02033f62 00020020
+[  158.882455] nouveau 0000:05:00.0: DRM: DCB outp 06: 02844f76 04600010
+[  158.882516] nouveau 0000:05:00.0: DRM: DCB outp 07: 02044f72 00020010
+[  158.882577] nouveau 0000:05:00.0: DRM: DCB conn 00: 00001031
+[  158.882636] nouveau 0000:05:00.0: DRM: DCB conn 01: 02000146
+[  158.882696] nouveau 0000:05:00.0: DRM: DCB conn 02: 01000246
+[  158.882755] nouveau 0000:05:00.0: DRM: DCB conn 03: 00020361
+[  158.882815] nouveau 0000:05:00.0: DRM: DCB conn 04: 00010446
+[  158.882911] nouveau: DRM:00000000:00000080: ioctl: new size 32
+[  158.882973] nouveau: DRM:00000000:00000080: ioctl: new vers 0 handle 00000000 class ffffffff route 00 token ffff9c413a719b80 object ffff9c413a719b80
+[  158.883063] nouveau: DRM:00000000:ffffffff: init running...
+[  158.883123] nouveau: DRM:00000000:ffffffff: init children...
+[  158.883183] nouveau: DRM:00000000:ffffffff: init completed in 59us
+[  159.133626] nouveau: DRM:00000000:00000080: ioctl: rd size 16
+[  159.133697] nouveau: DRM:00000000:00000080: ioctl: rd vers 0 size 4 addr 000000000061c880
+[  159.133795] nouveau: DRM:00000000:00000080: ioctl: rd size 16
+[  159.133865] nouveau: DRM:00000000:00000080: ioctl: rd vers 0 size 4 addr 000000000061c884
+[  159.134284] [drm] Initialized nouveau 1.3.1 20120801 for 0000:05:00.0 on minor 0
+
+before & after modprobe - test failing. Fine only after modprobe + rmmod.
