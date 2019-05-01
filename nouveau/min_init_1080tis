@@ -1,6 +1,6 @@
 modprobe nouveau config=NvForcePost=1 modeset=2 nofbaccel=1 runpm=0 noaccel=1 debug=BUS=spam,DRM=spam,BIOS=spam,DEVICE=spam,DMAOBJ=spam,PBSP=spam,PCE0=spam,PCE1=spam,PCE2=spam,PCRYPT=spam,PDISP=spam,PFIFO=spam,PGRAPH=spam,PMPEG=spam,PPM=spam,PPPP=spam,PVP=spam,SW=spam,BARCTL=spam,DEVINIT=spam,GPIO=spam,I2C=spam,INSTMEM=spam,MXM=spam,PBUS=spam,PIBUS=spam,PLTCG=spam,PTHERM=spam,PTIMER=spam,VBIOS=spam
 
-1080ti gamerock, no monitor, second card:
+1080ti gamerock ok, no monitor, second card:
 [  158.546953] nouveau 0000:05:00.0: enabling device (0000 -> 0003)
 [  158.547398] nouveau 0000:05:00.0: NVIDIA GP102 (132000a1)
 [  158.548777] nouveau 0000:05:00.0: bios: trying PRAMIN...
@@ -338,3 +338,181 @@ modprobe nouveau config=NvForcePost=1 modeset=2 nofbaccel=1 runpm=0 noaccel=1 de
 [  159.134284] [drm] Initialized nouveau 1.3.1 20120801 for 0000:05:00.0 on minor 0
 
 before & after modprobe - test failing. Fine only after modprobe + rmmod.
+
+inno3d-1080ti-problem:
+[  407.682385] nouveau 0000:01:00.0: NVIDIA GP102 (132000a1)
+[  407.682544] nouveau 0000:01:00.0: bios: trying PRAMIN...
+[  407.683776] nouveau 0000:01:00.0: bios: 00000000: ROM signature (beef) unknown
+[  407.683829] nouveau 0000:01:00.0: bios: image 0 invalid
+[  407.683880] nouveau 0000:01:00.0: bios: scored 0
+[  407.684599] nouveau 0000:01:00.0: bios: trying PROM...
+[  407.686558] nouveau 0000:01:00.0: bios: 00000000: type 00, 61952 bytes
+[  407.715323] nouveau 0000:01:00.0: bios: 0000f200: type 03, 67584 bytes
+[  407.746427] nouveau 0000:01:00.0: bios: 0001fa00: type e0, 56832 bytes
+[  407.772561] nouveau 0000:01:00.0: bios: 0002d800: type e0, 46592 bytes
+[  407.794004] nouveau 0000:01:00.0: bios: 00038e00: type 70, 2560 bytes
+[  407.794054] nouveau 0000:01:00.0: bios: scored 20
+[  407.794099] nouveau 0000:01:00.0: bios: trying ACPI...
+[  407.794187] nouveau 0000:01:00.0: bios: using image from PROM
+[  407.795244] nouveau 0000:01:00.0: bios: BIT signature found
+[  407.795330] nouveau 0000:01:00.0: bios: version 86.02.40.00.1a
+[  407.795442] nouveau 0000:01:00.0: i2c: ccb 00: type ff drive ff sense ff share ff auxch ff
+[  407.795571] nouveau 0000:01:00.0: i2c: pad 0100: ctor
+[  407.795658] nouveau 0000:01:00.0: i2c: ccb 01: type 80 drive 01 sense ff share ff auxch ff
+[  407.795787] nouveau 0000:01:00.0: i2c: pad 0101: ctor
+[  407.795873] nouveau 0000:01:00.0: i2c: bus 0001: ctor
+[  407.796084] nouveau 0000:01:00.0: i2c: ccb 02: type 80 drive 02 sense ff share ff auxch ff
+[  407.796222] nouveau 0000:01:00.0: i2c: pad 0102: ctor
+[  407.796320] nouveau 0000:01:00.0: i2c: bus 0002: ctor
+[  407.796467] nouveau 0000:01:00.0: i2c: ccb 03: type ff drive ff sense ff share ff auxch ff
+[  407.796606] nouveau 0000:01:00.0: i2c: pad 0103: ctor
+[  407.796698] nouveau 0000:01:00.0: i2c: ccb 04: type 80 drive 04 sense ff share 05 auxch 05
+[  407.796838] nouveau 0000:01:00.0: i2c: pad 0005: ctor
+[  407.796934] nouveau 0000:01:00.0: i2c: bus 0004: ctor
+[  407.797082] nouveau 0000:01:00.0: i2c: aux 0004: ctor
+[  407.797227] nouveau 0000:01:00.0: i2c: ccb 05: type 80 drive 05 sense ff share 06 auxch 06
+[  407.803949] nouveau 0000:01:00.0: i2c: pad 0006: ctor
+[  407.804051] nouveau 0000:01:00.0: i2c: bus 0005: ctor
+[  407.804262] nouveau 0000:01:00.0: i2c: aux 0005: ctor
+[  407.804417] nouveau 0000:01:00.0: i2c: ccb 06: type 80 drive 06 sense ff share 00 auxch 00
+[  407.804550] nouveau 0000:01:00.0: i2c: pad 0000: ctor
+[  407.804644] nouveau 0000:01:00.0: i2c: bus 0006: ctor
+[  407.804785] nouveau 0000:01:00.0: i2c: aux 0006: ctor
+[  407.804928] nouveau 0000:01:00.0: i2c: ccb 07: type 80 drive 07 sense ff share 01 auxch 01
+[  407.805070] nouveau 0000:01:00.0: i2c: pad 0001: ctor
+[  407.805166] nouveau 0000:01:00.0: i2c: bus 0007: ctor
+[  407.805309] nouveau 0000:01:00.0: i2c: aux 0007: ctor
+[  407.805450] nouveau 0000:01:00.0: i2c: ccb 08: type 80 drive 08 sense ff share 02 auxch 02
+[  407.805590] nouveau 0000:01:00.0: i2c: pad 0002: ctor
+[  407.805684] nouveau 0000:01:00.0: i2c: bus 0008: ctor
+[  407.805833] nouveau 0000:01:00.0: i2c: aux 0008: ctor
+[  407.805974] nouveau 0000:01:00.0: i2c: ccb 09: type 80 drive 09 sense ff share 03 auxch 03
+[  407.806110] nouveau 0000:01:00.0: i2c: pad 0003: ctor
+[  407.806201] nouveau 0000:01:00.0: i2c: bus 0009: ctor
+[  407.806343] nouveau 0000:01:00.0: i2c: aux 0009: ctor
+[  407.806484] nouveau 0000:01:00.0: i2c: ccb 0a: type ff drive ff sense ff share ff auxch ff
+[  407.806622] nouveau 0000:01:00.0: i2c: pad 010a: ctor
+[  407.806716] nouveau 0000:01:00.0: i2c: ccb 0b: type ff drive ff sense ff share ff auxch ff
+[  407.806854] nouveau 0000:01:00.0: i2c: pad 010b: ctor
+[  407.806947] nouveau 0000:01:00.0: i2c: ccb 0c: type ff drive ff sense ff share ff auxch ff
+[  407.807084] nouveau 0000:01:00.0: i2c: pad 010c: ctor
+[  407.807177] nouveau 0000:01:00.0: i2c: ccb 0d: type ff drive ff sense ff share ff auxch ff
+[  407.807354] nouveau 0000:01:00.0: i2c: pad 010d: ctor
+[  407.807451] nouveau 0000:01:00.0: i2c: ccb 0e: type ff drive ff sense ff share ff auxch ff
+[  407.807585] nouveau 0000:01:00.0: i2c: pad 010e: ctor
+[  407.830949] nouveau 0000:01:00.0: preinit running...
+[  407.831050] nouveau 0000:01:00.0: bios: preinit running...
+[  407.831139] nouveau 0000:01:00.0: bios: preinit completed in 1us
+[  407.831227] nouveau 0000:01:00.0: devinit: preinit running...
+[  407.831321] nouveau 0000:01:00.0: devinit: preinit completed in 4us
+[  407.831411] nouveau 0000:01:00.0: gpio: preinit running...
+[  407.831499] nouveau 0000:01:00.0: gpio: preinit completed in 0us
+[  407.831587] nouveau 0000:01:00.0: i2c: preinit running...
+[  407.831675] nouveau 0000:01:00.0: i2c: preinit completed in 0us
+[  407.831763] nouveau 0000:01:00.0: bus: preinit running...
+[  407.831851] nouveau 0000:01:00.0: bus: preinit completed in 0us
+[  407.831988] nouveau 0000:01:00.0: sw: preinit running...
+[  407.832075] nouveau 0000:01:00.0: sw: preinit completed in 0us
+[  407.833152] nouveau 0000:01:00.0: preinit completed in 2104us
+[  407.833241] nouveau 0000:01:00.0: fini running...
+[  407.833333] nouveau 0000:01:00.0: sw: fini running...
+[  407.833471] nouveau 0000:01:00.0: sw: fini completed in 0us
+[  407.833678] nouveau 0000:01:00.0: bus: fini running...
+[  407.833819] nouveau 0000:01:00.0: bus: fini completed in 0us
+[  407.834012] nouveau 0000:01:00.0: i2c: fini running...
+[  407.834211] nouveau 0000:01:00.0: i2c: pad 0100: fini
+[  407.834414] nouveau 0000:01:00.0: i2c: pad 0100: -> off
+[  407.834627] nouveau 0000:01:00.0: i2c: pad 0101: fini
+[  407.834831] nouveau 0000:01:00.0: i2c: pad 0101: -> off
+[  407.835035] nouveau 0000:01:00.0: i2c: pad 0102: fini
+[  407.835236] nouveau 0000:01:00.0: i2c: pad 0102: -> off
+[  407.835439] nouveau 0000:01:00.0: i2c: pad 0103: fini
+[  407.835617] nouveau 0000:01:00.0: i2c: pad 0103: -> off
+[  407.835739] nouveau 0000:01:00.0: i2c: pad 0005: fini
+[  407.835841] nouveau 0000:01:00.0: i2c: pad 0005: -> off
+[  407.835981] nouveau 0000:01:00.0: i2c: pad 0006: fini
+[  407.836124] nouveau 0000:01:00.0: i2c: pad 0006: -> off
+[  407.836216] nouveau 0000:01:00.0: i2c: pad 0000: fini
+[  407.836304] nouveau 0000:01:00.0: i2c: pad 0000: -> off
+[  407.836395] nouveau 0000:01:00.0: i2c: pad 0001: fini
+[  407.836497] nouveau 0000:01:00.0: i2c: pad 0001: -> off
+[  407.836605] nouveau 0000:01:00.0: i2c: pad 0002: fini
+[  407.836691] nouveau 0000:01:00.0: i2c: pad 0002: -> off
+[  407.836782] nouveau 0000:01:00.0: i2c: pad 0003: fini
+[  407.836869] nouveau 0000:01:00.0: i2c: pad 0003: -> off
+[  407.836960] nouveau 0000:01:00.0: i2c: pad 010a: fini
+[  407.837048] nouveau 0000:01:00.0: i2c: pad 010a: -> off
+[  407.837136] nouveau 0000:01:00.0: i2c: pad 010b: fini
+[  407.837224] nouveau 0000:01:00.0: i2c: pad 010b: -> off
+[  407.837397] nouveau 0000:01:00.0: i2c: pad 010c: fini
+[  407.837487] nouveau 0000:01:00.0: i2c: pad 010c: -> off
+[  407.837576] nouveau 0000:01:00.0: i2c: pad 010d: fini
+[  407.837664] nouveau 0000:01:00.0: i2c: pad 010d: -> off
+[  407.837752] nouveau 0000:01:00.0: i2c: pad 010e: fini
+[  407.837840] nouveau 0000:01:00.0: i2c: pad 010e: -> off
+[  407.837929] nouveau 0000:01:00.0: i2c: fini completed in 3727us
+[  407.838017] nouveau 0000:01:00.0: gpio: fini running...
+[  407.838117] nouveau 0000:01:00.0: gpio: fini completed in 12us
+[  407.838207] nouveau 0000:01:00.0: devinit: fini running...
+[  407.838297] nouveau 0000:01:00.0: devinit: fini completed in 0us
+[  407.838385] nouveau 0000:01:00.0: bios: fini running...
+[  407.838472] nouveau 0000:01:00.0: bios: fini completed in 0us
+[  407.838562] nouveau 0000:01:00.0: fini completed in 5229us...
+[  407.838650] nouveau 0000:01:00.0: init running...
+[  407.838767] nouveau 0000:01:00.0: bios: init running...
+[  407.838854] nouveau 0000:01:00.0: bios: init completed in 0us
+[  407.838942] nouveau 0000:01:00.0: devinit: init running...
+[  407.839045] nouveau 0000:01:00.0: devinit: 0x00006581[0]: DONE
+[  407.839136] nouveau 0000:01:00.0: devinit: 0x00005d11[0]: DONE
+[  407.839229] nouveau 0000:01:00.0: devinit: 0x00006581[0]: DONE
+[  407.839321] nouveau 0000:01:00.0: devinit: 0x00005d11[0]: DONE
+[  407.839417] nouveau 0000:01:00.0: devinit: 0x00005d11[0]: DONE
+[  407.839512] nouveau 0000:01:00.0: devinit: 0x00005d11[0]: DONE
+[  407.839635] nouveau 0000:01:00.0: devinit: init completed in 605us
+[  407.839778] nouveau 0000:01:00.0: gpio: init running...
+[  407.839868] nouveau 0000:01:00.0: gpio: init completed in 2us
+[  407.839955] nouveau 0000:01:00.0: i2c: init running...
+[  407.840044] nouveau 0000:01:00.0: i2c: pad 0100: init
+[  407.840131] nouveau 0000:01:00.0: i2c: pad 0100: -> off
+[  407.840220] nouveau 0000:01:00.0: i2c: pad 0101: init
+[  407.840307] nouveau 0000:01:00.0: i2c: pad 0101: -> off
+[  407.840397] nouveau 0000:01:00.0: i2c: pad 0102: init
+[  407.840485] nouveau 0000:01:00.0: i2c: pad 0102: -> off
+[  407.840593] nouveau 0000:01:00.0: i2c: pad 0103: init
+[  407.840681] nouveau 0000:01:00.0: i2c: pad 0103: -> off
+[  407.840771] nouveau 0000:01:00.0: i2c: pad 0005: init
+[  407.840858] nouveau 0000:01:00.0: i2c: pad 0005: -> off
+[  407.840948] nouveau 0000:01:00.0: i2c: pad 0006: init
+[  407.841036] nouveau 0000:01:00.0: i2c: pad 0006: -> off
+[  407.841126] nouveau 0000:01:00.0: i2c: pad 0000: init
+[  407.841214] nouveau 0000:01:00.0: i2c: pad 0000: -> off
+[  407.841303] nouveau 0000:01:00.0: i2c: pad 0001: init
+[  407.841390] nouveau 0000:01:00.0: i2c: pad 0001: -> off
+[  407.841480] nouveau 0000:01:00.0: i2c: pad 0002: init
+[  407.841569] nouveau 0000:01:00.0: i2c: pad 0002: -> off
+[  407.841657] nouveau 0000:01:00.0: i2c: pad 0003: init
+[  407.841745] nouveau 0000:01:00.0: i2c: pad 0003: -> off
+[  407.841834] nouveau 0000:01:00.0: i2c: pad 010a: init
+[  407.841921] nouveau 0000:01:00.0: i2c: pad 010a: -> off
+[  407.842009] nouveau 0000:01:00.0: i2c: pad 010b: init
+[  407.842096] nouveau 0000:01:00.0: i2c: pad 010b: -> off
+[  407.842185] nouveau 0000:01:00.0: i2c: pad 010c: init
+[  407.842271] nouveau 0000:01:00.0: i2c: pad 010c: -> off
+[  407.842359] nouveau 0000:01:00.0: i2c: pad 010d: init
+[  407.842446] nouveau 0000:01:00.0: i2c: pad 010d: -> off
+[  407.842533] nouveau 0000:01:00.0: i2c: pad 010e: init
+[  407.842621] nouveau 0000:01:00.0: i2c: pad 010e: -> off
+[  407.844143] nouveau 0000:01:00.0: i2c: bus 0001: init
+[  407.844232] nouveau 0000:01:00.0: i2c: bus 0002: init
+[  407.844326] nouveau 0000:01:00.0: i2c: bus 0004: init
+[  407.844414] nouveau 0000:01:00.0: i2c: bus 0005: init
+[  407.844501] nouveau 0000:01:00.0: i2c: bus 0006: init
+[  407.844588] nouveau 0000:01:00.0: i2c: bus 0007: init
+[  407.844676] nouveau 0000:01:00.0: i2c: bus 0008: init
+[  407.844765] nouveau 0000:01:00.0: i2c: bus 0009: init
+[  407.844853] nouveau 0000:01:00.0: i2c: init completed in 4809us
+[  407.844954] nouveau 0000:01:00.0: bus: init running...
+[  407.845042] nouveau 0000:01:00.0: bus: init completed in 1us
+[  407.845175] nouveau 0000:01:00.0: fb: 11264 MiB GDDR5X
+[  407.857567] nouveau 0000:01:00.0: fifo: fault 00 [READ] at 0000000000000000 engine 05 [BAR2] client 08 [GPC0/PE_2] reason 00 [PDE] on channel -1 [02bfebf000 unknown]
+и т.д.
