@@ -87,13 +87,22 @@ def run_test():
         totals()
         raise Exception("ERRORS found in test " + test_name)
     #verify_no_errors_with_data(b'\xFF'*len(phys_arr), "ONEs")
-    #verify_no_errors_with_data(b'\x00'*len(phys_arr), "ZERO")
+    """
+    verify_no_errors_with_data(
+        b'\x02\x0c\xb9\xb2\x02\x8d\xe3\x0a\x8d\x83\x36\x3d\x0c\x83\xed\x04\xe3\xed\x58\x53\xb9\x36\x58\xb1\x0a\x04\xb1\xba\xb2\x3d\x53\xba'
+        *(len(phys_arr)//32), "Polaris0x200")
+    """
     #verify_no_errors_with_data(b'\x00'*len(phys_arr), "ZERO")
     #verify_no_errors_with_data(b'\xCC'*len(phys_arr), "xCC")
     #verify_no_errors_with_data(b'\x55'*len(phys_arr), "x55")
+    #verify_no_errors_with_data(b'\x31'*len(phys_arr), "x31")
     #verify_no_errors_with_data(b'\xaa'*len(phys_arr), "xaa")
     #verify_no_errors_with_data(b'\x12\x34\x56\x78\x9A\xBC\xDE\xF0\x46\xa3\xe5\x13\xad'*(len(phys_arr)//13), "special")
     #verify_no_errors_with_data(b'\x55\xaa\x55'*(len(phys_arr)//3), "aa55")
+    amd_problem=0x200
+    amd_total=0x8000
+    amd_pat=b'\xee'*amd_problem + bytes(random.getrandbits(8) for i in range(0x100)) + b'\xaa'*(amd_total - 0x100 - amd_problem)
+    #verify_no_errors_with_data(amd_pat * (len(phys_arr)//len(amd_pat)), "amd-mem")
     verify_no_errors_with_data(bytes(random.getrandbits(8) for i in range(len(phys_arr))), "rand")
     #verify_no_errors_with_data(bytes(random.getrandbits(8) for i in range(len(phys_arr))), "rand")
 try:
