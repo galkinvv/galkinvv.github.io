@@ -46,7 +46,8 @@ def get_power_data(pci_id):
 		print("Unknown I2C device")
 		return None
 	shunts = {	
-		"If all shunts r5":[1,1,1]
+		"If all shunts r5":[1,1,1],
+		"If shunts r5, r5, r2":[1,1,0]
 	}
 	powers = []
 	for channel in range(3):
@@ -64,7 +65,7 @@ def get_power_data(pci_id):
 			pretty_floats(r2_r5_powers), "Watts")
 	for sk, sv in shunts.items():
 		watts = [powers[i][v] for i, v in enumerate(sv)]
-		print(sk, watts, " Total watts:", sum(watts))
+		print(sk, pretty_floats(watts), " Total watts:", sum(watts))
 	bus.close()
 
 if len(sys.argv) != 2:
