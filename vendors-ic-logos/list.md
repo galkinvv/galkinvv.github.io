@@ -1,10 +1,10 @@
-* alpha omega логотип
+* alpha omega логотип ![AO](./aos.jpg)
+* Advanced Power Electronics Corp. -треугольник и полукруг ![AP](./AdvancedPower.jpg)
 * Excelliance power ic логотип в видe ![M](./ExcellianceMos.png)
 * UBIQ semiconductor логотип в видe ![bq](./UbiqSemi.jpeg)
-* Richtek = или пробел
+* Richtek `=` или пробел
 * Nexperia - три линии
 * monolitic power надчёркивание с точкой (MP2107/2120/2119/2121)
-* Advanced Power Electronics Corp. -треугольник и полукруг (AP)
 
 Micron GDDR5 8Gb
 MT51J256M32HF-80:A (2000MHz) D9TCB
