@@ -1,6 +1,6 @@
 * alpha omega логотип
-* Excelliance power ic логотип в видe M 
-
+* Excelliance power ic логотип в видe ![M](./ExcellianceMos.png)
+* UBIQ semiconductor логотип в видe ![bq](./UbiqSemi.jpeg)
 * Richtek = или пробел
 * Nexperia - три линии
 * monolitic power надчёркивание с точкой (MP2107/2120/2119/2121)
