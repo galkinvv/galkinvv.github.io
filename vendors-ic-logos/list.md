@@ -3,7 +3,7 @@
 * Excelliance power ic логотип в видe ![M](./ExcellianceMos.png)
 * UBIQ semiconductor логотип в видe ![bq](./UbiqSemi.jpeg)
 * Richtek `=` или пробел
-* Nexperia - три линии
+* Nexperia - три линии. В datasheet - "% = placeholder for manufacturing site code" бывает как миниму W или t, например WCM/tCM NX7002AK N-Mosfet.
 * monolitic power надчёркивание с точкой (MP2107/2120/2119/2121)
 
 ```
