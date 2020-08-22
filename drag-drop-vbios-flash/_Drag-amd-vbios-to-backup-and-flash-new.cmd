@@ -5,6 +5,8 @@
 @set now=%date:.=-%_%time::=%
 @set now=%now: =%
 @set now=%now:,=%
+@set now=%now:/=%
+@set now=%now:\=%
 @set backup_name=vbios_backup-%now:~0,17%.rom
 @call "%~dp0\atiflash.exe" -s 0 %backup_name%
 @call "%~dp0\atiflash.exe" -fs -fp -fa -p 0 %~f1
