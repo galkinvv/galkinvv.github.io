@@ -4,7 +4,7 @@
 * UBIQ semiconductor логотип в видe ![bq](./UbiqSemi.jpeg)
 * Richtek `=` или пробел
 * Nexperia - три линии. В datasheet - "% = placeholder for manufacturing site code" бывает как миниму W или t, например WCM/tCM NX7002AK N-Mosfet.
-* monolitic power надчёркивание с точкой (MP2107/2120/2119/2121)
+* monolitic power надчёркивание с точкой или кружком. На меньших полоса справа ![_1](./MP1.jpg) ![_2](./MP2.jpg) ![_3](./MP3.jpg)
 
 ```
 Micron GDDR5X 8Gb
