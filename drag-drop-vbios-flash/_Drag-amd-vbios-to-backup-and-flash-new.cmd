@@ -8,6 +8,9 @@
 @set now=%now:/=%
 @set now=%now:\=%
 @set backup_name=vbios_backup-%now:~0,17%.rom
-@call "%~dp0\atiflash.exe" -s 0 %backup_name%
-@call "%~dp0\atiflash.exe" -fs -fp -fa -p 0 %~f1
+@cd "%~dp0"
+@set flasher=atiflash.exe
+@if not exist %flasher% set flasher=amdvbflash.exe
+call %flasher% -s 0 %backup_name%
+call %flasher% -fs -fp -fa -p 0 %~f1
 @echo Finished. Window can be closed
