@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-# Copyright (C) 2017, 2018 Vasily Galkin (galkinvv.github.io)
-# This file may be used and redistributed accorindg to GPLv3 licence.
+# Copyright (C) 2017-2020 Vasily Galkin (galkinvv.github.io)
+# This file may be used and redistributed accoring to GPLv3 license.
 
 #1MB woking 1070 before mem init: \xfb\xac\xd0\xba\xff\xff\xff\xff\xfc\xac\xd0\xba\xff\xff\xff\xff (0badac??, ?? are rotating).
 import sys, os, mmap, random, datetime, time
@@ -121,5 +121,5 @@ try:
         run_test()
 finally:
     os.system("setfont")
-    print("Before errors, foolowing passed:", passed)
+    print("Before errors, following passed:", passed)
     os.system("setfont")
