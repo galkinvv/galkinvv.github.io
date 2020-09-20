@@ -8,6 +8,9 @@
 @set now=%now:/=%
 @set now=%now:\=%
 @set backup_name=vbios_backup-%now:~0,17%.rom
-@call "%~dp0\nvflash64.exe" --save %backup_name%
-@call "%~dp0\nvflash64.exe" -6 %~f1
+@cd "%~dp0"
+@set flasher=nvflash.exe
+@if not exist %flasher% set flasher=nvflash64.exe
+call %flasher% --save %backup_name%
+call %flasher% -6 %~f1
 @echo Finished. Window can be closed
