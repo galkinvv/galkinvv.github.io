@@ -41,3 +41,6 @@ H5GC8H24MJR - R0C, R0F 3.5GHz memory older - rx470-rx580 (м.б. и 4GHz)
 Samsung
 K4G80325FC - newer rx570-rx590, rare, -hc25 only
 ```
+
+215-0910038 - rx580
+215-0910052 - rx570
