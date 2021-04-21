@@ -7,8 +7,9 @@
 @set now=%now:,=%
 @set now=%now:/=%
 @set now=%now:\=%
-@set backup_name=vbios_backup-%now:~0,17%.rom
-@cd "%~dp0"
+@set backup_name=vbios_backups/vbios_backup-%now:~0,17%.rom
+@cd /d "%~dp0"
+@if not exist vbios_backups mkdir vbios_backups
 @set flasher=atiflash.exe
 @if not exist %flasher% set flasher=amdvbflash.exe
 call %flasher% -s 0 %backup_name%

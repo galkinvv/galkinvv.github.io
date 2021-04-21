@@ -8,7 +8,7 @@
 @set now=%now:/=%
 @set now=%now:\=%
 @set backup_name=vbios_backup-%now:~0,17%.rom
-@cd "%~dp0"
+@cd /d "%~dp0"
 @set flasher=nvflash.exe
 @if not exist %flasher% set flasher=nvflash64.exe
 call %flasher% --save %backup_name%
