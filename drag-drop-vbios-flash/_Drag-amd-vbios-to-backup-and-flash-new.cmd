@@ -13,5 +13,5 @@
 @set flasher=atiflash.exe
 @if not exist %flasher% set flasher=amdvbflash.exe
 call %flasher% -s 0 %backup_name%
-call %flasher% -fs -fp -fa -p 0 %~f1
+call %flasher% -fs -fp -fa -p 0 "%~f1"
 @echo Finished. Window can be closed
