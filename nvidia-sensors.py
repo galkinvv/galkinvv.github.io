@@ -23,7 +23,7 @@ class INA3221:
 	def read(bus, register):
 		reved = bus.read_word_data(INA3221.I2C_ADDR, register)
 		#reverse bytes in word
-		return  int.from_bytes(reved.to_bytes(2, byteorder='little'), byteorder='big', signed=False)
+		return  int.from_bytes(((reved + 2**16) % 2**16).to_bytes(2, byteorder='little'), byteorder='big', signed=False)
 
 def pretty_floats(float_arr):
 	return ["{0:05.2f}".format(f) for f in float_arr]
