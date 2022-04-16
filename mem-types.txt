@@ -12,11 +12,11 @@ vendors:
 0x9 - ESMT (unused)
 0xf - Micron
 */
-
+/* GDDR6 2Gb=0a, 4Gb=0b/ElpFB, 8Gb=18/MicE8*/
 { MEM_GDDR5, 0x1, 0x0, "Samsung K4G20325FD" },
-{ MEM_GDDR5, 0x1, 0x2, "Samsung K4G80325FB" },
+{ MEM_GDDR5, 0x1, 0x2, "Samsung K4G80325FB" },//K4G41325FS
 { MEM_GDDR5, 0x1, 0x3, "Samsung K4G20325FD" },
-{ MEM_GDDR5, 0x1, 0x6, "Samsung K4G20325FS" },
+{ MEM_GDDR5, 0x1, 0x6, "Samsung K4G20325FS" },//K4G41325FC
 { MEM_GDDR5, 0x1, 0x9, "Samsung K4G41325FE" },
 { MEM_GDDR5, 0x1, 0xa, "Samsung K4G80325FC" },
 { MEM_GDDR5, 0x3, 0x0, "Elpida EDW4032BABG" },
@@ -24,9 +24,9 @@ vendors:
 { MEM_GDDR5, 0x6, 0x2, "SK Hynix H5GQ2H24MFR" },
 { MEM_GDDR5, 0x6, 0x3, "SK Hynix H5GQ2H24AFR" },
 { MEM_GDDR5, 0x6, 0x4, "SK Hynix H5GC2H24BFR" },
-{ MEM_GDDR5, 0x6, 0x5, "SK Hynix H5GQ4H24MFR" },
-{ MEM_GDDR5, 0x6, 0x6, "SK Hynix H5GC4H24AJR" },
-{ MEM_GDDR5, 0x6, 0x7, "SK Hynix H5GQ(C)8H24MJR" },
+{ MEM_GDDR5, 0x6, 0x5, "SK Hynix H5GC(Q)4H24MFR" },
+{ MEM_GDDR5, 0x6, 0x6, "SK Hynix H5GC(Q)4H24AJR" },
+{ MEM_GDDR5, 0x6, 0x7, "SK Hynix H5GC(Q)8H24MJR" },
 { MEM_GDDR5, 0x6, 0x8, "SK Hynix H5GC8H24AJR" },
 { MEM_GDDR5, 0xf, 0x0, "Micron MT51J256M32HF" },
 { MEM_GDDR5, 0xf, 0x1, "Micron MT51J256M32HF-B" },
@@ -35,6 +35,13 @@ vendors:
 { MEM_HBM, 0x1, 0, "Samsung KHA843801B" },
 { MEM_HBM, 0x6, 0x0, "SK Hynix H5VR2GCCM" },
 
-/* GDDR6 */
-{ MEM_GDDR6, 0x1, 0x8, "Samsung K4Z80325BC"},
-{ MEM_GDDR6, 0xf, 0x0, "Micron MT61K256M32"},
+/* GDDR5X 8Gb=a9/MicFA*/
+{ MEM_GDDR5X, 0xf, 0x0, "Micron MT58K256M32"}
+
+/* GDDR6 8Gb=a9/Mic79, 16Gb=ab/Mic7b*/
+{ MEM_GDDR6, 0x1, 0x8, "Samsung K4Z80325BC/K4ZAF325BM(16)"},
+{ MEM_GDDR6, 0xf, 0x0, "Micron MT61K256M32/MT61K512M32(16)"},
+{ MEM_GDDR6, 0x6, 0x0, "SK Hynix H56C8H24MJR/H56CBM24MIR(16)"},
+
+/* GDDR6X 8Gb=MicB9, 16Gb=MicA9*/
+{ MEM_GDDR6X, 0xf, 0xf, "Micron MT61K256M32(8)/MT61K512M32(16)"},
