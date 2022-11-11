@@ -13,5 +13,7 @@
 @set flasher=nvflash.exe
 @if not exist %flasher% set flasher=nvflash64.exe
 call %flasher% --save %backup_name%
-call %flasher% -6 "%~f1"
-@echo Finished. Window can be closed
+call %flasher% -6 "%~f1" -L con
+@set FLASH_STATUS=%ERRORLEVEL%
+@if %FLASH_STATUS%==0 (echo Finished. Window can be closed) else (echo Error code %FLASH_STATUS%. Window can be closed)
+
