@@ -54,6 +54,7 @@ K4G80325FC - newer rx570-rx590, rare, -hc25 only
 ### Ellesmere
 
 * 215-0922006 - rx590 rev e1
+* 215-0910066 - rx590 GME
 * 215-0910038 - rx580 rev e7
 * 215-0910052 - rx570 rev ef
 * 215-0876184 - rx480 rev c7
