@@ -1,0 +1,87 @@
+;
+; Copyright (C) NVIDIA Corporation. All rights reserved.
+;
+; Module Name:
+;
+;     nvppc.inf
+;
+; Abstract:
+;
+;     INF for installing the USB Connector Manager client driver for
+;     Nvidia UCSI-compatible systems.
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=USB
+ClassGuid={36FC9E60-C465-11CF-8056-444553540000}
+Provider=%ManufacturerName%
+; match catfile name to inf file name
+CatalogFile=nvppc.cat
+DriverVer = 04/11/2023,1.50.831.832
+PnpLockdown = 1
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTamd64
+
+[Standard.NTamd64]
+%UcmCxUcsiNvppc.DeviceDesc%=UcmCxUcsiNvppc_Device, PCI\VEN_10DE&DEV_1AD7
+%UcmCxUcsiNvppc.DeviceDesc%=UcmCxUcsiNvppc_Device, PCI\VEN_10DE&DEV_1AD9
+%UcmCxUcsiNvppc.DeviceDesc%=UcmCxUcsiNvppc_Device, PCI\VEN_10DE&DEV_1ADB
+%UcmCxUcsiNvppc.DeviceDesc%=UcmCxUcsiNvppc_Device, PCI\VEN_10DE&DEV_1AED
+
+[UcmCxUcsiNvppc_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+UcmCxUcsiNvppc.sys
+
+;-------------- HW
+[UcmCxUcsiNvppc_Device.NT.HW]
+AddReg=UcmCxUcsiNvppc_Device_AddReg
+
+[UcmCxUcsiNvppc_Device_AddReg]
+HKR,Interrupt Management,,0x00000010
+HKR,Interrupt Management\MessageSignaledInterruptProperties,,0x00000010
+HKR,Interrupt Management\MessageSignaledInterruptProperties,MSISupported,0x00010001,1
+HKR,,FriendlyName,,%UcmCxUcsiNvppc.DeviceDesc%
+HKR,,Security,,%SDDL_DEVOBJ_SYS_ALL_ADM_RWX_WORLD_R_RES_R%
+HKR,"WDF","WdfDirectedPowerTransitionEnable",0x00010001,1
+
+;-------------- Service installation
+[UcmCxUcsiNvppc_Device.NT.Services]
+AddService = UcmCxUcsiNvppc,%SPSVCINST_ASSOCSERVICE%, UcmCxUcsiNvppc_Service_Inst
+
+; -------------- UcmCxUcsiNvppc driver install sections
+[UcmCxUcsiNvppc_Service_Inst]
+DisplayName    = %UcmCxUcsiNvppc.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %13%\UcmCxUcsiNvppc.sys
+Dependencies   = UcmCx
+AddReg         = UcmCxUcsiNvppc_Service_Inst_AddReg
+
+[UcmCxUcsiNvppc_Service_Inst_AddReg]
+HKR,Parameters,"UcsiDevType",0x00010001,1		; 0 = UcsiDevType_Acpi, 1 = UcsiDevType_Nvppc
+
+[DestinationDirs]
+DefaultDestDir = 13
+
+[SourceDisksNames]
+3426 = windows cd
+
+[SourceDisksFiles]
+UcmCxUcsiNvppc.sys = 3426
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="NVIDIA"
+DiskName = "UcmCxUcsiNvppc Installation Disk"
+UcmCxUcsiNvppc.DeviceDesc = "NVIDIA USB Type-C Port Policy Controller"
+UcmCxUcsiNvppc.SVCDESC = "NVIDIA USB Type-C PPC Service"
+SDDL_DEVOBJ_SYS_ALL_ADM_RWX_WORLD_R_RES_R="D:P(A;;GA;;;SY)(A;;GRGWGX;;;BA)(A;;GR;;;WD)(A;;GR;;;RC)"
