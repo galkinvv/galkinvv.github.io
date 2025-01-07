@@ -7,7 +7,7 @@ Software to use:
   * Carefully select display to avoid flashing the wrong one, press "Read EDID"
   * Press "Save file...", save backup
   * Press "Load file...", agree if asked, press "Write EDID"
-  * Intel GPUs are NOT supported (supported on Linux variant below)
+  * Intel GPUs are NOT supported for writing EDID. But they workd fine with already modded, so use another PC for modding or use Linux writer (below)
 * Linux + AMD/NVIDIA/Intel: Use edid-checked-writer from https://github.com/galkinvv/edid-checked-writer (see manual there)
 
 Possible outcomes:
