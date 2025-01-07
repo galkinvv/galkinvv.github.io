@@ -26,33 +26,32 @@ Write EDID into it and always use the monitor with this emulator.
   * Use "Import..." button to load custom EDI file, press OK
   * Run "Restart64" utility to force PC rescan monitors
 * Linux: 
-  * place custom edid file in `/usr/lib/firmware/edid/NAME.bin`
+  * place custom EDID file in `/usr/lib/firmware/edid/NAME.bin`
   * add parameter to kernel cmd line like `drm.edid_firmware=edid/NAME.bin`
   * distribution-specific: you may need adding the above file into list of files packed into initramfs, see https://wiki.archlinux.org/title/Kernel_mode_setting#Forcing_modes_and_EDID
 
 
 ## EDID files for Yamakasi Catleap Q270 27" 2560x1440
-My no-audio, no-overclock instance was NOT write-protected, so just permenantly written EDID into it. Not sure about general case, maybe some are write-protected.
+My no-audio, no-overclock instance was NOT write-protected, so just permanently written EDID into it. Not sure about general case, maybe some are write-protected.
 
-Handles hdmi-single-link input from ~35 to ~55Hz. 60Hz is unstable/experimental/may depend on cable&source.
+Handles hdmi-single-link input from ~35 to ~55Hz. 60Hz is unstable/experimental/may depend on cable/source.
 
-#### Modded for HDMI source + passive HDMI->DVI cable or single-link DVI
+#### Modded for HDMI source + passive HDMI⇾DVI cable or single-link DVI
 * RECOMMENDED [256 byte YamakasiQ270-54HZ2025.1-edid-256byte.bin](https://github.com/galkinvv/galkinvv.github.io/raw/refs/heads/master/displays/EDIDModToFixDualLink/YamakasiQ270-54HZ2025.1-edid-256byte.bin)
-40Hz default + 50, 54Hz selectable on PC, for passive HDMI->DVI cable/converter
+40Hz default + 50, 54Hz selectable on PC, for passive HDMI⇾DVI cable/converter
 
 * FAILSAFE [256 byte YamakasiQ270-ANY40HZ2025.1-edid-256byte.bin](https://github.com/galkinvv/galkinvv.github.io/raw/refs/heads/master/displays/EDIDModToFixDualLink/YamakasiQ270-ANY40HZ2025.1-edid-256byte.bin)
-40Hz only, failsafe, most universal, for any cable&video source capable outputting 2560x1440 at 161MHz pixel clock
+40Hz only, failsafe, most universal, for any cable+video source capable outputting 2560x1440 at 161MHz pixel clock
 
   * FAILSAFE [128 byte YamakasiQ270-ANY40HZ2025.1-edid-128byte.bin](https://github.com/galkinvv/galkinvv.github.io/raw/refs/heads/master/displays/EDIDModToFixDualLink/YamakasiQ270-ANY40HZ2025.1-edid-128byte.bin)
 40Hz only, like above, but cut to 128byte if software complaining to padding in the file
 
 * EXPERIMENTAL [256 byte YamakasiQ270-60HZ2025.2-edid-256byte.bin](https://github.com/galkinvv/galkinvv.github.io/raw/refs/heads/master/displays/EDIDModToFixDualLink/YamakasiQ270-60HZ2025.2-edid-256byte.bin)
-40Hz default + 50, 54, 56, 60Hz selectable on PC, for passive HDMI->DVI cable/converter. 60Hz is very unstable, try pressing power button on a monitor several times until it show normal picture instead of blackscreen. May be very problematic if video source autoselects 60Hz rate.
+40Hz default + 50, 54, 56, 60Hz selectable on PC, for passive HDMI⇾DVI cable/converter. 60Hz is very unstable, try pressing power button on a monitor several times until it show normal picture instead of blackscreen. May be very problematic if video source autoselects 60Hz rate.
 
-#### Dual-link-DVI only (descrete GPU with DVI port or active converter)
+#### Dual-link-DVI only (discrete GPU with DVI port or active converter)
 * ORIGINAL [256 byte YamakasiQ270-Original-edid-256byte.bin](https://github.com/galkinvv/galkinvv.github.io/raw/refs/heads/master/displays/EDIDModToFixDualLink/YamakasiQ270-Original-edid-256byte.bin)
  60Hz, for physically Dual-link DVI only
 
 
-
- See https://github.com/galkinvv/galkinvv.github.io/tree/master/displays/EDIDModToFixDualLink for the latest version of this manual 
+For the latest version of this manual see https://github.com/galkinvv/galkinvv.github.io/tree/master/displays/EDIDModToFixDualLink#readme
