@@ -37,20 +37,29 @@ My no-audio, no-overclock instance was NOT write-protected, so just permanently 
 Handles hdmi-single-link input from ~35 to ~55Hz. 60Hz is unstable/experimental/may depend on cable/source.
 
 #### Modded for HDMI source + passive HDMI⇾DVI cable or single-link DVI
-* RECOMMENDED [256 byte YamakasiQ270-54HZ2025.1-edid-256byte.bin](https://github.com/galkinvv/galkinvv.github.io/raw/refs/heads/master/displays/EDIDModToFixDualLink/YamakasiQ270-54HZ2025.1-edid-256byte.bin)
+* RECOMMENDED [YamakasiQ270-54HZ2025.1-edid-256byte.bin](https://github.com/galkinvv/galkinvv.github.io/raw/refs/heads/master/displays/EDIDModToFixDualLink/YamakasiQ270-54HZ2025.1-edid-256byte.bin)
 40Hz default + 50, 54Hz selectable on PC, for passive HDMI⇾DVI cable/converter
 
-* FAILSAFE [256 byte YamakasiQ270-ANY40HZ2025.1-edid-256byte.bin](https://github.com/galkinvv/galkinvv.github.io/raw/refs/heads/master/displays/EDIDModToFixDualLink/YamakasiQ270-ANY40HZ2025.1-edid-256byte.bin)
+* FAILSAFE
+  * [YamakasiQ270-ANY40HZ2025.1-edid-256byte.bin](https://github.com/galkinvv/galkinvv.github.io/raw/refs/heads/master/displays/EDIDModToFixDualLink/YamakasiQ270-ANY40HZ2025.1-edid-256byte.bin)
 40Hz only, failsafe, most universal, for any cable+video source capable outputting 2560x1440 at 161MHz pixel clock
 
-  * FAILSAFE [128 byte YamakasiQ270-ANY40HZ2025.1-edid-128byte.bin](https://github.com/galkinvv/galkinvv.github.io/raw/refs/heads/master/displays/EDIDModToFixDualLink/YamakasiQ270-ANY40HZ2025.1-edid-128byte.bin)
+  * [YamakasiQ270-ANY40HZ2025.1-edid-128byte.bin](https://github.com/galkinvv/galkinvv.github.io/raw/refs/heads/master/displays/EDIDModToFixDualLink/YamakasiQ270-ANY40HZ2025.1-edid-128byte.bin)
 40Hz only, like above, but cut to 128byte if software complaining to padding in the file
 
-* EXPERIMENTAL [256 byte YamakasiQ270-60HZ2025.2-edid-256byte.bin](https://github.com/galkinvv/galkinvv.github.io/raw/refs/heads/master/displays/EDIDModToFixDualLink/YamakasiQ270-60HZ2025.2-edid-256byte.bin)
+* EXPERIMENTAL 
+  * [YamakasiQ270-55FreeSync-edid-256byte.bin](https://github.com/galkinvv/galkinvv.github.io/raw/refs/heads/master/displays/EDIDModToFixDualLink/YamakasiQ270-55FreeSync-edid-256byte.bin)
+40Hz default + 50, 55Hz and FreeSync up to 55Hz selectable on PC, for passive HDMI⇾DVI cable/converter. Developed by ToastyX.
+
+  * [YamakasiQ270-60HZ2025.2-edid-256byte.bin](https://github.com/galkinvv/galkinvv.github.io/raw/refs/heads/master/displays/EDIDModToFixDualLink/YamakasiQ270-60HZ2025.2-edid-256byte.bin)
 40Hz default + 50, 54, 56, 60Hz selectable on PC, for passive HDMI⇾DVI cable/converter. 60Hz is very unstable, try pressing power button on a monitor several times until it show normal picture instead of blackscreen. May be very problematic if video source autoselects 60Hz rate.
 
+  * [YamakasiQ270-60FreeSync-edid-256byte.bin](https://github.com/galkinvv/galkinvv.github.io/raw/refs/heads/master/displays/EDIDModToFixDualLink/YamakasiQ270-60FreeSync-edid-256byte.bin)
+40Hz default + 50, 55, 60Hz and FreeSync up to 60Hz selectable on PC, for passive HDMI⇾DVI cable/converter. 60Hz is unstable. Developed by ToastyX. 
+
+
 #### Dual-link-DVI only (discrete GPU with DVI port or active converter)
-* ORIGINAL [256 byte YamakasiQ270-Original-edid-256byte.bin](https://github.com/galkinvv/galkinvv.github.io/raw/refs/heads/master/displays/EDIDModToFixDualLink/YamakasiQ270-Original-edid-256byte.bin)
+* ORIGINAL [YamakasiQ270-Original-edid-256byte.bin](https://github.com/galkinvv/galkinvv.github.io/raw/refs/heads/master/displays/EDIDModToFixDualLink/YamakasiQ270-Original-edid-256byte.bin)
  60Hz, for physically Dual-link DVI only
 
 
