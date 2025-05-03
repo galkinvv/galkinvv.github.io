@@ -7,13 +7,13 @@ Software to use:
   * Carefully select display to avoid flashing the wrong one, press "Read EDID"
   * Press "Save file...", save backup
   * Press "Load file...", agree if asked, press "Write EDID"
-  * Intel GPUs are NOT supported for writing EDID. But they workd fine with already modded, so use another PC for modding or use Linux writer (below)
+  * Intel GPUs are NOT supported for writing EDID. But they work fine with already modded, so use another PC for modding or use Linux writer (below)
 * Linux + AMD/NVIDIA/Intel: Use edid-checked-writer from https://github.com/galkinvv/edid-checked-writer (see manual there)
 
 Possible outcomes:
 
-* If the software succeeds all done!
-* If the software reports that device is write-protected - you will need trivial extra device (the video signal is passing through) - the so called "HDMI lock emulator" in the role of writeable-EDID-injector between signal source and HDMI cable.
+* If the software succeeds, all done!
+* If the software reports that device is write-protected - you will need a trivial extra device (the video signal is passing through) - the so called "HDMI lock emulator" in the role of writeable-EDID-injector between signal source and HDMI cable.
 Cheapest one is in a picture below (no need to disassemble it, internals shown below just for reference).
 Write EDID into it and always use the monitor with this emulator.
 
@@ -25,16 +25,25 @@ Write EDID into it and always use the monitor with this emulator.
   * plug display, start CRU utility, select correct display in the list
   * Use "Import..." button to load custom EDI file, press OK
   * Run "Restart64" utility to force PC rescan monitors
+  * For overclocking a Dual-Link-DVI monitor over 330MHz dot clock on AMD Polaris GPU - patch the driver with https://www.monitortests.com/forum/Thread-AMD-ATI-Pixel-Clock-Patcher
+* Windows: for modes hitting the driver limits on NVIDIA (like overclocking a Dual-Link-DVI monitor over 330MHz dot clock)
+  * Modes can be constructed manually via NVIDIA control panel
+  * They are stored in the `CustomDisplay` value of the `[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\`**XXXX** where XXXX is the windows-generated 4-digit ID of current GPU.
+  * So actually they can be saved/restored via writing to a registry given a file with previously exported values (such files are provided below for overclocking 2560x1440 monitors)
+    * if imported from .reg file, the last 4 digits need to be manually edited in reg file to correspond the actually active GPU
+    * or the "Nvidia Custom Resolutions Backup Tool" executed by admin can autodetect the current GPU and import just the value data from .bin file - https://www.monitortests.com/forum/Thread-Nvidia-Custom-Resolutions-Backup-Tool
 * Linux: 
   * place custom EDID file in `/usr/lib/firmware/edid/NAME.bin`
   * add parameter to kernel cmd line like `drm.edid_firmware=edid/NAME.bin`
   * distribution-specific: you may need adding the above file into list of files packed into initramfs, see https://wiki.archlinux.org/title/Kernel_mode_setting#Forcing_modes_and_EDID
+  * For overclocking a Dual-Link-DVI monitor over 330MHz dot clock on AMD Polaris GPU - boot the kernel with `amdgpu.dc=0` parameter
+
 
 
 ## EDID files for Yamakasi Catleap Q270 27" 2560x1440
 My no-audio, no-overclock instance was NOT write-protected, so just permanently written EDID into it. Not sure about general case, maybe some are write-protected.
 
-Handles hdmi-single-link input from ~35 to ~55Hz. 60Hz is unstable/experimental/may depend on cable/source.
+Handles hdmi-single-link input from ~35 to ~55Hz. 60Hz is unstable/experimental/may depend on cable/source. Is not overclockable even via physical Dual-Link DVI, so dual link is useless for this model.
 
 #### Modded for HDMI source + passive HDMI⇾DVI cable or single-link DVI
 * RECOMMENDED [YamakasiQ270-54HZ2025.1-edid-256byte.bin](https://github.com/galkinvv/galkinvv.github.io/raw/refs/heads/master/displays/EDIDModToFixDualLink/YamakasiQ270-54HZ2025.1-edid-256byte.bin)
@@ -61,6 +70,30 @@ Handles hdmi-single-link input from ~35 to ~55Hz. 60Hz is unstable/experimental/
 #### Dual-link-DVI only (discrete GPU with DVI port or active converter)
 * ORIGINAL [YamakasiQ270-Original-edid-256byte.bin](https://github.com/galkinvv/galkinvv.github.io/raw/refs/heads/master/displays/EDIDModToFixDualLink/YamakasiQ270-Original-edid-256byte.bin)
  60Hz, for physically Dual-link DVI only
+
+## EDID files for Shimian QH270 27" 2560x1440
+My no-audio, no-single-link instance was NOT write-protected, so just permanently written EDID into it. Not sure about general case, maybe some are write-protected.
+
+Does NOT handle HDMI/single-link input. Requires physically Dual-Link DVI source. Can be overclocked to 80-100Hz depending on cable/source. Clocking >85Hz requires driver without Dual-Link-DVI pixel clock limit.
+
+#### Dual-link-DVI only (discrete GPU with DVI port or active converter)
+* RECOMMENDED [ShimianQH270-DUAL-LINK-DRIVER-PATHCER-FOR100HZ-edid-256byte.bin](https://github.com/galkinvv/galkinvv.github.io/raw/refs/heads/master/displays/EDIDModToFixDualLink/ShimianQH270-DUAL-LINK-DRIVER-PATHCER-FOR100HZ-edid-256byte.bin)
+80Hz default + 60-85Hz selectable on PC; 90-95-100Hz selectable on drivers without limits
+
+* FAILSAFE [ShimianQH270-DUAL-LINK80HZ-edid-128byte.bin](https://github.com/galkinvv/galkinvv.github.io/raw/refs/heads/master/displays/EDIDModToFixDualLink/ShimianQH270-DUAL-LINK80HZ-edid-128byte.bin)
+80Hz default + 60-85Hz selectable on PC
+
+* ORIGINAL [ShimianQH270-Original-edid-256byte.bin](https://github.com/galkinvv/galkinvv.github.io/raw/refs/heads/master/displays/EDIDModToFixDualLink/ShimianQH270-Original-edid-256byte.bin)
+ 60Hz only, checksum errors
+
+#### Dual-link-DVI only (files to configure Nvidia Custom Resolutions on Windows, GPU with DVI port or active converter)
+* .BIN for NvCRBT (it is **NOT EDID**!) 
+[NvidiaCustResolution-dual-link-2560x1440-90-95-100hz](https://github.com/galkinvv/galkinvv.github.io/raw/refs/heads/master/displays/EDIDModToFixDualLink/NvidiaCustResolution-dual-link-2560x1440-90-95-100hz.bin)
+90-95-100Hz selectable on NVIDIA control panel, see above for NvCRBT backup tool link used for importing this file
+
+* .REG for editing
+[NvidiaCustResolution-dual-link-2560x1440-90-95-100hz-edit-REPLACE4DIGIT-reg](https://github.com/galkinvv/galkinvv.github.io/raw/refs/heads/master/displays/EDIDModToFixDualLink/NvidiaCustResolution-dual-link-2560x1440-90-95-100hz-edit-REPLACE4DIGIT-reg.txt)
+90-95-100Hz selectable on NVIDIA control panel; to import edit the final path inside to your GPUs index, then rename to .reg
 
 
 For the latest version of this manual see https://github.com/galkinvv/galkinvv.github.io/tree/master/displays/EDIDModToFixDualLink#readme
