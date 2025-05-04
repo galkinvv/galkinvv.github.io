@@ -108,5 +108,14 @@ Does NOT handle HDMI/single-link input. Requires physically Dual-Link DVI source
 [NvidiaCustResolution-dual-link-2560x1440-90-95-100hz-edit-REPLACE4DIGIT-reg](https://github.com/galkinvv/galkinvv.github.io/raw/refs/heads/master/displays/EDIDModToFixDualLink/NvidiaCustResolution-dual-link-2560x1440-90-95-100hz-edit-REPLACE4DIGIT-reg.txt)
 90-95-100Hz selectable on NVIDIA control panel; to import edit the final path inside to your GPUs index, then rename to .reg
 
+## EDID files for Samsung S27A850D 27" 2560x1440
+Not overclockable. It has native DisplayPort input, scaling, menu, etc. But lacks HDMI. However its DVI input Handles hdmi-single-link input @60Hz.
+
+* HDMI-optimized [SamsungS27A850D-hdmi2k60only-edid-256byte.bin](https://github.com/galkinvv/galkinvv.github.io/raw/refs/heads/master/displays/EDIDModToFixDualLink/SamsungS27A850D-hdmi2k60only-edid-256byte.bin) ENFORCED 2560x1440@60HZ over HDMI->DVI cable, no sound
+
+* Original [SamsungS27A850D-Original-edid-256byte.bin](https://github.com/galkinvv/galkinvv.github.io/raw/refs/heads/master/displays/EDIDModToFixDualLink/SamsungS27A850D-Original-edid-256byte.bin) only 1080p while plugged via HDMI->DVI cable
+
+
+
 
 For the latest version of this manual see https://github.com/galkinvv/galkinvv.github.io/tree/master/displays/EDIDModToFixDualLink#readme
