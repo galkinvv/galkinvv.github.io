@@ -25,20 +25,33 @@ Write EDID into it and always use the monitor with this emulator.
   * plug display, start CRU utility, select correct display in the list
   * Use "Import..." button to load custom EDI file, press OK
   * Run "Restart64" utility to force PC rescan monitors
-  * For overclocking a Dual-Link-DVI monitor over 330MHz dot clock on AMD Polaris GPU - patch the driver with https://www.monitortests.com/forum/Thread-AMD-ATI-Pixel-Clock-Patcher
-* Windows: for modes hitting the driver limits on NVIDIA (like overclocking a Dual-Link-DVI monitor over 330MHz dot clock)
-  * Modes can be constructed manually via NVIDIA control panel
-  * They are stored in the `CustomDisplay` value of the `[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\`**XXXX** where XXXX is the windows-generated 4-digit ID of current GPU.
-  * So actually they can be saved/restored via writing to a registry given a file with previously exported values (such files are provided below for overclocking 2560x1440 monitors)
-    * if imported from .reg file, the last 4 digits need to be manually edited in reg file to correspond the actually active GPU
-    * or the "Nvidia Custom Resolutions Backup Tool" executed by admin can autodetect the current GPU and import just the value data from .bin file - https://www.monitortests.com/forum/Thread-Nvidia-Custom-Resolutions-Backup-Tool
 * Linux: 
   * place custom EDID file in `/usr/lib/firmware/edid/NAME.bin`
   * add parameter to kernel cmd line like `drm.edid_firmware=edid/NAME.bin`
   * distribution-specific: you may need adding the above file into list of files packed into initramfs, see https://wiki.archlinux.org/title/Kernel_mode_setting#Forcing_modes_and_EDID
-  * For overclocking a Dual-Link-DVI monitor over 330MHz dot clock on AMD Polaris GPU - boot the kernel with `amdgpu.dc=0` parameter
 
 
+### Limitations for Dual-Link-DVI connections
+
+While *some* Dual-Link-DVI monitor models can be adapted to work from Single-Link/HDMI, *some* others (mostly pre-2010) **truly requires Dual-Link-DVI signal**. They will not work with HDMI->DVI cables or Single-link DVI sources even after EDID flashing.
+
+#### Hardware-level limitations for Dual-Link-DVI
+
+If the monitor signal decoder truly can't handle single-link signal - you need to get real Dual-Link-DVI signal source. Quite popular solution is an active DisplayPort->DualLinkDVI converters, but I didn't try it, so it is not discussed here.
+
+All or almost all integrated GPUs does NOT support Dual-Link-DVI. It is supported by AMD/NVIDIA discrete cards having DVI port, except for RX5500 and GT1030 models, which DVI ports are single-link. The last generation having DVI ports in most models was RX5x0/GTX10x0 from ~2016. On later cards DVI present on Asus RX VEGA, many GTX 16x0 models, and selected RTX 2060/2060Super and 3050 models and the most powerful card with Dual-link-DVI - RTX 2080 Super Founders Edition.
+
+#### Driver-level limitations for Dual-Link-DVI
+
+Dual-Link-DVI connections often have a driver limitation the artificially limits pixel clock frequency to 330MHz. To get >85Hz@2560x1440 or >75Hz@2560x1600 this limit need to be overcomed, regardless of the way used to modify EDID:
+
+  * Windows + AMD: For overclocking a Dual-Link-DVI monitor over 330MHz dot clock on AMD GPU - patch the driver with https://www.monitortests.com/forum/Thread-AMD-ATI-Pixel-Clock-Patcher
+  * Linux + AMD: For overclocking a Dual-Link-DVI monitor over 330MHz dot clock on AMD GPU - boot the kernel with `amdgpu.dc=0` parameter
+  * Windows + NVIDIA: for modes hitting the driver limits on NVIDIA you can't use EDID to add them, but modes can be constructed manually via NVIDIA control panel
+    * They are stored in the `CustomDisplay` value of the `[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\`**XXXX** where XXXX is the windows-generated 4-digit ID of current GPU.
+    * So actually they can be saved/restored via writing to a registry given a file with previously exported values (such files are provided below for overclocking 2560x1440 monitors)
+      * if imported from .reg file, the last 4 digits need to be manually edited in reg file to correspond the actually active GPU
+      * or the "Nvidia Custom Resolutions Backup Tool" executed by admin can autodetect the current GPU and import just the value data from .bin file - https://www.monitortests.com/forum/Thread-Nvidia-Custom-Resolutions-Backup-Tool
 
 ## EDID files for Yamakasi Catleap Q270 27" 2560x1440
 My no-audio, no-overclock instance was NOT write-protected, so just permanently written EDID into it. Not sure about general case, maybe some are write-protected.
@@ -94,6 +107,15 @@ Does NOT handle HDMI/single-link input. Requires physically Dual-Link DVI source
 * .REG for editing
 [NvidiaCustResolution-dual-link-2560x1440-90-95-100hz-edit-REPLACE4DIGIT-reg](https://github.com/galkinvv/galkinvv.github.io/raw/refs/heads/master/displays/EDIDModToFixDualLink/NvidiaCustResolution-dual-link-2560x1440-90-95-100hz-edit-REPLACE4DIGIT-reg.txt)
 90-95-100Hz selectable on NVIDIA control panel; to import edit the final path inside to your GPUs index, then rename to .reg
+
+## EDID files for Samsung S27A850D 27" 2560x1440
+Not overclockable. It has native DisplayPort input, scaling, menu, etc. But lacks HDMI. However its DVI input Handles hdmi-single-link input @60Hz.
+
+* HDMI-optimized [SamsungS27A850D-hdmi2k60only-edid-256byte.bin](https://github.com/galkinvv/galkinvv.github.io/raw/refs/heads/master/displays/EDIDModToFixDualLink/SamsungS27A850D-hdmi2k60only-edid-256byte.bin) ENFORCED 2560x1440@60HZ over HDMI->DVI cable, no sound
+
+* Original [SamsungS27A850D-Original-edid-256byte.bin](https://github.com/galkinvv/galkinvv.github.io/raw/refs/heads/master/displays/EDIDModToFixDualLink/SamsungS27A850D-Original-edid-256byte.bin) only 1080p while plugged via HDMI->DVI cable
+
+
 
 
 For the latest version of this manual see https://github.com/galkinvv/galkinvv.github.io/tree/master/displays/EDIDModToFixDualLink#readme
