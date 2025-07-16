@@ -1,0 +1,2382 @@
+; NVIDIA Windows 10 (64 bit) Display INF file
+; Copyright (c) NVIDIA Corporation. All rights reserved.
+; Timestamp: 1751568281228075 3a4b22d100ff55a5cedafd2d291ddc35
+
+[Version]
+Signature   = "$Windows NT$"
+Provider    = %NVIDIA%
+ClassGUID   = {4D36E968-E325-11CE-BFC1-08002BE10318}
+Class       = Display
+DriverVer   = 07/03/2025, 32.0.15.9026
+PnpLockdown = 1
+CatalogFile = NV_DISP.CAT
+[nv_CplInstaller]
+Default_addreg = nv_CplInstaller_addreg
+Default_copyfiles = nv_CplInstaller_copyfiles
+
+[nv_CplInstaller_copyfiles]
+Nv3DAppShExt.dll
+Nv3DAppShExtR.dll
+nvDevTools.dll
+nvDevToolsR.dll
+nvSmartMax.dll
+nvSmartMax64.dll
+nvSmartMaxapp.exe
+nvSmartMaxapp64.exe
+nvcoproc.bin
+nvcpl.dll
+nvdisps.dll
+nvdispsr.dll
+nvgames.dll
+nvgamesr.dll
+nvshext.dll
+nvsvc64.dll
+nvsvcr.dll
+nvui.dll
+nvuir.dll
+nvvitvs.dll
+nvvitvsr.dll
+nvwss.dll
+nvwssr.dll
+nvxdapix.dll
+nvxdbat.dll
+nvxdcore.dll
+nvxdplcy.dll
+nvxdsyncplugin.dll
+
+[nv_CplInstaller_addreg]
+
+[nv_FTS_addreg]
+HKR,"Global\NVTweak",NvCplEnableSRS1564,%REG_DWORD%,1
+HKR,"Parameters\FTS",Enable5345913,%REG_DWORD%,0
+HKR,"Parameters\FTS",EnableCTK6810,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableDDC14,%REG_DWORD%,0
+HKR,"Parameters\FTS",EnableDDC15,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableDDW1000,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableFSN1368,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableFSN414,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR1041,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR1069,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR1110,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR1128,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR1272,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR1297,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR1315,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR1322,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR1363,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR1374,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR1393,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR1405,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR1407,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR1560,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR1583,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR1594,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR1599,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR1632,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR1653,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR1656,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR1670,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR1751,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR1800,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR1849,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR1850,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR1854,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR1898,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR1907,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR2040,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR2065,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR2066,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR2204,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR2210,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR2363,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR2366,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR2367,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR2392,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR2398,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR2407,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR2408,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR2483,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR2720,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR2757,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR2781,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR2800,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR2840,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR2846,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR3057,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR3213,%REG_DWORD%,0
+HKR,"Parameters\FTS",EnableGR3214,%REG_DWORD%,0
+HKR,"Parameters\FTS",EnableGR376,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR440,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR448,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR482,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR494,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR53,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR535,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR538,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR539,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR600,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR616,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR649,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR671,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR692,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR717,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR800,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR802,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR805,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR853,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR905,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR965,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR966,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableGR980,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID50052,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID50787,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID55335,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID57152,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID61091,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID67369,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID67826,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID68264,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID68361,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID69106,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID69436,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID69477,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID69527,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID69975,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID72201,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID72540,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID72558,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID72938,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID73090,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID73106,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID73287,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID73737,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID73779,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID73780,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID74336,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID74361,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID74488,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID74501,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID74521,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID74632,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID74712,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID74945,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID75044,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID75167,%REG_DWORD%,1
+HKR,"Parameters\FTS",EnableRID75307,%REG_DWORD%,1
+
+[Manufacturer]
+%NVIDIA_A% = NVIDIA_Devices,NTamd64.10.0...17134
+
+[NVIDIA_Devices.NTamd64.10.0...17134]
+%NVIDIA_DEV.1F95.3E2E.1EC9% = Section001, PCI\VEN_10DE&DEV_1F95&SUBSYS_3E2E1EC9 
+%NVIDIA_DEV.1F95.3E2E.6745% = Section001, PCI\VEN_10DE&DEV_1F95&SUBSYS_3E2E6745 
+%NVIDIA_DEV.1F99.3E2E.1EC9% = Section001, PCI\VEN_10DE&DEV_1F99&SUBSYS_3E2E1EC9 
+%NVIDIA_DEV.1F99.3E2E.6745% = Section001, PCI\VEN_10DE&DEV_1F99&SUBSYS_3E2E6745 
+
+[DestinationDirs]
+DefaultDestDir = 11
+NVWMI_InstallDir = 13,NVWMI
+NvDisplayContainer_Dir = 13,Display.NvContainer
+NvDisplayContainer_PluginsLS_Dir = 13,Display.NvContainer\plugins\LocalSystem
+NvDisplayContainer_PluginsSession_Dir = 13,Display.NvContainer\plugins\Session
+nv_DS_VGPU_copyfiles = 13
+nv_Drs_copyfiles = 12,NVIDIA Corporation\Drs
+nv_containerSetup_copyfiles = 13
+nv_cplSetup_copy_nvcpl_dll = 11
+nv_cplSetup_copyfiles = 13
+nv_libcuda_copyfiles = 11,lxss\lib
+nv_license_copyfiles = 12,NVIDIA Corporation
+nv_ngx_copyfiles = 13
+nv_nvcamera_copyfiles = 13,NvCamera
+nv_nvsmi_copyfiles = 11
+nv_openCL_copyfiles = 13
+nv_sysDrivers_RS_copyfiles = 13
+nv_sysDrivers_copyfiles = 12
+nv_system32_RS_copyfiles = 13
+nv_system32_VGPU_copyfiles = 11
+nv_system32_copyfiles = 11
+nv_syswow64_RS_copyfiles = 13
+nv_syswow64_VGPU_copyfiles = 10,SysWow64
+nv_syswow64_copyfiles = 10,SysWow64
+nv_telemetry_copyfiles = 13
+
+[SourceDisksNames]
+1 = %DiskID1%
+
+[SourceDisksFiles]
+FreqTransfer32.exe = 1,NvCamera
+FreqTransfer64.exe = 1,NvCamera
+GreenScreenBG01.jpg = 1,NvCamera
+GreenScreenBG02.jpg = 1,NvCamera
+HighresBlender32.exe = 1,NvCamera
+HighresBlender64.exe = 1,NvCamera
+MCU.exe = 1
+NVDisplay.Container.exe = 1,Display.NvContainer
+NvCamera32.dll = 1,NvCamera
+NvCamera64.dll = 1,NvCamera
+NvCameraEnable.exe = 1,NvCamera
+NvContainerRecovery.bat = 1,Display.NvContainer
+NvFBC.dll = 1
+NvFBC64.dll = 1
+NvIFR.dll = 1
+NvIFR64.dll = 1
+NvImageConvert32.exe = 1,NvCamera
+NvImageConvert64.exe = 1,NvCamera
+NvMemMapStorage.dll = 1
+NvMemMapStorageax.dll = 1
+NvMemMapStorageaxec.dll = 1
+NvMemMapStoragex.dll = 1
+NvMessageBus.dll = 1,Display.NvContainer
+NvPresent64.dll = 1
+NvTelemetry64.dll = 1
+NvXDCore.dll = 1,Display.NvContainer\plugins\LocalSystem
+NvcDispCorePlugin.dll = 1,Display.NvContainer\plugins\LocalSystem
+NvcDispWatchdog.dll = 1,Display.NvContainer\plugins\LocalSystem
+OpenCL32.dll = 1
+OpenCL64.dll = 1
+OscTool.exe = 1
+ReShadeFXC32.exe = 1,NvCamera
+ReShadeFXC64.exe = 1,NvCamera
+ShotWithGeforce518x32.rgba = 1,NvCamera
+SphericalEquirect32.exe = 1,NvCamera
+SphericalEquirect64.exe = 1,NvCamera
+Sticker01.png = 1,NvCamera
+Sticker02.png = 1,NvCamera
+Sticker03.png = 1,NvCamera
+Sticker04.png = 1,NvCamera
+Sticker05.png = 1,NvCamera
+Sticker06.png = 1,NvCamera
+Sticker07.png = 1,NvCamera
+Sticker08.png = 1,NvCamera
+_DisplayDriverRAS.dll = 1,Display.NvContainer\plugins\LocalSystem
+_NvGSTPlugin.dll = 1,Display.NvContainer\plugins\Session
+_NvMsgBusBroadcast.dll = 1,Display.NvContainer\plugins\LocalSystem
+_nvngx.dll = 1
+_nvtopps.dll = 1,Display.NvContainer\plugins\LocalSystem
+d3dcompiler_47_32.dll = 1,NvCamera
+d3dcompiler_47_64.dll = 1,NvCamera
+dbInstaller.exe = 1
+dlsargs.xml = 1,Display.NvContainer
+dlsnetparams.csv = 1,Display.NvContainer
+gsp_ga10x.bin = 1
+gsp_tu10x.bin = 1
+libcuda.so.1.1 = 1
+libcuda_loader.so = 1
+libcudadebugger.so.1 = 1
+libnvcuvid.so.1 = 1
+libnvdxdlkernels.so = 1
+libnvdxgdmal.so.1 = 1
+libnvidia-encode.so.1 = 1
+libnvidia-gpucomp.so = 1
+libnvidia-ml.so.1 = 1
+libnvidia-ml_loader.so = 1
+libnvidia-ngx.so.1 = 1
+libnvidia-nvvm.so.4 = 1
+libnvidia-nvvm70.so.4 = 1
+libnvidia-opticalflow.so.1 = 1
+libnvidia-ptxjitcompiler.so.1 = 1
+libnvoptix_loader.so.1 = 1
+libnvwgf2umx.so = 1
+license.txt = 1
+messagebus.conf = 1,Display.NvContainer\plugins\LocalSystem
+messagebus_client.conf = 1,Display.NvContainer
+nv-vk32.json = 1
+nv-vk64.json = 1
+nv-vksc64.json = 1
+nv3dappshext.dll = 1
+nv3dappshextr.dll = 1
+nvAIDVC.dll = 1
+nvAIDVCx.dll = 1
+nvAIHDR.dll = 1
+nvAIHDRx.dll = 1
+nvAIVPx.dll = 1
+nvDecMFTMjpeg.dll = 1
+nvDecMFTMjpegx.dll = 1
+nvEncMFTH264.dll = 1
+nvEncMFTH264x.dll = 1
+nvEncMFThevc.dll = 1
+nvEncMFThevcx.dll = 1
+nvEncodeAPI.dll = 1
+nvEncodeAPI64.dll = 1
+nvIccAdvancedColorIdentity.icm = 1
+nvPerfProvider.man = 1,NVWMI
+nvWmi.mof = 1,NVWMI
+nvWmi64.exe = 1,NVWMI
+nvapi.dll = 1
+nvapi64.dll = 1
+nvcoproc.bin = 1
+nvcpl.dll = 1
+nvcubins.bin = 1
+nvcuda32.dll = 1
+nvcuda64.dll = 1
+nvcudaETW.xml = 1
+nvcuda_loader32.dll = 1
+nvcuda_loader64.dll = 1
+nvcudadebugger.dll = 1
+nvcudart_hybrid64.dll = 1
+nvcuvid32.dll = 1
+nvcuvid64.dll = 1
+nvd3dum.dll = 1
+nvd3dumx.dll = 1
+nvdebugdump.exe = 1
+nvdevtools.dll = 1
+nvdevtoolsr.dll = 1
+nvdirectsr.dll = 1
+nvdispco64.exe = 1
+nvdisps.dll = 1
+nvdispsr.dll = 1
+nvdlist.dll = 1
+nvdlistx.dll = 1
+nvdlppx.dll = 1
+nvdrsdb.bin = 1
+nvdxdlkernels.dll = 1
+nvdxgdmal32.dll = 1
+nvdxgdmal64.dll = 1
+nvgames.dll = 1
+nvgamesr.dll = 1
+nvgpucomp32.dll = 1
+nvgpucomp64.dll = 1
+nvgwls.exe = 1,Display.NvContainer
+nvidia-ngx-updater = 1
+nvidia-pcc.exe = 1
+nvidia-smi = 1
+nvidia-smi.exe = 1
+nvinfo.pb = 1
+nvlddmkm.sys = 1
+nvldumd.dll = 1
+nvldumdx.dll = 1
+nvlicensings.dll = 1
+nvlicensingsr.dll = 1
+nvml.dll = 1
+nvml_loader.dll = 1
+nvngx.dll = 1
+nvngx_update.exe = 1
+nvofapi.dll = 1
+nvofapi64.dll = 1
+nvoglv32.dll = 1
+nvoglv64.dll = 1
+nvopencl32.dll = 1
+nvopencl64.dll = 1
+nvoptix.bin = 1
+nvoptix.dll = 1
+nvppe.dll = 1
+nvppex.dll = 1
+nvprofileupdaterplugin.dll = 1,Display.NvContainer\plugins\Session
+nvptxJitCompiler32.dll = 1
+nvptxJitCompiler64.dll = 1
+nvrtum64.dll = 1
+nvshext.dll = 1
+nvsmartmax.dll = 1
+nvsmartmax64.dll = 1
+nvsmartmaxapp.exe = 1
+nvsmartmaxapp64.exe = 1
+nvsvc64.dll = 1
+nvsvcr.dll = 1
+nvsvs.dll = 1
+nvsvsr.dll = 1
+nvtopps.db3 = 1,Display.NvContainer
+nvui.dll = 1
+nvuir.dll = 1
+nvvitvs.dll = 1
+nvvitvsr.dll = 1
+nvvkscv64.dll = 1
+nvvm32.dll = 1
+nvvm64.dll = 1
+nvvm70.dll = 1
+nvwgf2um.dll = 1
+nvwgf2umx.dll = 1
+nvwss.dll = 1
+nvwssr.dll = 1
+nvxdapix.dll = 1
+nvxdbat.dll = 1
+nvxdplcy.dll = 1
+nvxdsyncplugin.dll = 1,Display.NvContainer\plugins\Session
+scratches.jpg = 1,NvCamera
+tools_licenses.txt = 1,NvCamera
+ui.tga = 1,NvCamera
+vulkan-1-x64.dll = 1
+vulkan-1-x86.dll = 1
+vulkaninfo-x64.exe = 1
+vulkaninfo-x86.exe = 1
+wksServicePlugin.dll = 1,Display.NvContainer\plugins\Session
+wksServicePluginZ.dll = 1,Display.NvContainer\plugins\LocalSystem
+
+[ControlFlags]
+ExcludeFromSelect = *
+
+[Section001]
+AddReg = nv_commonBase_addreg
+AddReg = nv_commonDisplayModes_addreg
+AddReg = nv_global_addreg
+AddReg = nv_miscBase_addreg
+AddReg = nv_opengl_addreg
+AddReg = nv_timingRestrictions_addreg
+CopyFiles = NVWMI_InstallDir
+CopyFiles = NvDisplayContainer_Dir
+CopyFiles = NvDisplayContainer_PluginsLS_Dir
+CopyFiles = NvDisplayContainer_PluginsSession_Dir
+CopyFiles = nv_DS_VGPU_copyfiles
+CopyFiles = nv_Drs_copyfiles
+CopyFiles = nv_containerSetup_copyfiles
+CopyFiles = nv_cplSetup_copy_nvcpl_dll
+CopyFiles = nv_cplSetup_copyfiles
+CopyFiles = nv_libcuda_copyfiles
+CopyFiles = nv_license_copyfiles
+CopyFiles = nv_ngx_copyfiles
+CopyFiles = nv_nvcamera_copyfiles
+CopyFiles = nv_nvsmi_copyfiles
+CopyFiles = nv_openCL_copyfiles
+CopyFiles = nv_sysDrivers_RS_copyfiles
+CopyFiles = nv_sysDrivers_copyfiles
+CopyFiles = nv_system32_RS_copyfiles
+CopyFiles = nv_system32_VGPU_copyfiles
+CopyFiles = nv_system32_copyfiles
+CopyFiles = nv_syswow64_RS_copyfiles
+CopyFiles = nv_syswow64_VGPU_copyfiles
+CopyFiles = nv_syswow64_copyfiles
+CopyFiles = nv_telemetry_copyfiles
+DelReg = nv_dch_delreg
+FeatureScore = CF
+NVAllowMCVirtualAudioPreStage = 0
+NVSupportAnsel = 1
+NVSupportDisplayUpdate = 1
+NVSupportGFExperienceOEM = 1
+NVSupportGFExperienceUDA = 1
+NVSupportNGX = 1
+NVSupportPhysx = 1
+NVSupportRTXVoice = 1
+NvSupportMSHybrid = 1
+NvSupportNppo = 1
+NvSupportNvtopps = 1
+NvSupportTelemetry = 1
+
+[Section001.GeneralConfigData]
+MaximumDeviceMemoryConfiguration = 128
+MaximumNumberOfDevices = 4
+
+[Section001.HW]
+AddReg = nv_msiSupport_addreg
+
+[Section001.Services]
+AddService = nvlddmkm, 0x00000002, nv_nvlddmkm_serviceInstallRS,nv_nvlddmkm_RS_eventlogging
+AddService = NVDisplay.ContainerLocalSystem, 0x00000800, NvDisplayContainer_ServiceInstall
+
+[Section001.Software]
+AddSoftware = NVIDIA CoInstaller Display.Driver, 0, nv_software_install64
+AddSoftware = NVIDIACorp.NVIDIAControlPanel, 0, nv_store_software_CPL_install64
+
+[IncludedSubPackages]
+Display.Driver = AppxInstallerApplication.exe
+Display.Driver = DisplayDriverExt.dll
+Display.Driver = mcu.exe
+Display.Driver = nvofapi.dll
+Display.Driver\Display.NvContainer = *.*
+Display.Driver\NVCPL = *.*
+Display.Driver\NVWMI = nvWmi.mof,nvPerfProvider.man,nvWmi64.exe
+Display.Driver\NvCamera = *.*
+Display.Optimus = *.dll,*.nvi,*.mof
+Display.Update = *.dll,*.nvi
+NVI2 = theme.cfg,*.ui.forms,*.ui.strings,*.png,NVI2*.dll,NVPrxy*.dll,NVI2SystemService*.sys,NvInstallerUtil.dll
+Update.Core = *.dll,*.nvi,*.exe
+
+[NVWMI_InstallDir]
+nvPerfProvider.man,,,
+nvWmi.mof,,,
+nvWmi64.exe,,,
+
+[NvDisplayContainer_Dir]
+NVDisplay.Container.exe,,,0x00000000
+NvContainerRecovery.bat,,,0x00000000
+NvMessageBus.dll,,,0x00000000
+dlsargs.xml,,,
+dlsnetparams.csv,,,
+messagebus_client.conf,,,0x00000000
+nvgwls.exe,,,
+nvtopps.db3,,,
+
+[NvDisplayContainer_PluginsLS_Dir]
+NvXDCore.dll,,,0x00000000
+NvcDispCorePlugin.dll,,,0x00000000
+NvcDispWatchdog.dll,,,0x00000000
+_DisplayDriverRAS.dll,,,0x00000000
+_NvMsgBusBroadcast.dll,,,
+_nvtopps.dll,,,0x00000000
+messagebus.conf,,,0x00000000
+wksServicePluginZ.dll,,,
+
+[NvDisplayContainer_PluginsSession_Dir]
+_NvGSTPlugin.dll,,,0x00000000
+nvprofileupdaterplugin.dll,,,0x00000010
+nvxdsyncplugin.dll,,,0x00000000
+wksServicePlugin.dll,,,0x00000000
+
+[NvDisplayContainer_ServiceInstall]
+AddReg = NvDisplayContainer_ServiceInstall_AddReg
+Description = "Container service for NVIDIA root features"
+DisplayName = "NVIDIA Display Container LS"
+ErrorControl = 0
+LoadOrderGroup = Video
+ServiceBinary = %13%\Display.NvContainer\NVDisplay.Container.exe
+ServiceType = 0x10
+StartType = 2
+
+[NvDisplayContainer_ServiceInstall_AddReg]
+HKR,"LocalSystem\NvXDCore",DisableLoad,%REG_DWORD_NO_CLOBBER%,0x00000002
+HKR,"LocalSystem\NvcDispCorePlugin",DisableLoad,%REG_DWORD%,0x00000000
+HKR,"LocalSystem\NvcDispCorePlugin",LogFile,%REG_SZ%,"%%ProgramData%%\NVIDIA\NvcDispCorePlugin.log"
+HKR,"LocalSystem\NvcDispCorePlugin",LogLevel,%REG_DWORD%,0x00000003
+HKR,"LocalSystem\NvcDispWatchdog",DisableLoad,%REG_DWORD_NO_CLOBBER%,0x00000002
+HKR,"LocalSystem\Watchdog",LogFile,%REG_SZ%,"%%ProgramData%%\NVIDIA\NVDisplayContainerWatchdog.log"
+HKR,"LocalSystem\Watchdog\Session",Container,%REG_SZ%,"%13%\Display.NvContainer\NVDisplay.Container.exe"
+HKR,"LocalSystem\Watchdog\Session",Folder,%REG_SZ%,"%13%\Display.NvContainer\plugins\Session"
+HKR,"LocalSystem\Watchdog\Session",GenerateDump,%REG_DWORD%,0x00000000
+HKR,"LocalSystem\Watchdog\Session",Parameters,%REG_SZ%,"-f %%ProgramData%%\NVIDIA\DisplaySessionContainer%%d.log -d %13%\Display.NvContainer\plugins\Session -r -l 3 -p 30000 -cfg NVDisplay.ContainerLocalSystem\Session /ert"
+HKR,"LocalSystem\Watchdog\Session",Policy,%REG_SZ%,"10/300/5"
+HKR,"LocalSystem\Watchdog\Session",RunElevated,%REG_DWORD%,0x00000001
+HKR,"LocalSystem\_DisplayDriverRAS",DisableLoad,%REG_DWORD_NO_CLOBBER%,0x00000002
+HKR,,FailureActions,%REG_BINARY%,0a,00,00,00,00,00,00,00,01,00,00,00,03,00,00,00,14,00,00,00,01,00,00,00,70,17,00,00,01,00,00,00,40,1f,00,00,03,00,00,00,10,27,00,00
+HKR,,FailureActionsOnNonCrashFailures,%REG_DWORD%,0x00000001
+HKR,,FailureCommand,%REG_SZ%,"cmd.exe /C %13%\Display.NvContainer\NvContainerRecovery.bat NVDisplay.ContainerLocalSystem %%ProgramData%%\NVIDIA\NvContainerRecoveryNVDisplay.ContainerLocalSystem.log"
+HKR,,ImagePath,%REG_EXPAND_SZ%,"%13%\Display.NvContainer\NVDisplay.Container.exe -s NVDisplay.ContainerLocalSystem -f %%ProgramData%%\NVIDIA\NVDisplay.ContainerLocalSystem.log -l 3 -d %13%\Display.NvContainer\plugins\LocalSystem -r -p 30000 -cfg NVDisplay.ContainerLocalSystem\LocalSystem /ert"
+HKR,,LocalSystem,%REG_SZ%,"LocalSystem Container Hive"
+HKR,,Session,%REG_SZ%,"Session Container Hive"
+
+[SignatureAttributes]
+NvMemMapStorage.dll = SignatureAttributes.PETrust
+NvMemMapStorageax.dll = SignatureAttributes.PETrust
+NvMemMapStorageaxec.dll = SignatureAttributes.PETrust
+nvAIHDR.dll = SignatureAttributes.PETrust
+nvAIHDRx.dll = SignatureAttributes.PETrust
+nvDLPPx.dll = SignatureAttributes.PETrust
+nvapi.dll = SignatureAttributes.PETrust
+nvapi64.dll = SignatureAttributes.PETrust
+nvd3dum.dll = SignatureAttributes.PETrust
+nvd3dumx.dll = SignatureAttributes.PETrust
+nvdlist.dll = SignatureAttributes.PETrust
+nvdlistx.dll = SignatureAttributes.PETrust
+nvgpucomp32.dll = SignatureAttributes.PETrust
+nvgpucomp64.dll = SignatureAttributes.PETrust
+nvldumd.dll = SignatureAttributes.PETrust
+nvldumdx.dll = SignatureAttributes.PETrust
+nvmemmapstoragex.dll = SignatureAttributes.PETrust
+nvppe.dll = SignatureAttributes.PETrust
+nvppex.dll = SignatureAttributes.PETrust
+nvwgf2um.dll = SignatureAttributes.PETrust
+nvwgf2umx.dll = SignatureAttributes.PETrust
+
+[SignatureAttributes.PETrust]
+PETrust = true
+
+[amd_dpfc_Service_Inst]
+
+[nv_CoInstaller_Data]
+GRD = 1
+MigratedComponents = Display.ControlPanel,NVDisplayContainer,Ansel,Display.NVWMI
+NVPackageName = Display.Driver
+OriginalInfSourcePath = %01%
+Universal = 1
+
+[nv_DRS_addreg]
+HKR,"Global\DRS",DRS_Enabled,%REG_DWORD%,1
+
+[nv_DS_VGPU_copyfiles]
+
+[nv_Drs_copyfiles]
+dbInstaller.exe,,,0x00004000
+nvdrsdb.bin,,,0x00004000
+
+[nv_commonBase_addreg]
+HKCR,"Wow6432Node\CLSID\{B63E31D0-87B5-477F-B224-4A35B6BECED6}",,%REG_SZ%,"NVIDIA CUDA Video Encoder"
+HKCR,"Wow6432Node\CLSID\{B63E31D0-87B5-477F-B224-4A35B6BECED6}\InProcServer32",ThreadingModel,%REG_SZ%,"Both"
+HKR,"CopyToVmWhenNewer",CudaDebuggerFiles,%REG_MULTI_SZ%,"nvcudadebugger.dll"
+HKR,"CopyToVmWhenNewer",CudaDriverFiles,%REG_MULTI_SZ%,"nvcuda_loader64.dll"
+HKR,"CopyToVmWhenNewer",CudaDriverFiles,%REG_SZ_APPEND%,"nvcuda.dll"
+HKR,"CopyToVmWhenNewer",CuvidDriverFile,%REG_MULTI_SZ%,"nvcuvid64.dll"
+HKR,"CopyToVmWhenNewer",CuvidDriverFile,%REG_SZ_APPEND%,"nvcuvid.dll"
+HKR,"CopyToVmWhenNewer",EncodeApiFiles,%REG_MULTI_SZ%,"nvEncodeAPI64.dll"
+HKR,"CopyToVmWhenNewer",NVAPIFiles,%REG_MULTI_SZ%,"nvapi64.dll"
+HKR,"CopyToVmWhenNewer",NvmlDriverFiles,%REG_MULTI_SZ%,"nvml_loader.dll"
+HKR,"CopyToVmWhenNewer",NvmlDriverFiles,%REG_SZ_APPEND%,"nvml.dll"
+HKR,"CopyToVmWhenNewer",OpenCLFiles,%REG_MULTI_SZ%,"OpenCL64.dll"
+HKR,"CopyToVmWhenNewer",OpenCLFiles,%REG_SZ_APPEND%,"OpenCL.dll"
+HKR,"CopyToVmWhenNewer",VulkanFiles,%REG_MULTI_SZ%,"vulkan-1-x64.dll"
+HKR,"CopyToVmWhenNewer",VulkanFiles,%REG_SZ_APPEND%,"vulkan-1.dll"
+HKR,"CopyToVmWhenNewerWow64",CudaDriverFiles,%REG_MULTI_SZ%,"nvcuda_loader32.dll"
+HKR,"CopyToVmWhenNewerWow64",CudaDriverFiles,%REG_SZ_APPEND%,"nvcuda.dll"
+HKR,"CopyToVmWhenNewerWow64",CuvidDriverFile,%REG_MULTI_SZ%,"nvcuvid32.dll"
+HKR,"CopyToVmWhenNewerWow64",CuvidDriverFile,%REG_SZ_APPEND%,"nvcuvid.dll"
+HKR,"CopyToVmWhenNewerWow64",EncodeApiFiles,%REG_MULTI_SZ%,"nvEncodeAPI.dll"
+HKR,"CopyToVmWhenNewerWow64",NVAPIFiles,%REG_SZ_APPEND%,"nvapi.dll"
+HKR,"CopyToVmWhenNewerWow64",OpenCLFiles,%REG_MULTI_SZ%,"OpenCL32.dll"
+HKR,"CopyToVmWhenNewerWow64",OpenCLFiles,%REG_SZ_APPEND%,"OpenCL.dll"
+HKR,"CopyToVmWhenNewerWow64",VulkanFiles,%REG_MULTI_SZ%,"vulkan-1-x86.dll"
+HKR,"CopyToVmWhenNewerWow64",VulkanFiles,%REG_SZ_APPEND%,"vulkan-1.dll"
+HKR,,Acceleration.Level,%REG_DWORD%,0
+HKR,,InstalledDisplayDrivers,%REG_MULTI_SZ%,"%13%\nvldumdx.dll,%13%\nvldumdx.dll,%13%\nvldumdx.dll,%13%\nvldumdx.dll"
+HKR,,InstalledDisplayDrivers,%REG_SZ_APPEND%,"%13%\nvldumd.dll,%13%\nvldumd.dll,%13%\nvldumd.dll,%13%\nvldumd.dll"
+HKR,,MultiFunctionSupported,%REG_DWORD%,1
+HKR,,UseBestResolution,%REG_DWORD%,1
+HKR,,UserModeDriverName,%REG_MULTI_SZ%,%13%\nvldumdx.dll,%13%\nvldumdx.dll,%13%\nvldumdx.dll,%13%\nvldumdx.dll
+HKR,,UserModeDriverNameWoW,%REG_MULTI_SZ%,%13%\nvldumd.dll,%13%\nvldumd.dll,%13%\nvldumd.dll,%13%\nvldumd.dll
+HKR,,UserModeDriverNameWsl,%REG_MULTI_SZ%,"%13%\libnvwgf2umx.so"
+HKR,,VulkanDriverName,%REG_SZ%,"%13%\nv-vk64.json"
+HKR,,VulkanDriverNameWoW,%REG_SZ%,"%13%\nv-vk32.json"
+HKR,,VulkanImplicitLayers,%REG_SZ%,"%13%\nv-vk64.json"
+HKR,,VulkanImplicitLayersWow,%REG_SZ%,"%13%\nv-vk32.json"
+HKR,,VulkanSCDriverName,%REG_SZ%,"%13%\nv-vksc64.json"
+HKR,,VulkanSCImplicitLayers,%REG_SZ%,"%13%\nv-vksc64.json"
+
+[nv_commonDisplayModes_addreg]
+HKR,, NV_Modes, %REG_MULTI_SZ%,  "{*}S 640x480x32,64 720x480x32,64 800x600x32,64 1024x768x32,64 1152x864x32,64 1280x720x32,64 1280x768x32,64 1280x800x32,64 1280x960x32,64 1280x1024x32,64 1360x768x32,64 1366x768x32,64 1440x1080x32,64 1600x900x32,64 1600x1024x32,64 1600x1200x32,64 1680x1050x32,64 1920x1080x32,64 1920x1200x32,64 1920x1440x32,64 2048x1536x32,64 2560x1440x32,64 2560x1600x32,64=1; 720x576x32,64=8032;"
+
+[nv_containerSetup_copyfiles]
+
+[nv_controlPanel_addreg]
+HKCR,".avi\ShellEx\{3D1975AF-0FC3-463d-8965-4DC6B5A840F4}",,%REG_SZ%,""
+HKCR,".mpe\ShellEx\{3D1975AF-0FC3-463d-8965-4DC6B5A840F4}",,%REG_SZ%,""
+HKCR,".mpeg\ShellEx\{3D1975AF-0FC3-463d-8965-4DC6B5A840F4}",,%REG_SZ%,""
+HKCR,".mpg\ShellEx\{3D1975AF-0FC3-463d-8965-4DC6B5A840F4}",,%REG_SZ%,""
+HKCR,".wmv\ShellEx\{3D1975AF-0FC3-463d-8965-4DC6B5A840F4}",,%REG_SZ%,""
+HKCR,"AVIFile\shellex\ContextMenuHandlers\NvPlayOnMyTV",,%REG_SZ%,""
+HKCR,"AppID\NVXDApiX.DLL",AppID,%REG_SZ%,"{B92B577B-628A-442B-A017-E86FB518C6FD}"
+HKCR,"AppID\NVXDBat.DLL",AppID,%REG_SZ%,"{EF73A51A-EE4A-4E16-9D3A-649245C8F44F}"
+HKCR,"AppID\NVXDPlcy.DLL",AppID,%REG_SZ%,"{9C5791C4-BCD3-48B8-A10D-CA0279320836}"
+HKCR,"AppID\Nv3DAppShExt.DLL",AppID,%REG_SZ%,"{A4CF1DBB-664A-4600-9CE3-96FBAA344504}"
+HKCR,"AppID\NvUI.DLL,AppID",,%REG_SZ%,"{048F26EF-2F89-46C9-99E7-481E40F3F2EC}"
+HKCR,"AppID\{048F26EF-2F89-46C9-99E7-481E40F3F2EC}",,%REG_SZ%,"NvCpl"
+HKCR,"AppID\{9C5791C4-BCD3-48B8-A10D-CA0279320836}",,%REG_SZ%,"NVXDPlcy"
+HKCR,"AppID\{A4CF1DBB-664A-4600-9CE3-96FBAA344504}",,%REG_SZ%,"Nv3DAppShExt"
+HKCR,"AppID\{B92B577B-628A-442B-A017-E86FB518C6FD}",,%REG_SZ%,"NVXDApiX"
+HKCR,"AppID\{B92B577B-628A-442B-A017-E86FB518C6FD}",DllSurrogate,%REG_SZ%,""
+HKCR,"AppID\{EF73A51A-EE4A-4E16-9D3A-649245C8F44F}",,%REG_SZ%,"NVXDBat"
+HKCR,"CLSID\{00E80F18-EC5B-4FCF-A417-7348991A8D32}",,%REG_SZ%,"Stereoscopic3DSettings Class"
+HKCR,"CLSID\{00E80F18-EC5B-4FCF-A417-7348991A8D32}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{00E80F18-EC5B-4FCF-A417-7348991A8D32}\InprocServer32",,%REG_SZ%,"%13%\nvsvs.dll"
+HKCR,"CLSID\{00E80F18-EC5B-4FCF-A417-7348991A8D32}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{00E80F18-EC5B-4FCF-A417-7348991A8D32}\ProgID",,%REG_SZ%,"StereoVisionServer.Stereoscopic3DSettings.1"
+HKCR,"CLSID\{00E80F18-EC5B-4FCF-A417-7348991A8D32}\TypeLib",,%REG_SZ%,"{E920DC48-2640-41a5-AA09-912B32234293}"
+HKCR,"CLSID\{00E80F18-EC5B-4FCF-A417-7348991A8D32}\VersionIndependentProgID",,%REG_SZ%,"StereoVisionServer.Stereoscopic3DSettings"
+HKCR,"CLSID\{01367108-5EE2-4E1C-A8DE-24438065ABC9}",,%REG_SZ%,"CategoryAppearance Class"
+HKCR,"CLSID\{01367108-5EE2-4E1C-A8DE-24438065ABC9}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{01367108-5EE2-4E1C-A8DE-24438065ABC9}\InprocServer32",,%REG_SZ%,"%13%\nvdisps.dll"
+HKCR,"CLSID\{01367108-5EE2-4E1C-A8DE-24438065ABC9}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{01367108-5EE2-4E1C-A8DE-24438065ABC9}\ProgID",,%REG_SZ%,"DisplayServer.CategoryAppearance.1"
+HKCR,"CLSID\{01367108-5EE2-4E1C-A8DE-24438065ABC9}\TypeLib",,%REG_SZ%,"{25EBA1D0-EB51-4CBE-8515-23E81DF77F97}"
+HKCR,"CLSID\{01367108-5EE2-4E1C-A8DE-24438065ABC9}\VersionIndependentProgID",,%REG_SZ%,"DisplayServer.CategoryAppearance"
+HKCR,"CLSID\{02C68609-99E3-4A8F-9575-4973D401C06F}",,%REG_SZ%,"MainServer Class"
+HKCR,"CLSID\{02C68609-99E3-4A8F-9575-4973D401C06F}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{02C68609-99E3-4A8F-9575-4973D401C06F}\InprocServer32",,%REG_SZ%,"%13%\nvdevtools.dll"
+HKCR,"CLSID\{02C68609-99E3-4A8F-9575-4973D401C06F}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{02C68609-99E3-4A8F-9575-4973D401C06F}\ProgID",,%REG_SZ%,"DevToolsServer.MainServer.1"
+HKCR,"CLSID\{02C68609-99E3-4A8F-9575-4973D401C06F}\TypeLib",,%REG_SZ%,"{40473277-70CE-464B-BE85-33BB4D1206B0}"
+HKCR,"CLSID\{02C68609-99E3-4A8F-9575-4973D401C06F}\VersionIndependentProgID",,%REG_SZ%,"DevToolsServer.MainServer"
+HKCR,"CLSID\{055A7699-EAFF-47DF-8E55-41F4C0612BF3}",,%REG_SZ%,"VideoColorSettings Class"
+HKCR,"CLSID\{055A7699-EAFF-47DF-8E55-41F4C0612BF3}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{055A7699-EAFF-47DF-8E55-41F4C0612BF3}\InprocServer32",,%REG_SZ%,"%13%\nvvitvs.dll"
+HKCR,"CLSID\{055A7699-EAFF-47DF-8E55-41F4C0612BF3}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{055A7699-EAFF-47DF-8E55-41F4C0612BF3}\ProgID",,%REG_SZ%,"Video_TVServer.VideoColorSettings.1"
+HKCR,"CLSID\{055A7699-EAFF-47DF-8E55-41F4C0612BF3}\TypeLib",,%REG_SZ%,"{D1F48243-B994-45CD-8A55-03DBB33745BE}"
+HKCR,"CLSID\{055A7699-EAFF-47DF-8E55-41F4C0612BF3}\VersionIndependentProgID",,%REG_SZ%,"Video_TVServer.VideoColorSettings"
+HKCR,"CLSID\{07333BBD-64AF-4206-899D-2809660C61C7}",,%REG_SZ%,"ECCSettings Class"
+HKCR,"CLSID\{07333BBD-64AF-4206-899D-2809660C61C7}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{07333BBD-64AF-4206-899D-2809660C61C7}\InprocServer32",,%REG_SZ%,"%13%\nvwss.dll"
+HKCR,"CLSID\{07333BBD-64AF-4206-899D-2809660C61C7}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{07333BBD-64AF-4206-899D-2809660C61C7}\ProgID",,%REG_SZ%,"WorkStationServer.ECCSettings.1"
+HKCR,"CLSID\{07333BBD-64AF-4206-899D-2809660C61C7}\TypeLib",,%REG_SZ%,"{D1F48243-B994-45CD-8A55-03DBB33745BE}"
+HKCR,"CLSID\{07333BBD-64AF-4206-899D-2809660C61C7}\VersionIndependentProgID",,%REG_SZ%,"WorkStationServer.ECCSettings"
+HKCR,"CLSID\{074BFFFD-4E50-42c1-A7EB-40D9D70F2471}",,%REG_SZ%,"AdjustDesktopSizePos Class"
+HKCR,"CLSID\{074BFFFD-4E50-42c1-A7EB-40D9D70F2471}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{074BFFFD-4E50-42c1-A7EB-40D9D70F2471}\InprocServer32",,%REG_SZ%,"%13%\nvdisps.dll"
+HKCR,"CLSID\{074BFFFD-4E50-42c1-A7EB-40D9D70F2471}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{074BFFFD-4E50-42c1-A7EB-40D9D70F2471}\ProgID",,%REG_SZ%,"DisplayServer.AdjustDesktopSizePos.1"
+HKCR,"CLSID\{074BFFFD-4E50-42c1-A7EB-40D9D70F2471}\TypeLib",,%REG_SZ%,"{25EBA1D0-EB51-4CBE-8515-23E81DF77F97}"
+HKCR,"CLSID\{074BFFFD-4E50-42c1-A7EB-40D9D70F2471}\VersionIndependentProgID",,%REG_SZ%,"DisplayServer.AdjustDesktopSizePos"
+HKCR,"CLSID\{0EEC1AF6-7664-4D17-88A5-B71EF18A93BC}",,%REG_SZ%,"MainServer Class"
+HKCR,"CLSID\{0EEC1AF6-7664-4D17-88A5-B71EF18A93BC}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{0EEC1AF6-7664-4D17-88A5-B71EF18A93BC}\InprocServer32",,%REG_SZ%,"%13%\nvwss.dll"
+HKCR,"CLSID\{0EEC1AF6-7664-4D17-88A5-B71EF18A93BC}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{0EEC1AF6-7664-4D17-88A5-B71EF18A93BC}\ProgID",,%REG_SZ%,"WorkStationServer.MainServer.1"
+HKCR,"CLSID\{0EEC1AF6-7664-4D17-88A5-B71EF18A93BC}\TypeLib",,%REG_SZ%,"{D1F48243-B994-45CD-8A55-03DBB33745BE}"
+HKCR,"CLSID\{0EEC1AF6-7664-4D17-88A5-B71EF18A93BC}\VersionIndependentProgID",,%REG_SZ%,"WorkStationServer.MainServer"
+HKCR,"CLSID\{0FB41BD0-3107-40A5-8D49-456E585947B2}",,%REG_SZ%,"IdentifyDisp Class"
+HKCR,"CLSID\{0FB41BD0-3107-40A5-8D49-456E585947B2}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{0FB41BD0-3107-40A5-8D49-456E585947B2}\InprocServer32",,%REG_SZ%,"%13%\nvdisps.dll"
+HKCR,"CLSID\{0FB41BD0-3107-40A5-8D49-456E585947B2}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{0FB41BD0-3107-40A5-8D49-456E585947B2}\ProgID",,%REG_SZ%,"DisplayServer.IdentifyDisp.1"
+HKCR,"CLSID\{0FB41BD0-3107-40A5-8D49-456E585947B2}\TypeLib",,%REG_SZ%,"{25EBA1D0-EB51-4CBE-8515-23E81DF77F97}"
+HKCR,"CLSID\{0FB41BD0-3107-40A5-8D49-456E585947B2}\VersionIndependentProgID",,%REG_SZ%,"DisplayServer.IdentifyDisp"
+HKCR,"CLSID\{1618348E-35B3-4631-8C04-2AB15AF5007D}",,%REG_SZ%,"SetupMosaicEx Class"
+HKCR,"CLSID\{1618348E-35B3-4631-8C04-2AB15AF5007D}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{1618348E-35B3-4631-8C04-2AB15AF5007D}\InprocServer32",,%REG_SZ%,"%13%\nvwss.dll"
+HKCR,"CLSID\{1618348E-35B3-4631-8C04-2AB15AF5007D}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{1618348E-35B3-4631-8C04-2AB15AF5007D}\ProgID",,%REG_SZ%,"WorkStationServer.SetupMosaicEx.1"
+HKCR,"CLSID\{1618348E-35B3-4631-8C04-2AB15AF5007D}\TypeLib",,%REG_SZ%,"{D1F48243-B994-45CD-8A55-03DBB33745BE}"
+HKCR,"CLSID\{1618348E-35B3-4631-8C04-2AB15AF5007D}\VersionIndependentProgID",,%REG_SZ%,"WorkStationServer.SetupMosaicEx"
+HKCR,"CLSID\{1BC39379-8D90-4F18-8817-795C57163770}",,%REG_SZ%,"ScreenMove Class"
+HKCR,"CLSID\{1BC39379-8D90-4F18-8817-795C57163770}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{1BC39379-8D90-4F18-8817-795C57163770}\InprocServer32",,%REG_SZ%,"%13%\nvdisps.dll"
+HKCR,"CLSID\{1BC39379-8D90-4F18-8817-795C57163770}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{1BC39379-8D90-4F18-8817-795C57163770}\ProgID",,%REG_SZ%,"DisplayServer.ScreenMove.1"
+HKCR,"CLSID\{1BC39379-8D90-4F18-8817-795C57163770}\TypeLib",,%REG_SZ%,"{25EBA1D0-EB51-4CBE-8515-23E81DF77F97}"
+HKCR,"CLSID\{1BC39379-8D90-4F18-8817-795C57163770}\VersionIndependentProgID",,%REG_SZ%,"DisplayServer.ScreenMove"
+HKCR,"CLSID\{1DC715B2-9126-4671-8086-299A44543E0F}",,%REG_SZ%,"NvXDBatchEngine Class"
+HKCR,"CLSID\{1DC715B2-9126-4671-8086-299A44543E0F}\InprocServer32",,%REG_SZ%,"%13%\NVXDBat.dll"
+HKCR,"CLSID\{1DC715B2-9126-4671-8086-299A44543E0F}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{1DC715B2-9126-4671-8086-299A44543E0F}\ProgID",,%REG_SZ%,"NVXDBat.NvXDBatchEngine.1"
+HKCR,"CLSID\{1DC715B2-9126-4671-8086-299A44543E0F}\TypeLib",,%REG_SZ%,"{F1091E74-3D9F-4D85-9CB2-B114FB659558}"
+HKCR,"CLSID\{1DC715B2-9126-4671-8086-299A44543E0F}\VersionIndependentProgID",,%REG_SZ%,"NVXDBat.NvXDBatchEngine"
+HKCR,"CLSID\{26A37DC6-935D-439B-80DD-C1006AE13D71}",,%REG_SZ%,"Config Class"
+HKCR,"CLSID\{26A37DC6-935D-439B-80DD-C1006AE13D71}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{26A37DC6-935D-439B-80DD-C1006AE13D71}\InprocServer32",,%REG_SZ%,"%13%\nvdisps.dll"
+HKCR,"CLSID\{26A37DC6-935D-439B-80DD-C1006AE13D71}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{26A37DC6-935D-439B-80DD-C1006AE13D71}\ProgID",,%REG_SZ%,"DisplayServer.Config.1"
+HKCR,"CLSID\{26A37DC6-935D-439B-80DD-C1006AE13D71}\TypeLib",,%REG_SZ%,"{25EBA1D0-EB51-4CBE-8515-23E81DF77F97}"
+HKCR,"CLSID\{26A37DC6-935D-439B-80DD-C1006AE13D71}\VersionIndependentProgID",,%REG_SZ%,"DisplayServer.Config"
+HKCR,"CLSID\{294EC7E3-94B7-4A6C-8636-09B33674D58F}",,%REG_SZ%,"Panoramic Class"
+HKCR,"CLSID\{294EC7E3-94B7-4A6C-8636-09B33674D58F}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{294EC7E3-94B7-4A6C-8636-09B33674D58F}\InprocServer32",,%REG_SZ%,"%13%\nvwss.dll"
+HKCR,"CLSID\{294EC7E3-94B7-4A6C-8636-09B33674D58F}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{294EC7E3-94B7-4A6C-8636-09B33674D58F}\ProgID",,%REG_SZ%,"WorkStationServer.Panoramic.1"
+HKCR,"CLSID\{294EC7E3-94B7-4A6C-8636-09B33674D58F}\TypeLib",,%REG_SZ%,"{D1F48243-B994-45CD-8A55-03DBB33745BE}"
+HKCR,"CLSID\{294EC7E3-94B7-4A6C-8636-09B33674D58F}\VersionIndependentProgID",,%REG_SZ%,"WorkStationServer.Panoramic"
+HKCR,"CLSID\{2DF0ACC2-6D97-491b-9581-70A6001FD25A}",,%REG_SZ%,"GamesCompatibility Class"
+HKCR,"CLSID\{2DF0ACC2-6D97-491b-9581-70A6001FD25A}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{2DF0ACC2-6D97-491b-9581-70A6001FD25A}\InprocServer32",,%REG_SZ%,"%13%\nvsvs.dll"
+HKCR,"CLSID\{2DF0ACC2-6D97-491b-9581-70A6001FD25A}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{2DF0ACC2-6D97-491b-9581-70A6001FD25A}\ProgID",,%REG_SZ%,"StereoVisionServer.GamesCompatibility.1"
+HKCR,"CLSID\{2DF0ACC2-6D97-491b-9581-70A6001FD25A}\TypeLib",,%REG_SZ%,"{E920DC48-2640-41a5-AA09-912B32234293}"
+HKCR,"CLSID\{2DF0ACC2-6D97-491b-9581-70A6001FD25A}\VersionIndependentProgID",,%REG_SZ%,"StereoVisionServer.GamesCompatibility"
+HKCR,"CLSID\{2FD96798-0D65-4D57-A095-B57679740E37}",,%REG_SZ%,"CategoryPerformance Class"
+HKCR,"CLSID\{2FD96798-0D65-4D57-A095-B57679740E37}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{2FD96798-0D65-4D57-A095-B57679740E37}\InprocServer32",,%REG_SZ%,"%13%\nvgames.dll"
+HKCR,"CLSID\{2FD96798-0D65-4D57-A095-B57679740E37}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{2FD96798-0D65-4D57-A095-B57679740E37}\ProgID",,%REG_SZ%,"GamesConfigServer.CategoryPerformance.1"
+HKCR,"CLSID\{2FD96798-0D65-4D57-A095-B57679740E37}\TypeLib",,%REG_SZ%,"{6481B880-0FE2-48FE-A15F-D8254FC98884}"
+HKCR,"CLSID\{2FD96798-0D65-4D57-A095-B57679740E37}\VersionIndependentProgID",,%REG_SZ%,"GamesConfigServer.CategoryPerformance"
+HKCR,"CLSID\{3020E6D8-7D1A-4D3C-8B62-C4D4B8F28434}",,%REG_SZ%,"Category_Video Class"
+HKCR,"CLSID\{3020E6D8-7D1A-4D3C-8B62-C4D4B8F28434}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{3020E6D8-7D1A-4D3C-8B62-C4D4B8F28434}\InprocServer32",,%REG_SZ%,"%13%\nvvitvs.dll"
+HKCR,"CLSID\{3020E6D8-7D1A-4D3C-8B62-C4D4B8F28434}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{3020E6D8-7D1A-4D3C-8B62-C4D4B8F28434}\ProgID",,%REG_SZ%,"Video_TVServer.Category_Video.1"
+HKCR,"CLSID\{3020E6D8-7D1A-4D3C-8B62-C4D4B8F28434}\TypeLib",,%REG_SZ%,"{56494266-49C1-4C68-8C11-5E1B7B878E02}"
+HKCR,"CLSID\{3020E6D8-7D1A-4D3C-8B62-C4D4B8F28434}\VersionIndependentProgID",,%REG_SZ%,"Video_TVServer.Category_Video"
+HKCR,"CLSID\{3156EC84-29BD-4EAA-AE0A-817ED606FA99}",,%REG_SZ%,"MainServer Class"
+HKCR,"CLSID\{3156EC84-29BD-4EAA-AE0A-817ED606FA99}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{3156EC84-29BD-4EAA-AE0A-817ED606FA99}\InprocServer32",,%REG_SZ%,"%13%\nvgames.dll"
+HKCR,"CLSID\{3156EC84-29BD-4EAA-AE0A-817ED606FA99}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{3156EC84-29BD-4EAA-AE0A-817ED606FA99}\ProgID",,%REG_SZ%,"GamesConfigServer.MainServer.1"
+HKCR,"CLSID\{3156EC84-29BD-4EAA-AE0A-817ED606FA99}\TypeLib",,%REG_SZ%,"{6481B880-0FE2-48FE-A15F-D8254FC98884}"
+HKCR,"CLSID\{3156EC84-29BD-4EAA-AE0A-817ED606FA99}\VersionIndependentProgID",,%REG_SZ%,"GamesConfigServer.MainServer"
+HKCR,"CLSID\{33C89616-F807-4957-BF34-A1C91D7A1A2E}",,%REG_SZ%,"OperationInterceptor Class"
+HKCR,"CLSID\{33C89616-F807-4957-BF34-A1C91D7A1A2E}\InprocServer32",,%REG_SZ%,"%13%\NVXDBat.dll"
+HKCR,"CLSID\{33C89616-F807-4957-BF34-A1C91D7A1A2E}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{33C89616-F807-4957-BF34-A1C91D7A1A2E}\ProgID",,%REG_SZ%,"NVXDBatdll.OperationInterceptor.1"
+HKCR,"CLSID\{33C89616-F807-4957-BF34-A1C91D7A1A2E}\TypeLib",,%REG_SZ%,"{F1091E74-3D9F-4D85-9CB2-B114FB659558}"
+HKCR,"CLSID\{33C89616-F807-4957-BF34-A1C91D7A1A2E}\VersionIndependentProgID",,%REG_SZ%,"NVXDBatdll.OperationInterceptor"
+HKCR,"CLSID\{3D1975AF-48C6-4f8e-A182-AC5012248AB5}",,%REG_SZ%,"NVIDIA Play On My TV Context Menu Extension"
+HKCR,"CLSID\{3D1975AF-48C6-4f8e-A182-AC5012248AB5}\InProcServer32",,%REG_SZ%,"%13%\nvshext.dll"
+HKCR,"CLSID\{3D1975AF-48C6-4f8e-A182-AC5012248AB5}\InProcServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{3D1975AF-48C6-4f8e-A182-BE0E08FA86A9}",,%REG_SZ%,"NVIDIA CPL Context Menu Extension"
+HKCR,"CLSID\{3D1975AF-48C6-4f8e-A182-BE0E08FA86A9}\InProcServer32",,%REG_SZ%,"%13%\nvshext.dll"
+HKCR,"CLSID\{3D1975AF-48C6-4f8e-A182-BE0E08FA86A9}\InProcServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{3E500C0C-5D15-4610-8095-7CEBD4C43F24}",,%REG_SZ%,"MainServer Class"
+HKCR,"CLSID\{3E500C0C-5D15-4610-8095-7CEBD4C43F24}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{3E500C0C-5D15-4610-8095-7CEBD4C43F24}\InprocServer32",,%REG_SZ%,"%13%\nvvitvs.dll"
+HKCR,"CLSID\{3E500C0C-5D15-4610-8095-7CEBD4C43F24}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{3E500C0C-5D15-4610-8095-7CEBD4C43F24}\ProgID",,%REG_SZ%,"Video_TVServer.MainServer.1"
+HKCR,"CLSID\{3E500C0C-5D15-4610-8095-7CEBD4C43F24}\TypeLib",,%REG_SZ%,"{56494266-49C1-4C68-8C11-5E1B7B878E02}"
+HKCR,"CLSID\{3E500C0C-5D15-4610-8095-7CEBD4C43F24}\VersionIndependentProgID",,%REG_SZ%,"Video_TVServer.MainServer"
+HKCR,"CLSID\{47AADF36-BA70-4E24-BBDE-20EC9FC139FD}",,%REG_SZ%,"MainServer Class"
+HKCR,"CLSID\{47AADF36-BA70-4E24-BBDE-20EC9FC139FD}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{47AADF36-BA70-4E24-BBDE-20EC9FC139FD}\InprocServer32",,%REG_SZ%,"%13%\nvlicensings.dll"
+HKCR,"CLSID\{47AADF36-BA70-4E24-BBDE-20EC9FC139FD}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{47AADF36-BA70-4E24-BBDE-20EC9FC139FD}\ProgID",,%REG_SZ%,"LicensingServer.MainServer.1"
+HKCR,"CLSID\{47AADF36-BA70-4E24-BBDE-20EC9FC139FD}\TypeLib",,%REG_SZ%,"{B99B6947-DC2A-486E-9E7F-D278F9E704DD}"
+HKCR,"CLSID\{47AADF36-BA70-4E24-BBDE-20EC9FC139FD}\VersionIndependentProgID",,%REG_SZ%,"LicensingServer.MainServer"
+HKCR,"CLSID\{49F585C0-CE12-4306-9100-B6A28857B10B}",,%REG_SZ%,"CustomRez Class"
+HKCR,"CLSID\{49F585C0-CE12-4306-9100-B6A28857B10B}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{49F585C0-CE12-4306-9100-B6A28857B10B}\InprocServer32",,%REG_SZ%,"%13%\nvdisps.dll"
+HKCR,"CLSID\{49F585C0-CE12-4306-9100-B6A28857B10B}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{49F585C0-CE12-4306-9100-B6A28857B10B}\ProgID",,%REG_SZ%,"DisplayServer.CustomRez.1"
+HKCR,"CLSID\{49F585C0-CE12-4306-9100-B6A28857B10B}\TypeLib",,%REG_SZ%,"{25EBA1D0-EB51-4CBE-8515-23E81DF77F97}"
+HKCR,"CLSID\{49F585C0-CE12-4306-9100-B6A28857B10B}\VersionIndependentProgID",,%REG_SZ%,"DisplayServer.CustomRez"
+HKCR,"CLSID\{4FC7F090-041C-4730-BD24-AF4BA8A2A5E0}",,%REG_SZ%,"NvXDSerializer Class"
+HKCR,"CLSID\{4FC7F090-041C-4730-BD24-AF4BA8A2A5E0}\InprocServer32",,%REG_SZ%,"%13%\NVXDBat.dll"
+HKCR,"CLSID\{4FC7F090-041C-4730-BD24-AF4BA8A2A5E0}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{4FC7F090-041C-4730-BD24-AF4BA8A2A5E0}\ProgID",,%REG_SZ%,"NVXDBatdll.NvXDSerializer.1"
+HKCR,"CLSID\{4FC7F090-041C-4730-BD24-AF4BA8A2A5E0}\Programmable",,%REG_SZ%,%FLG_ADDREG_KEYONLY%
+HKCR,"CLSID\{4FC7F090-041C-4730-BD24-AF4BA8A2A5E0}\TypeLib",,%REG_SZ%,"{F1091E74-3D9F-4D85-9CB2-B114FB659558}"
+HKCR,"CLSID\{4FC7F090-041C-4730-BD24-AF4BA8A2A5E0}\VersionIndependentProgID",,%REG_SZ%,"NVXDBatdll.NvXDSerializer"
+HKCR,"CLSID\{50125552-EC89-4049-B1B7-5FDBE38C8509}",,%REG_SZ%,"SetUpStereoVision Class"
+HKCR,"CLSID\{50125552-EC89-4049-B1B7-5FDBE38C8509}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{50125552-EC89-4049-B1B7-5FDBE38C8509}\InprocServer32",,%REG_SZ%,"%13%\nvsvs.dll"
+HKCR,"CLSID\{50125552-EC89-4049-B1B7-5FDBE38C8509}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{50125552-EC89-4049-B1B7-5FDBE38C8509}\ProgID",,%REG_SZ%,"StereoVisionServer.SetUp"StereoVision.1"
+HKCR,"CLSID\{50125552-EC89-4049-B1B7-5FDBE38C8509}\TypeLib",,%REG_SZ%,"{E920DC48-2640-41a5-AA09-912B32234293}"
+HKCR,"CLSID\{50125552-EC89-4049-B1B7-5FDBE38C8509}\VersionIndependentProgID",,%REG_SZ%,"StereoVisionServer.SetUp"StereoVision"
+HKCR,"CLSID\{5135A9C0-F05A-4FBD-8EC6-6B920CD387F6}",,%REG_SZ%,"TopologyViewer Class"
+HKCR,"CLSID\{5135A9C0-F05A-4FBD-8EC6-6B920CD387F6}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{5135A9C0-F05A-4FBD-8EC6-6B920CD387F6}\InprocServer32",,%REG_SZ%,"%13%\nvwss.dll"
+HKCR,"CLSID\{5135A9C0-F05A-4FBD-8EC6-6B920CD387F6}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{5135A9C0-F05A-4FBD-8EC6-6B920CD387F6}\ProgID",,%REG_SZ%,"WorkStationServer.TopologyViewer.1"
+HKCR,"CLSID\{5135A9C0-F05A-4FBD-8EC6-6B920CD387F6}\TypeLib",,%REG_SZ%,"{D1F48243-B994-45CD-8A55-03DBB33745BE}"
+HKCR,"CLSID\{5135A9C0-F05A-4FBD-8EC6-6B920CD387F6}\VersionIndependentProgID",,%REG_SZ%,"WorkStationServer.TopologyViewer"
+HKCR,"CLSID\{51840041-B26F-4843-B358-22ABB067396C}",,%REG_SZ%,"ScreenTimingDVI Class"
+HKCR,"CLSID\{51840041-B26F-4843-B358-22ABB067396C}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{51840041-B26F-4843-B358-22ABB067396C}\InprocServer32",,%REG_SZ%,"%13%\nvdisps.dll"
+HKCR,"CLSID\{51840041-B26F-4843-B358-22ABB067396C}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{51840041-B26F-4843-B358-22ABB067396C}\ProgID",,%REG_SZ%,"DisplayServer.ScreenTimingDVI.1"
+HKCR,"CLSID\{51840041-B26F-4843-B358-22ABB067396C}\TypeLib",,%REG_SZ%,"{25EBA1D0-EB51-4CBE-8515-23E81DF77F97}"
+HKCR,"CLSID\{51840041-B26F-4843-B358-22ABB067396C}\VersionIndependentProgID",,%REG_SZ%,"DisplayServer.ScreenTimingDVI"
+HKCR,"CLSID\{5387A36B-6F55-4C66-B085-E18393FCEA87}",,%REG_SZ%,"StateDataSessionFilter Class"
+HKCR,"CLSID\{5387A36B-6F55-4C66-B085-E18393FCEA87}\InprocHandler32",,%REG_SZ%,"%13%\NVXDBat.dll"
+HKCR,"CLSID\{5387A36B-6F55-4C66-B085-E18393FCEA87}\InprocHandler32",ThreadingModel,%REG_SZ%,"Both"
+HKCR,"CLSID\{5387A36B-6F55-4C66-B085-E18393FCEA87}\ProgID",,%REG_SZ%,"NVXDBatdll.StateDataSessionFilter.1"
+HKCR,"CLSID\{5387A36B-6F55-4C66-B085-E18393FCEA87}\Programmable",,%REG_SZ%,%FLG_ADDREG_KEYONLY%
+HKCR,"CLSID\{5387A36B-6F55-4C66-B085-E18393FCEA87}\TypeLib",,%REG_SZ%,"{F1091E74-3D9F-4D85-9CB2-B114FB659558}"
+HKCR,"CLSID\{5387A36B-6F55-4C66-B085-E18393FCEA87}\VersionIndependentProgID",,%REG_SZ%,"NVXDBatdll.StateDataSessionFilter"
+HKCR,"CLSID\{54CEE07E-E1C8-45DB-B550-417E75C4CA58}",,%REG_SZ%,"TopologyViewerVista Class"
+HKCR,"CLSID\{54CEE07E-E1C8-45DB-B550-417E75C4CA58}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{54CEE07E-E1C8-45DB-B550-417E75C4CA58}\InprocServer32",,%REG_SZ%,"%13%\nvwss.dll"
+HKCR,"CLSID\{54CEE07E-E1C8-45DB-B550-417E75C4CA58}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{54CEE07E-E1C8-45DB-B550-417E75C4CA58}\ProgID",,%REG_SZ%,"WorkStationServer.TopologyViewerVista.1"
+HKCR,"CLSID\{54CEE07E-E1C8-45DB-B550-417E75C4CA58}\TypeLib",,%REG_SZ%,"{D1F48243-B994-45CD-8A55-03DBB33745BE}"
+HKCR,"CLSID\{54CEE07E-E1C8-45DB-B550-417E75C4CA58}\VersionIndependentProgID",,%REG_SZ%,"WorkStationServer.TopologyViewerVista"
+HKCR,"CLSID\{55C27CA1-022A-4381-AE5E-3412BF3D31C9}",,%REG_SZ%,"CategoryLicense Class"
+HKCR,"CLSID\{55C27CA1-022A-4381-AE5E-3412BF3D31C9}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{55C27CA1-022A-4381-AE5E-3412BF3D31C9}\InprocServer32",,%REG_SZ%,"%13%\nvlicensings.dll"
+HKCR,"CLSID\{55C27CA1-022A-4381-AE5E-3412BF3D31C9}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{55C27CA1-022A-4381-AE5E-3412BF3D31C9}\ProgID",,%REG_SZ%,"LicensingServer.CategoryLicense.1"
+HKCR,"CLSID\{55C27CA1-022A-4381-AE5E-3412BF3D31C9}\TypeLib",,%REG_SZ%,"{B99B6947-DC2A-486E-9E7F-D278F9E704DD}"
+HKCR,"CLSID\{55C27CA1-022A-4381-AE5E-3412BF3D31C9}\VersionIndependentProgID",,%REG_SZ%,"LicensingServer.CategoryLicense"
+HKCR,"CLSID\{5DF4E7C5-78E3-4CCA-93CD-DF1639E165FB}",,%REG_SZ%,"NvApixEngine Class"
+HKCR,"CLSID\{5DF4E7C5-78E3-4CCA-93CD-DF1639E165FB}",AppID,%REG_SZ%,"{B92B577B-628A-442B-A017-E86FB518C6FD}"
+HKCR,"CLSID\{5DF4E7C5-78E3-4CCA-93CD-DF1639E165FB}\InprocServer32",,%REG_SZ%,"%13%\nvxdapix.dll"
+HKCR,"CLSID\{5DF4E7C5-78E3-4CCA-93CD-DF1639E165FB}\InprocServer32",ThreadingModel,%REG_SZ%,"Both"
+HKCR,"CLSID\{5DF4E7C5-78E3-4CCA-93CD-DF1639E165FB}\ProgID",,%REG_SZ%,"NVXDApiX.NvApixEngine.1"
+HKCR,"CLSID\{5DF4E7C5-78E3-4CCA-93CD-DF1639E165FB}\TypeLib",,%REG_SZ%,"{44791701-9506-4452-9DB0-8AD36E1930C9}"
+HKCR,"CLSID\{5DF4E7C5-78E3-4CCA-93CD-DF1639E165FB}\VersionIndependentProgID",,%REG_SZ%,"NVXDApiX.NvApixEngine"
+HKCR,"CLSID\{6017A978-93AD-4F2F-9E2D-07CF8C8DEBC4}",,%REG_SZ%,"RotateDisplay Class"
+HKCR,"CLSID\{6017A978-93AD-4F2F-9E2D-07CF8C8DEBC4}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{6017A978-93AD-4F2F-9E2D-07CF8C8DEBC4}\InprocServer32",,%REG_SZ%,"%13%\nvdisps.dll"
+HKCR,"CLSID\{6017A978-93AD-4F2F-9E2D-07CF8C8DEBC4}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{6017A978-93AD-4F2F-9E2D-07CF8C8DEBC4}\ProgID",,%REG_SZ%,"DisplayServer.RotateDisplay.1"
+HKCR,"CLSID\{6017A978-93AD-4F2F-9E2D-07CF8C8DEBC4}\TypeLib",,%REG_SZ%,"{25EBA1D0-EB51-4CBE-8515-23E81DF77F97}"
+HKCR,"CLSID\{6017A978-93AD-4F2F-9E2D-07CF8C8DEBC4}\VersionIndependentProgID",,%REG_SZ%,"DisplayServer.RotateDisplay"
+HKCR,"CLSID\{621E1D58-583A-45B6-B869-E3C53DE71B49}",,%REG_SZ%,"ECCSettings Class"
+HKCR,"CLSID\{621E1D58-583A-45B6-B869-E3C53DE71B49}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{621E1D58-583A-45B6-B869-E3C53DE71B49}\InprocServer32",,%REG_EXPAND_SZ%,"%13%\nvGameS.dll"
+HKCR,"CLSID\{621E1D58-583A-45B6-B869-E3C53DE71B49}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{621E1D58-583A-45B6-B869-E3C53DE71B49}\ProgID",,%REG_SZ%,"GamesConfigServer.ECCSettings.1"
+HKCR,"CLSID\{621E1D58-583A-45B6-B869-E3C53DE71B49}\TypeLib",,%REG_SZ%,"{6481B880-0FE2-48FE-A15F-D8254FC98884}"
+HKCR,"CLSID\{621E1D58-583A-45B6-B869-E3C53DE71B49}\VersionIndependentProgID",,%REG_SZ%,"GamesConfigServer.ECCSettings"
+HKCR,"CLSID\{63005CD0-8541-439c-A66A-617F4B1F2BCB}",,%REG_SZ%,"TVWizard Class"
+HKCR,"CLSID\{63005CD0-8541-439c-A66A-617F4B1F2BCB}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{63005CD0-8541-439c-A66A-617F4B1F2BCB}\InprocServer32",,%REG_SZ%,"%13%\nvvitvs.dll"
+HKCR,"CLSID\{63005CD0-8541-439c-A66A-617F4B1F2BCB}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{63005CD0-8541-439c-A66A-617F4B1F2BCB}\ProgID",,%REG_SZ%,"Video_TVServer.TVSizeMove.1"
+HKCR,"CLSID\{63005CD0-8541-439c-A66A-617F4B1F2BCB}\TypeLib",,%REG_SZ%,"{56494266-49C1-4C68-8C11-5E1B7B878E02}"
+HKCR,"CLSID\{63005CD0-8541-439c-A66A-617F4B1F2BCB}\VersionIndependentProgID",,%REG_SZ%,"Video_TVServer.TVSizeMove"
+HKCR,"CLSID\{6539579C-2657-45E5-985F-835E197959C2}",,%REG_SZ%,"AdjustSizePosExt Class"
+HKCR,"CLSID\{6539579C-2657-45E5-985F-835E197959C2}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{6539579C-2657-45E5-985F-835E197959C2}\InprocServer32",,%REG_SZ%,"%13%\nvdisps.dll"
+HKCR,"CLSID\{6539579C-2657-45E5-985F-835E197959C2}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{6539579C-2657-45E5-985F-835E197959C2}\ProgID",,%REG_SZ%,"DisplayServer.AdjustSizePosExt.1"
+HKCR,"CLSID\{6539579C-2657-45E5-985F-835E197959C2}\TypeLib",,%REG_SZ%,"{25EBA1D0-EB51-4CBE-8515-23E81DF77F97}"
+HKCR,"CLSID\{6539579C-2657-45E5-985F-835E197959C2}\VersionIndependentProgID",,%REG_SZ%,"DisplayServer.AdjustSizePosExt"
+HKCR,"CLSID\{6A10CEAB-0813-48BA-9769-BD98F03F3EB8}",,%REG_SZ%,"SynchronizeDisplays Class"
+HKCR,"CLSID\{6A10CEAB-0813-48BA-9769-BD98F03F3EB8}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{6A10CEAB-0813-48BA-9769-BD98F03F3EB8}\InprocServer32",,%REG_SZ%,"%13%\nvwss.dll"
+HKCR,"CLSID\{6A10CEAB-0813-48BA-9769-BD98F03F3EB8}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{6A10CEAB-0813-48BA-9769-BD98F03F3EB8}\ProgID",,%REG_SZ%,"WorkStationServer.SynchronizeDisplays.1"
+HKCR,"CLSID\{6A10CEAB-0813-48BA-9769-BD98F03F3EB8}\TypeLib",,%REG_SZ%,"{D1F48243-B994-45CD-8A55-03DBB33745BE}"
+HKCR,"CLSID\{6A10CEAB-0813-48BA-9769-BD98F03F3EB8}\VersionIndependentProgID",,%REG_SZ%,"WorkStationServer.SynchronizeDisplays"
+HKCR,"CLSID\{6A22E68F-887C-4221-9DF1-EE0B3AC76497}",,%REG_SZ%,"NameDisp Class"
+HKCR,"CLSID\{6A22E68F-887C-4221-9DF1-EE0B3AC76497}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{6A22E68F-887C-4221-9DF1-EE0B3AC76497}\InprocServer32",,%REG_SZ%,"%13%\nvdisps.dll"
+HKCR,"CLSID\{6A22E68F-887C-4221-9DF1-EE0B3AC76497}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{6A22E68F-887C-4221-9DF1-EE0B3AC76497}\ProgID",,%REG_SZ%,"DisplayServer.NameDisp.1"
+HKCR,"CLSID\{6A22E68F-887C-4221-9DF1-EE0B3AC76497}\TypeLib",,%REG_SZ%,"{25EBA1D0-EB51-4CBE-8515-23E81DF77F97}"
+HKCR,"CLSID\{6A22E68F-887C-4221-9DF1-EE0B3AC76497}\VersionIndependentProgID",,%REG_SZ%,"DisplayServer.NameDisp"
+HKCR,"CLSID\{6E4B938E-4BA1-4E8D-BCBA-8C51CE95F94F}",,%REG_SZ%,"MultiMon Class"
+HKCR,"CLSID\{6E4B938E-4BA1-4E8D-BCBA-8C51CE95F94F}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{6E4B938E-4BA1-4E8D-BCBA-8C51CE95F94F}\InprocServer32",,%REG_SZ%,"%13%\nvdisps.dll"
+HKCR,"CLSID\{6E4B938E-4BA1-4E8D-BCBA-8C51CE95F94F}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{6E4B938E-4BA1-4E8D-BCBA-8C51CE95F94F}\ProgID",,%REG_SZ%,"DisplayServer.MultiMon.1"
+HKCR,"CLSID\{6E4B938E-4BA1-4E8D-BCBA-8C51CE95F94F}\TypeLib",,%REG_SZ%,"{25EBA1D0-EB51-4CBE-8515-23E81DF77F97}"
+HKCR,"CLSID\{6E4B938E-4BA1-4E8D-BCBA-8C51CE95F94F}\VersionIndependentProgID",,%REG_SZ%,"DisplayServer.MultiMon"
+HKCR,"CLSID\{6F3F133D-61E3-4153-8AAE-056031E2B597}",,%REG_SZ%,"FullScreenVideo Class"
+HKCR,"CLSID\{6F3F133D-61E3-4153-8AAE-056031E2B597}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{6F3F133D-61E3-4153-8AAE-056031E2B597}\InprocServer32",,%REG_SZ%,"%13%\nvvitvs.dll"
+HKCR,"CLSID\{6F3F133D-61E3-4153-8AAE-056031E2B597}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{6F3F133D-61E3-4153-8AAE-056031E2B597}\ProgID",,%REG_SZ%,"Video_TVServer.FullScreenVideo.1"
+HKCR,"CLSID\{6F3F133D-61E3-4153-8AAE-056031E2B597}\TypeLib",,%REG_SZ%,"{56494266-49C1-4C68-8C11-5E1B7B878E02}"
+HKCR,"CLSID\{6F3F133D-61E3-4153-8AAE-056031E2B597}\VersionIndependentProgID",,%REG_SZ%,"Video_TVServer.FullScreenVideo"
+HKCR,"CLSID\{704033A7-A100-403E-AD9E-D6FEC5FF457E}",,%REG_SZ%,"CategoryDevTools Class"
+HKCR,"CLSID\{704033A7-A100-403E-AD9E-D6FEC5FF457E}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{704033A7-A100-403E-AD9E-D6FEC5FF457E}\InprocServer32",,%REG_SZ%,"%13%\nvdevtools.dll"
+HKCR,"CLSID\{704033A7-A100-403E-AD9E-D6FEC5FF457E}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{704033A7-A100-403E-AD9E-D6FEC5FF457E}\ProgID",,%REG_SZ%,"DevToolsServer.CategoryDevTools.1"
+HKCR,"CLSID\{704033A7-A100-403E-AD9E-D6FEC5FF457E}\TypeLib",,%REG_SZ%,"{40473277-70CE-464B-BE85-33BB4D1206B0}"
+HKCR,"CLSID\{704033A7-A100-403E-AD9E-D6FEC5FF457E}\VersionIndependentProgID",,%REG_SZ%,"DevToolsServer.CategoryDevTools"
+HKCR,"CLSID\{73BCA54E-6AEB-4597-8F27-E1284FF12722}",,%REG_SZ%,"ServerMain Class"
+HKCR,"CLSID\{73BCA54E-6AEB-4597-8F27-E1284FF12722}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{73BCA54E-6AEB-4597-8F27-E1284FF12722}\InprocServer32",,%REG_SZ%,"%13%\nvdisps.dll"
+HKCR,"CLSID\{73BCA54E-6AEB-4597-8F27-E1284FF12722}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{73BCA54E-6AEB-4597-8F27-E1284FF12722}\ProgID",,%REG_SZ%,"DisplayServer.ServerMain.1"
+HKCR,"CLSID\{73BCA54E-6AEB-4597-8F27-E1284FF12722}\TypeLib",,%REG_SZ%,"{25EBA1D0-EB51-4CBE-8515-23E81DF77F97}"
+HKCR,"CLSID\{73BCA54E-6AEB-4597-8F27-E1284FF12722}\VersionIndependentProgID",,%REG_SZ%,"DisplayServer.ServerMain"
+HKCR,"CLSID\{75BDD7A1-1224-41DA-90B4-457ACD874F12}",,%REG_SZ%,"CategorySDI Class"
+HKCR,"CLSID\{75BDD7A1-1224-41DA-90B4-457ACD874F12}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{75BDD7A1-1224-41DA-90B4-457ACD874F12}\InprocServer32",,%REG_SZ%,"%13%\nvwss.dll"
+HKCR,"CLSID\{75BDD7A1-1224-41DA-90B4-457ACD874F12}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{75BDD7A1-1224-41DA-90B4-457ACD874F12}\ProgID",,%REG_SZ%,"WorkStationServer.CategorySDI.1"
+HKCR,"CLSID\{75BDD7A1-1224-41DA-90B4-457ACD874F12}\TypeLib",,%REG_SZ%,"{D1F48243-B994-45CD-8A55-03DBB33745BE}"
+HKCR,"CLSID\{75BDD7A1-1224-41DA-90B4-457ACD874F12}\VersionIndependentProgID",,%REG_SZ%,"WorkStationServer.CategorySDI"
+HKCR,"CLSID\{7735B86B-2EAB-43EF-B5DE-31A15F767C14}",,%REG_SZ%,"SDISettings Class"
+HKCR,"CLSID\{7735B86B-2EAB-43EF-B5DE-31A15F767C14}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{7735B86B-2EAB-43EF-B5DE-31A15F767C14}\InprocServer32",,%REG_SZ%,"%13%\nvwss.dll"
+HKCR,"CLSID\{7735B86B-2EAB-43EF-B5DE-31A15F767C14}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{7735B86B-2EAB-43EF-B5DE-31A15F767C14}\ProgID",,%REG_SZ%,"WorkStationServer.SDISettings.1"
+HKCR,"CLSID\{7735B86B-2EAB-43EF-B5DE-31A15F767C14}\TypeLib",,%REG_SZ%,"{D1F48243-B994-45CD-8A55-03DBB33745BE}"
+HKCR,"CLSID\{7735B86B-2EAB-43EF-B5DE-31A15F767C14}\VersionIndependentProgID",,%REG_SZ%,"WorkStationServer.SDISettings"
+HKCR,"CLSID\{7945F814-7BFB-4506-A113-2BD66CDC713A}",,%REG_SZ%,"DualView Class"
+HKCR,"CLSID\{7945F814-7BFB-4506-A113-2BD66CDC713A}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{7945F814-7BFB-4506-A113-2BD66CDC713A}\InprocServer32",,%REG_SZ%,"%13%\nvdisps.dll"
+HKCR,"CLSID\{7945F814-7BFB-4506-A113-2BD66CDC713A}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{7945F814-7BFB-4506-A113-2BD66CDC713A}\ProgID",,%REG_SZ%,"DisplayServer.DualView.1"
+HKCR,"CLSID\{7945F814-7BFB-4506-A113-2BD66CDC713A}\TypeLib",,%REG_SZ%,"{25EBA1D0-EB51-4CBE-8515-23E81DF77F97}"
+HKCR,"CLSID\{7945F814-7BFB-4506-A113-2BD66CDC713A}\VersionIndependentProgID",,%REG_SZ%,"DisplayServer.DualView"
+HKCR,"CLSID\{7BB17C5A-3176-4B40-A3F9-39D4A64D7E83}",,%REG_SZ%,"CategoryGfxSys Class"
+HKCR,"CLSID\{7BB17C5A-3176-4B40-A3F9-39D4A64D7E83}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{7BB17C5A-3176-4B40-A3F9-39D4A64D7E83}\InprocServer32",,%REG_SZ%,"%13%\nvwss.dll"
+HKCR,"CLSID\{7BB17C5A-3176-4B40-A3F9-39D4A64D7E83}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{7BB17C5A-3176-4B40-A3F9-39D4A64D7E83}\ProgID",,%REG_SZ%,"WorkStationServer.CategoryGfxSys.1"
+HKCR,"CLSID\{7BB17C5A-3176-4B40-A3F9-39D4A64D7E83}\TypeLib",,%REG_SZ%,"{D1F48243-B994-45CD-8A55-03DBB33745BE}"
+HKCR,"CLSID\{7BB17C5A-3176-4B40-A3F9-39D4A64D7E83}\VersionIndependentProgID",,%REG_SZ%,"WorkStationServer.CategoryGfxSys"
+HKCR,"CLSID\{80BA3813-908F-4D4C-A5FF-263640AD5B7A}",,%REG_SZ%,"VariableRefreshRate Class"
+HKCR,"CLSID\{80BA3813-908F-4D4C-A5FF-263640AD5B7A}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{80BA3813-908F-4D4C-A5FF-263640AD5B7A}\InprocServer32",,%REG_SZ%,"%13%\nvdisps.dll"
+HKCR,"CLSID\{80BA3813-908F-4D4C-A5FF-263640AD5B7A}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{80BA3813-908F-4D4C-A5FF-263640AD5B7A}\ProgID",,%REG_SZ%,"DisplayServer.VariableRefreshRate.1"
+HKCR,"CLSID\{80BA3813-908F-4D4C-A5FF-263640AD5B7A}\TypeLib",,%REG_SZ%,"{25EBA1D0-EB51-4CBE-8515-23E81DF77F97}"
+HKCR,"CLSID\{80BA3813-908F-4D4C-A5FF-263640AD5B7A}\VersionIndependentProgID",,%REG_SZ%,"DisplayServer.VariableRefreshRate"
+HKCR,"CLSID\{81667C73-F396-44a3-923B-3749C0840A58}",,%REG_SZ%,"TVHDMIColor Class"
+HKCR,"CLSID\{81667C73-F396-44a3-923B-3749C0840A58}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{81667C73-F396-44a3-923B-3749C0840A58}\InprocServer32",,%REG_SZ%,"%13%\nvvitvs.dll"
+HKCR,"CLSID\{81667C73-F396-44a3-923B-3749C0840A58}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{81667C73-F396-44a3-923B-3749C0840A58}\ProgID",,%REG_SZ%,"Video_TVServer.TVHDMIColor.1"
+HKCR,"CLSID\{81667C73-F396-44a3-923B-3749C0840A58}\TypeLib",,%REG_SZ%,"{56494266-49C1-4C68-8C11-5E1B7B878E02}"
+HKCR,"CLSID\{81667C73-F396-44a3-923B-3749C0840A58}\VersionIndependentProgID",,%REG_SZ%,"Video_TVServer.TVHDMIColor"
+HKCR,"CLSID\{86193C76-0DCA-4B33-83CA-6D7DCCA48D0B}",,%REG_SZ%,"FSSettings Class"
+HKCR,"CLSID\{86193C76-0DCA-4B33-83CA-6D7DCCA48D0B}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{86193C76-0DCA-4B33-83CA-6D7DCCA48D0B}\InprocServer32",,%REG_SZ%,"%13%\nvwss.dll"
+HKCR,"CLSID\{86193C76-0DCA-4B33-83CA-6D7DCCA48D0B}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{86193C76-0DCA-4B33-83CA-6D7DCCA48D0B}\ProgID",,%REG_SZ%,"WorkStationServer.FSSettings.1"
+HKCR,"CLSID\{86193C76-0DCA-4B33-83CA-6D7DCCA48D0B}\TypeLib",,%REG_SZ%,"{D1F48243-B994-45CD-8A55-03DBB33745BE}"
+HKCR,"CLSID\{86193C76-0DCA-4B33-83CA-6D7DCCA48D0B}\VersionIndependentProgID",,%REG_SZ%,"WorkStationServer.FSSettings"
+HKCR,"CLSID\{87BDED91-3F10-4383-B8C1-26886F49F141}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{87CDE238-C2D9-4E31-99D7-DCD6A7E15F19}",,%REG_SZ%,"TVImage Class"
+HKCR,"CLSID\{87CDE238-C2D9-4E31-99D7-DCD6A7E15F19}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{87CDE238-C2D9-4E31-99D7-DCD6A7E15F19}\InprocServer32",,%REG_SZ%,"%13%\nvvitvs.dll"
+HKCR,"CLSID\{87CDE238-C2D9-4E31-99D7-DCD6A7E15F19}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{87CDE238-C2D9-4E31-99D7-DCD6A7E15F19}\ProgID",,%REG_SZ%,"Video_TVServer.TVImage.1"
+HKCR,"CLSID\{87CDE238-C2D9-4E31-99D7-DCD6A7E15F19}\TypeLib",,%REG_SZ%,"{56494266-49C1-4C68-8C11-5E1B7B878E02}"
+HKCR,"CLSID\{87CDE238-C2D9-4E31-99D7-DCD6A7E15F19}\VersionIndependentProgID",,%REG_SZ%,"Video_TVServer.TVImage"
+HKCR,"CLSID\{88FC94D1-2ABB-42CF-8A07-4BC54F66EDDF}",,%REG_SZ%,"CategoryMultiMon Class"
+HKCR,"CLSID\{88FC94D1-2ABB-42CF-8A07-4BC54F66EDDF}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{88FC94D1-2ABB-42CF-8A07-4BC54F66EDDF}\InprocServer32",,%REG_SZ%,"%13%\nvdisps.dll"
+HKCR,"CLSID\{88FC94D1-2ABB-42CF-8A07-4BC54F66EDDF}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{88FC94D1-2ABB-42CF-8A07-4BC54F66EDDF}\ProgID",,%REG_SZ%,"DisplayServer.CategoryMultiMon.1"
+HKCR,"CLSID\{88FC94D1-2ABB-42CF-8A07-4BC54F66EDDF}\TypeLib",,%REG_SZ%,"{25EBA1D0-EB51-4CBE-8515-23E81DF77F97}"
+HKCR,"CLSID\{88FC94D1-2ABB-42CF-8A07-4BC54F66EDDF}\VersionIndependentProgID",,%REG_SZ%,"DisplayServer.CategoryMultiMon"
+HKCR,"CLSID\{894BF76C-115F-44B7-9B32-ABFA7E6A804A}",,%REG_SZ%,"MultiView Class"
+HKCR,"CLSID\{894BF76C-115F-44B7-9B32-ABFA7E6A804A}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{894BF76C-115F-44B7-9B32-ABFA7E6A804A}\InprocServer32",,%REG_SZ%,"%13%\nvdisps.dll"
+HKCR,"CLSID\{894BF76C-115F-44B7-9B32-ABFA7E6A804A}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{894BF76C-115F-44B7-9B32-ABFA7E6A804A}\ProgID",,%REG_SZ%,"DisplayServer.MultiView.1"
+HKCR,"CLSID\{894BF76C-115F-44B7-9B32-ABFA7E6A804A}\TypeLib",,%REG_SZ%,"{25EBA1D0-EB51-4CBE-8515-23E81DF77F97}"
+HKCR,"CLSID\{894BF76C-115F-44B7-9B32-ABFA7E6A804A}\VersionIndependentProgID",,%REG_SZ%,"DisplayServer.MultiView"
+HKCR,"CLSID\{89B53798-9A96-4758-9571-93B72CAA5381}",,%REG_SZ%,"TVFormat Class"
+HKCR,"CLSID\{89B53798-9A96-4758-9571-93B72CAA5381}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{89B53798-9A96-4758-9571-93B72CAA5381}\InprocServer32",,%REG_SZ%,"%13%\nvvitvs.dll"
+HKCR,"CLSID\{89B53798-9A96-4758-9571-93B72CAA5381}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{89B53798-9A96-4758-9571-93B72CAA5381}\ProgID",,%REG_SZ%,"Video_TVServer.TVFormat.1"
+HKCR,"CLSID\{89B53798-9A96-4758-9571-93B72CAA5381}\TypeLib",,%REG_SZ%,"{56494266-49C1-4C68-8C11-5E1B7B878E02}"
+HKCR,"CLSID\{89B53798-9A96-4758-9571-93B72CAA5381}\VersionIndependentProgID",,%REG_SZ%,"Video_TVServer.TVFormat"
+HKCR,"CLSID\{91363F1E-E7CA-4959-85D6-963719EC79FC}",,%REG_SZ%,"ChangeResExt Class"
+HKCR,"CLSID\{91363F1E-E7CA-4959-85D6-963719EC79FC}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{91363F1E-E7CA-4959-85D6-963719EC79FC}\InprocServer32",,%REG_SZ%,"%13%\nvdisps.dll"
+HKCR,"CLSID\{91363F1E-E7CA-4959-85D6-963719EC79FC}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{91363F1E-E7CA-4959-85D6-963719EC79FC}\ProgID",,%REG_SZ%,"DisplayServer.ChangeResExt.1"
+HKCR,"CLSID\{91363F1E-E7CA-4959-85D6-963719EC79FC}\TypeLib",,%REG_SZ%,"{25EBA1D0-EB51-4CBE-8515-23E81DF77F97}"
+HKCR,"CLSID\{91363F1E-E7CA-4959-85D6-963719EC79FC}\VersionIndependentProgID",,%REG_SZ%,"DisplayServer.ChangeResExt"
+HKCR,"CLSID\{9B0C8B3B-8CA5-46cb-B0DD-64542BBA21DC}",,%REG_SZ%,"Overlap Class"
+HKCR,"CLSID\{9B0C8B3B-8CA5-46cb-B0DD-64542BBA21DC}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{9B0C8B3B-8CA5-46cb-B0DD-64542BBA21DC}\InprocServer32",,%REG_SZ%,"%13%\nvwss.dll"
+HKCR,"CLSID\{9B0C8B3B-8CA5-46cb-B0DD-64542BBA21DC}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{9B0C8B3B-8CA5-46cb-B0DD-64542BBA21DC}\ProgID",,%REG_SZ%,"WorkStationServer.Overlap.1"
+HKCR,"CLSID\{9B0C8B3B-8CA5-46cb-B0DD-64542BBA21DC}\TypeLib",,%REG_SZ%,"{D1F48243-B994-45CD-8A55-03DBB33745BE}"
+HKCR,"CLSID\{9B0C8B3B-8CA5-46cb-B0DD-64542BBA21DC}\VersionIndependentProgID",,%REG_SZ%,"WorkStationServer.Overlap"
+HKCR,"CLSID\{9B5EC720-9A44-4811-8B9F-24BD53F2050D}",,%REG_SZ%,"AppSettingsBasic Class"
+HKCR,"CLSID\{9B5EC720-9A44-4811-8B9F-24BD53F2050D}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{9B5EC720-9A44-4811-8B9F-24BD53F2050D}\InprocServer32",,%REG_SZ%,"%13%\nvgames.dll"
+HKCR,"CLSID\{9B5EC720-9A44-4811-8B9F-24BD53F2050D}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{9B5EC720-9A44-4811-8B9F-24BD53F2050D}\ProgID",,%REG_SZ%,"DisplayServer.AppSettingsBasic.1"
+HKCR,"CLSID\{9B5EC720-9A44-4811-8B9F-24BD53F2050D}\TypeLib",,%REG_SZ%,"{25EBA1D0-EB51-4CBE-8515-23E81DF77F97}"
+HKCR,"CLSID\{9B5EC720-9A44-4811-8B9F-24BD53F2050D}\VersionIndependentProgID",,%REG_SZ%,"DisplayServer.AppSettingsBasic"
+HKCR,"CLSID\{9BC49CE1-EFA7-4C49-8BB2-5355FEA6C170}",,%REG_SZ%,"ManageMaximusSettings Class"
+HKCR,"CLSID\{9BC49CE1-EFA7-4C49-8BB2-5355FEA6C170}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{9BC49CE1-EFA7-4C49-8BB2-5355FEA6C170}\InprocServer32",,%REG_SZ%,"%13%\nvwss.dll"
+HKCR,"CLSID\{9BC49CE1-EFA7-4C49-8BB2-5355FEA6C170}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{9BC49CE1-EFA7-4C49-8BB2-5355FEA6C170}\ProgID",,%REG_SZ%,"WorkStationServer.ManageMaximusSettings.1"
+HKCR,"CLSID\{9BC49CE1-EFA7-4C49-8BB2-5355FEA6C170}\TypeLib",,%REG_SZ%,"{D1F48243-B994-45CD-8A55-03DBB33745BE}"
+HKCR,"CLSID\{9BC49CE1-EFA7-4C49-8BB2-5355FEA6C170}\VersionIndependentProgID",,%REG_SZ%,"WorkStationServerLib.ManageMaximusSettings"
+HKCR,"CLSID\{9C1878FA-A0CB-4F01-8762-A6BF18021C94}",,%REG_SZ%,"SetupMosaic Class"
+HKCR,"CLSID\{9C1878FA-A0CB-4F01-8762-A6BF18021C94}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{9C1878FA-A0CB-4F01-8762-A6BF18021C94}\InprocServer32",,%REG_SZ%,"%13%\nvwss.dll"
+HKCR,"CLSID\{9C1878FA-A0CB-4F01-8762-A6BF18021C94}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{9C1878FA-A0CB-4F01-8762-A6BF18021C94}\ProgID",,%REG_SZ%,"WorkStationServer.SetupMosaic.1"
+HKCR,"CLSID\{9C1878FA-A0CB-4F01-8762-A6BF18021C94}\TypeLib",,%REG_SZ%,"{D1F48243-B994-45CD-8A55-03DBB33745BE}"
+HKCR,"CLSID\{9C1878FA-A0CB-4F01-8762-A6BF18021C94}\VersionIndependentProgID",,%REG_SZ%,"WorkStationServer.SetupMosaic"
+HKCR,"CLSID\{9C7684B5-FC31-4e57-A852-282D907911CC}",,%REG_SZ%,"Category_Video Class"
+HKCR,"CLSID\{9C7684B5-FC31-4e57-A852-282D907911CC}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{9C7684B5-FC31-4e57-A852-282D907911CC}\InprocServer32",,%REG_SZ%,"%13%\nvsvs.dll"
+HKCR,"CLSID\{9C7684B5-FC31-4e57-A852-282D907911CC}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{9C7684B5-FC31-4e57-A852-282D907911CC}\ProgID",,%REG_SZ%,"StereoVisionServer.Category_Video.1"
+HKCR,"CLSID\{9C7684B5-FC31-4e57-A852-282D907911CC}\TypeLib",,%REG_SZ%,"{E920DC48-2640-41a5-AA09-912B32234293}"
+HKCR,"CLSID\{9C7684B5-FC31-4e57-A852-282D907911CC}\VersionIndependentProgID",,%REG_SZ%,"StereoVisionServer.Category_Video"
+HKCR,"CLSID\{A158544D-66FA-4F19-8806-F3CA2E2A4C52}",,%REG_SZ%,"Power Class"
+HKCR,"CLSID\{A158544D-66FA-4F19-8806-F3CA2E2A4C52}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{A158544D-66FA-4F19-8806-F3CA2E2A4C52}\InprocServer32",,%REG_SZ%,"%13%\nvdisps.dll"
+HKCR,"CLSID\{A158544D-66FA-4F19-8806-F3CA2E2A4C52}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{A158544D-66FA-4F19-8806-F3CA2E2A4C52}\ProgID",,%REG_SZ%,"DisplayServer.Power.1"
+HKCR,"CLSID\{A158544D-66FA-4F19-8806-F3CA2E2A4C52}\TypeLib",,%REG_SZ%,"{25EBA1D0-EB51-4CBE-8515-23E81DF77F97}"
+HKCR,"CLSID\{A158544D-66FA-4F19-8806-F3CA2E2A4C52}\VersionIndependentProgID",,%REG_SZ%,"DisplayServer.Power"
+HKCR,"CLSID\{A3B877C7-83CA-4c9b-87FB-BE0D518C2441}",,%REG_SZ%,"SetupDigitalAudio Class"
+HKCR,"CLSID\{A3B877C7-83CA-4c9b-87FB-BE0D518C2441}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{A3B877C7-83CA-4c9b-87FB-BE0D518C2441}\InprocServer32",,%REG_SZ%,"%13%\nvdisps.dll"
+HKCR,"CLSID\{A3B877C7-83CA-4c9b-87FB-BE0D518C2441}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{A3B877C7-83CA-4c9b-87FB-BE0D518C2441}\ProgID",,%REG_SZ%,"DisplayServer.SetupDigitalAudio.1"
+HKCR,"CLSID\{A3B877C7-83CA-4c9b-87FB-BE0D518C2441}\TypeLib",,%REG_SZ%,"{25EBA1D0-EB51-4CBE-8515-23E81DF77F97}"
+HKCR,"CLSID\{A3B877C7-83CA-4c9b-87FB-BE0D518C2441}\VersionIndependentProgID",,%REG_SZ%,"DisplayServer.SetupDigitalAudio"
+HKCR,"CLSID\{A70C977A-BF00-412C-90B7-034C51DA2439}",,%REG_SZ%,"DesktopContext Class"
+HKCR,"CLSID\{A70C977A-BF00-412C-90B7-034C51DA2439}\InprocServer32",,%REG_SZ%,"%13%\nvui.dll"
+HKCR,"CLSID\{A70C977A-BF00-412C-90B7-034C51DA2439}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{A70C977A-BF00-412C-90B7-034C51DA2439}\ProgID",,%REG_SZ%,"NvCpl.DesktopContext.1"
+HKCR,"CLSID\{A70C977A-BF00-412C-90B7-034C51DA2439}\Programmable",,%REG_SZ%,%FLG_ADDREG_KEYONLY%
+HKCR,"CLSID\{A70C977A-BF00-412C-90B7-034C51DA2439}\TypeLib",,%REG_SZ%,"{BA1DAD9B-F280-4F24-BF51-9C9F818E0FA5}"
+HKCR,"CLSID\{A70C977A-BF00-412C-90B7-034C51DA2439}\VersionIndependentProgID",,%REG_SZ%,"NvCpl.DesktopContext"
+HKCR,"CLSID\{A8679087-E64A-413A-9CBF-F38BE510C46C}",,%REG_SZ%,"Cat1 Class"
+HKCR,"CLSID\{A8679087-E64A-413A-9CBF-F38BE510C46C}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{A8679087-E64A-413A-9CBF-F38BE510C46C}\InprocServer32",,%REG_SZ%,"%13%\nvgames.dll"
+HKCR,"CLSID\{A8679087-E64A-413A-9CBF-F38BE510C46C}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{A8679087-E64A-413A-9CBF-F38BE510C46C}\ProgID",,%REG_SZ%,"GamesConfigServer.Cat1.1"
+HKCR,"CLSID\{A8679087-E64A-413A-9CBF-F38BE510C46C}\TypeLib",,%REG_SZ%,"{6481B880-0FE2-48FE-A15F-D8254FC98884}"
+HKCR,"CLSID\{A8679087-E64A-413A-9CBF-F38BE510C46C}\VersionIndependentProgID",,%REG_SZ%,"GamesConfigServer.Cat1"
+HKCR,"CLSID\{A929C4CE-FD36-4270-B4F5-34ECAC5BD63C}",,%REG_SZ%,"NvAppShExt Class"
+HKCR,"CLSID\{A929C4CE-FD36-4270-B4F5-34ECAC5BD63C}\InprocServer32",,%REG_SZ%,"%13%\nv3dappshext.dll"
+HKCR,"CLSID\{A929C4CE-FD36-4270-B4F5-34ECAC5BD63C}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{A929C4CE-FD36-4270-B4F5-34ECAC5BD63C}\ProgID",,%REG_SZ%,"Nv3DAppShExt.NvAppShExt.1"
+HKCR,"CLSID\{A929C4CE-FD36-4270-B4F5-34ECAC5BD63C}\TypeLib",,%REG_SZ%,"{FDBDDB6E-BA5F-41E3-9510-90F606999E91}"
+HKCR,"CLSID\{A929C4CE-FD36-4270-B4F5-34ECAC5BD63C}\VersionIndependentProgID",,%REG_SZ%,"Nv3DAppShExt.NvAppShExt"
+HKCR,"CLSID\{AAB8F985-EADA-428B-8636-270F58E1F1EF}",,%REG_SZ%,"VideoAudioControl Class"
+HKCR,"CLSID\{AAB8F985-EADA-428B-8636-270F58E1F1EF}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{AAB8F985-EADA-428B-8636-270F58E1F1EF}\InprocServer32",,%REG_SZ%,"%13%\nvdisps.dll"
+HKCR,"CLSID\{AAB8F985-EADA-428B-8636-270F58E1F1EF}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{AAB8F985-EADA-428B-8636-270F58E1F1EF}\ProgID",,%REG_SZ%,"DisplayServer.VideoAudioControl.1"
+HKCR,"CLSID\{AAB8F985-EADA-428B-8636-270F58E1F1EF}\TypeLib",,%REG_SZ%,"{25EBA1D0-EB51-4CBE-8515-23E81DF77F97}"
+HKCR,"CLSID\{AAB8F985-EADA-428B-8636-270F58E1F1EF}\VersionIndependentProgID",,%REG_SZ%,"DisplayServer.VideoAudioControl"
+HKCR,"CLSID\{AD374A9E-D7FC-453A-A146-16535FE9ECC1}",,%REG_SZ%,"NvXDPlcyEngine Class"
+HKCR,"CLSID\{AD374A9E-D7FC-453A-A146-16535FE9ECC1}\InprocServer32",,%REG_SZ%,"%13%\nvxdplcy.dll"
+HKCR,"CLSID\{AD374A9E-D7FC-453A-A146-16535FE9ECC1}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{AD374A9E-D7FC-453A-A146-16535FE9ECC1}\ProgID",,%REG_SZ%,"NVXDPlcy.NvXDPlcyEngine.1"
+HKCR,"CLSID\{AD374A9E-D7FC-453A-A146-16535FE9ECC1}\TypeLib",,%REG_SZ%,"{227D512C-19EB-4B49-8257-4A0097418B26}"
+HKCR,"CLSID\{AD374A9E-D7FC-453A-A146-16535FE9ECC1}\VersionIndependentProgID",,%REG_SZ%,"NVXDPlcy.NvXDPlcyEngine"
+HKCR,"CLSID\{B53EBC0C-2251-4AE2-9818-FD6AAF843EC2}",,%REG_SZ%,"ColorSettingsAdv Class"
+HKCR,"CLSID\{B53EBC0C-2251-4AE2-9818-FD6AAF843EC2}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{B53EBC0C-2251-4AE2-9818-FD6AAF843EC2}\InprocServer32",,%REG_SZ%,"%13%\nvdisps.dll"
+HKCR,"CLSID\{B53EBC0C-2251-4AE2-9818-FD6AAF843EC2}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{B53EBC0C-2251-4AE2-9818-FD6AAF843EC2}\ProgID",,%REG_SZ%,"DisplayServer.ColorSettingsAdv.1"
+HKCR,"CLSID\{B53EBC0C-2251-4AE2-9818-FD6AAF843EC2}\TypeLib",,%REG_SZ%,"{25EBA1D0-EB51-4CBE-8515-23E81DF77F97}"
+HKCR,"CLSID\{B53EBC0C-2251-4AE2-9818-FD6AAF843EC2}\VersionIndependentProgID",,%REG_SZ%,"DisplayServer.ColorSettingsAdv"
+HKCR,"CLSID\{BBB7D605-8639-49D0-849E-32C4A5DBB9C3}",,%REG_SZ%,"Manage3DSettings Class"
+HKCR,"CLSID\{BBB7D605-8639-49D0-849E-32C4A5DBB9C3}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{BBB7D605-8639-49D0-849E-32C4A5DBB9C3}\InprocServer32",,%REG_SZ%,"%13%\nvgames.dll"
+HKCR,"CLSID\{BBB7D605-8639-49D0-849E-32C4A5DBB9C3}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{BBB7D605-8639-49D0-849E-32C4A5DBB9C3}\ProgID",,%REG_SZ%,"GamesConfigServer.Manage3DSettings.1"
+HKCR,"CLSID\{BBB7D605-8639-49D0-849E-32C4A5DBB9C3}\TypeLib",,%REG_SZ%,"{6481B880-0FE2-48FE-A15F-D8254FC98884}"
+HKCR,"CLSID\{BBB7D605-8639-49D0-849E-32C4A5DBB9C3}\VersionIndependentProgID",,%REG_SZ%,"GamesConfigServer.Manage3DSettings"
+HKCR,"CLSID\{C4A29158-1A7E-425f-B25E-80FA382AAA14}",,%REG_SZ%,"MainServer Class"
+HKCR,"CLSID\{C4A29158-1A7E-425f-B25E-80FA382AAA14}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{C4A29158-1A7E-425f-B25E-80FA382AAA14}\InprocServer32",,%REG_SZ%,"%13%\nvsvs.dll"
+HKCR,"CLSID\{C4A29158-1A7E-425f-B25E-80FA382AAA14}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{C4A29158-1A7E-425f-B25E-80FA382AAA14}\ProgID",,%REG_SZ%,"StereoVisionServer.MainServer.1"
+HKCR,"CLSID\{C4A29158-1A7E-425f-B25E-80FA382AAA14}\TypeLib",,%REG_SZ%,"{E920DC48-2640-41a5-AA09-912B32234293}"
+HKCR,"CLSID\{C4A29158-1A7E-425f-B25E-80FA382AAA14}\VersionIndependentProgID",,%REG_SZ%,"StereoVisionServer.MainServer"
+HKCR,"CLSID\{C8F113AE-A2C9-47CB-8DAE-9376C64665AD}",,%REG_SZ%,"SliPhysXExt Class"
+HKCR,"CLSID\{C8F113AE-A2C9-47CB-8DAE-9376C64665AD}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{C8F113AE-A2C9-47CB-8DAE-9376C64665AD}\InprocServer32",,%REG_SZ%,"%13%\nvgames.dll"
+HKCR,"CLSID\{C8F113AE-A2C9-47CB-8DAE-9376C64665AD}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{C8F113AE-A2C9-47CB-8DAE-9376C64665AD}\ProgID",,%REG_SZ%,"GamesConfigServer.SliPhysXExt.1"
+HKCR,"CLSID\{C8F113AE-A2C9-47CB-8DAE-9376C64665AD}\TypeLib",,%REG_SZ%,"{6481B880-0FE2-48FE-A15F-D8254FC98884}"
+HKCR,"CLSID\{C8F113AE-A2C9-47CB-8DAE-9376C64665AD}\VersionIndependentProgID",,%REG_SZ%,"GamesConfigServer.SliPhysXExt"
+HKCR,"CLSID\{CBD600D7-2256-4ADB-8E3A-185F56EA9353}",,%REG_SZ%,"ManageACESettings Class"
+HKCR,"CLSID\{CBD600D7-2256-4ADB-8E3A-185F56EA9353}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{CBD600D7-2256-4ADB-8E3A-185F56EA9353}\InprocServer32",,%REG_EXPAND_SZ%,"%13%\nvGameS.dll"
+HKCR,"CLSID\{CBD600D7-2256-4ADB-8E3A-185F56EA9353}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{CBD600D7-2256-4ADB-8E3A-185F56EA9353}\ProgID",,%REG_SZ%,"GamesConfigServer.ManageACESettings.1"
+HKCR,"CLSID\{CBD600D7-2256-4ADB-8E3A-185F56EA9353}\TypeLib",,%REG_SZ%,"{6481B880-0FE2-48FE-A15F-D8254FC98884}"
+HKCR,"CLSID\{CBD600D7-2256-4ADB-8E3A-185F56EA9353}\VersionIndependentProgID",,%REG_SZ%,"GamesConfigServer.ManageACESettings"
+HKCR,"CLSID\{CC0648AE-7E85-483C-B1DB-9335C9D6F8C7}",,%REG_SZ%,"ColorCorrection Class"
+HKCR,"CLSID\{CC0648AE-7E85-483C-B1DB-9335C9D6F8C7}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{CC0648AE-7E85-483C-B1DB-9335C9D6F8C7}\InprocServer32",,%REG_SZ%,"%13%\nvdisps.dll"
+HKCR,"CLSID\{CC0648AE-7E85-483C-B1DB-9335C9D6F8C7}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{CC0648AE-7E85-483C-B1DB-9335C9D6F8C7}\ProgID",,%REG_SZ%,"DisplayServer.ColorCorrection.1"
+HKCR,"CLSID\{CC0648AE-7E85-483C-B1DB-9335C9D6F8C7}\TypeLib",,%REG_SZ%,"{25EBA1D0-EB51-4CBE-8515-23E81DF77F97}"
+HKCR,"CLSID\{CC0648AE-7E85-483C-B1DB-9335C9D6F8C7}\VersionIndependentProgID",,%REG_SZ%,"DisplayServer.ColorCorrection"
+HKCR,"CLSID\{D385E909-3F89-4ECD-B38F-AC11F9FE6F1C}",,%REG_SZ%,"VideoZoom Class"
+HKCR,"CLSID\{D385E909-3F89-4ECD-B38F-AC11F9FE6F1C}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{D385E909-3F89-4ECD-B38F-AC11F9FE6F1C}\InprocServer32",,%REG_SZ%,"%13%\nvvitvs.dll"
+HKCR,"CLSID\{D385E909-3F89-4ECD-B38F-AC11F9FE6F1C}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{D385E909-3F89-4ECD-B38F-AC11F9FE6F1C}\ProgID",,%REG_SZ%,"Video_TVServer.VideoZoom.1"
+HKCR,"CLSID\{D385E909-3F89-4ECD-B38F-AC11F9FE6F1C}\TypeLib",,%REG_SZ%,"{56494266-49C1-4C68-8C11-5E1B7B878E02}"
+HKCR,"CLSID\{D385E909-3F89-4ECD-B38F-AC11F9FE6F1C}\VersionIndependentProgID",,%REG_SZ%,"Video_TVServer.VideoZoom"
+HKCR,"CLSID\{D474EBC0-2851-4389-893D-030D2B6BCED1}",,%REG_SZ%,"TopologyViewerEx Class"
+HKCR,"CLSID\{D474EBC0-2851-4389-893D-030D2B6BCED1}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{D474EBC0-2851-4389-893D-030D2B6BCED1}\InprocServer32",,%REG_SZ%,"%13%\nvwss.dll"
+HKCR,"CLSID\{D474EBC0-2851-4389-893D-030D2B6BCED1}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{D474EBC0-2851-4389-893D-030D2B6BCED1}\ProgID",,%REG_SZ%,"WorkStationServer.TopologyViewerEx.1"
+HKCR,"CLSID\{D474EBC0-2851-4389-893D-030D2B6BCED1}\TypeLib",,%REG_SZ%,"{D1F48243-B994-45CD-8A55-03DBB33745BE}"
+HKCR,"CLSID\{D474EBC0-2851-4389-893D-030D2B6BCED1}\VersionIndependentProgID",,%REG_SZ%,"WorkStationServer.TopologyViewerEx"
+HKCR,"CLSID\{D8A8B20F-98D2-4EFF-8CE1-EF094F1A8043}",,%REG_SZ%,"CategoryFS Class"
+HKCR,"CLSID\{D8A8B20F-98D2-4EFF-8CE1-EF094F1A8043}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{D8A8B20F-98D2-4EFF-8CE1-EF094F1A8043}\InprocServer32",,%REG_SZ%,"%13%\nvwss.dll"
+HKCR,"CLSID\{D8A8B20F-98D2-4EFF-8CE1-EF094F1A8043}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{D8A8B20F-98D2-4EFF-8CE1-EF094F1A8043}\ProgID",,%REG_SZ%,"WorkStationServer.CategoryFS.1"
+HKCR,"CLSID\{D8A8B20F-98D2-4EFF-8CE1-EF094F1A8043}\TypeLib",,%REG_SZ%,"{D1F48243-B994-45CD-8A55-03DBB33745BE}"
+HKCR,"CLSID\{D8A8B20F-98D2-4EFF-8CE1-EF094F1A8043}\VersionIndependentProgID",,%REG_SZ%,"WorkStationServer.CategoryFS"
+HKCR,"CLSID\{DB4CBE92-74B3-4027-8B37-7B67927A7034}",,%REG_SZ%,"ManageDevTools Class"
+HKCR,"CLSID\{DB4CBE92-74B3-4027-8B37-7B67927A7034}\InprocServer32",,%REG_SZ%,"%13%\nvdevtools.dll"
+HKCR,"CLSID\{DB4CBE92-74B3-4027-8B37-7B67927A7034}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{DB4CBE92-74B3-4027-8B37-7B67927A7034}\ProgID",,%REG_SZ%,"DevToolsServer.ManageDevTools.1"
+HKCR,"CLSID\{DB4CBE92-74B3-4027-8B37-7B67927A7034}\TypeLib",,%REG_SZ%,"{40473277-70CE-464B-BE85-33BB4D1206B0}"
+HKCR,"CLSID\{DB4CBE92-74B3-4027-8B37-7B67927A7034}\Version",,%REG_SZ%,"1.0"
+HKCR,"CLSID\{DB4CBE92-74B3-4027-8B37-7B67927A7034}\VersionIndependentProgID",,%REG_SZ%,"DevToolsServer.ManageDevTools"
+HKCR,"CLSID\{DC09760E-9FDA-454A-B9D2-7E663E58C39D}",,%REG_SZ%,"PSFactoryBuffer"
+HKCR,"CLSID\{DC09760E-9FDA-454A-B9D2-7E663E58C39D}\InProcServer32",,%REG_SZ%,"%13%\NVXDBat.dll"
+HKCR,"CLSID\{DC09760E-9FDA-454A-B9D2-7E663E58C39D}\InProcServer32",ThreadingModel,%REG_SZ%,"Both"
+HKCR,"CLSID\{DCAB0989-1301-4319-BE5F-ADE89F88581C}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{DDEF97F5-723E-47D2-87B1-14C39EFBAE11}",,%REG_SZ%,"ManageSdiOutput Class"
+HKCR,"CLSID\{DDEF97F5-723E-47D2-87B1-14C39EFBAE11}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{DDEF97F5-723E-47D2-87B1-14C39EFBAE11}\InprocServer32",,%REG_SZ%,"%13%\nvwss.dll"
+HKCR,"CLSID\{DDEF97F5-723E-47D2-87B1-14C39EFBAE11}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{DDEF97F5-723E-47D2-87B1-14C39EFBAE11}\ProgID",,%REG_SZ%,"WorkStationServer.ManageSdiOutput.1"
+HKCR,"CLSID\{DDEF97F5-723E-47D2-87B1-14C39EFBAE11}\TypeLib",,%REG_SZ%,"{D1F48243-B994-45CD-8A55-03DBB33745BE}"
+HKCR,"CLSID\{DDEF97F5-723E-47D2-87B1-14C39EFBAE11}\VersionIndependentProgID",,%REG_SZ%,"WorkStationServer.ManageSdiOutput"
+HKCR,"CLSID\{DE0549BD-F34D-4748-AD94-0F2F22749F4F}",,%REG_SZ%,"SliBasic Class"
+HKCR,"CLSID\{DE0549BD-F34D-4748-AD94-0F2F22749F4F}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{DE0549BD-F34D-4748-AD94-0F2F22749F4F}\InprocServer32",,%REG_SZ%,"%13%\nvgames.dll"
+HKCR,"CLSID\{DE0549BD-F34D-4748-AD94-0F2F22749F4F}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{DE0549BD-F34D-4748-AD94-0F2F22749F4F}\ProgID",,%REG_SZ%,"GamesConfigServer.SliBasic.1"
+HKCR,"CLSID\{DE0549BD-F34D-4748-AD94-0F2F22749F4F}\TypeLib",,%REG_SZ%,"{25EBA1D0-EB51-4CBE-8515-23E81DF77F97}"
+HKCR,"CLSID\{DE0549BD-F34D-4748-AD94-0F2F22749F4F}\VersionIndependentProgID",,%REG_SZ%,"GamesConfigServer.SliBasic"
+HKCR,"CLSID\{DFA226E7-D28D-407D-95ED-5A79D9745BB5}",,%REG_SZ%,"ManageLicense Class"
+HKCR,"CLSID\{DFA226E7-D28D-407D-95ED-5A79D9745BB5}\InprocServer32",,%REG_SZ%,"%13%\nvlicensings.dll"
+HKCR,"CLSID\{DFA226E7-D28D-407D-95ED-5A79D9745BB5}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{DFA226E7-D28D-407D-95ED-5A79D9745BB5}\ProgID",,%REG_SZ%,"LicensingServer.ManageLicense.1"
+HKCR,"CLSID\{DFA226E7-D28D-407D-95ED-5A79D9745BB5}\TypeLib",,%REG_SZ%,"{B99B6947-DC2A-486E-9E7F-D278F9E704DD}"
+HKCR,"CLSID\{DFA226E7-D28D-407D-95ED-5A79D9745BB5}\Version",,%REG_SZ%,"1.0"
+HKCR,"CLSID\{DFA226E7-D28D-407D-95ED-5A79D9745BB5}\VersionIndependentProgID",,%REG_SZ%,"LicensingServer.ManageLicense"
+HKCR,"CLSID\{E851CB66-C839-4E96-8363-8535EB16FE2C}",,%REG_SZ%,"SmartPower Class"
+HKCR,"CLSID\{E851CB66-C839-4E96-8363-8535EB16FE2C}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{E851CB66-C839-4E96-8363-8535EB16FE2C}\InprocServer32",,%REG_SZ%,"%13%\nvgames.dll"
+HKCR,"CLSID\{E851CB66-C839-4E96-8363-8535EB16FE2C}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{E851CB66-C839-4E96-8363-8535EB16FE2C}\ProgID",,%REG_SZ%,"GamesConfigServer.SmartPower.1"
+HKCR,"CLSID\{E851CB66-C839-4E96-8363-8535EB16FE2C}\TypeLib",,%REG_SZ%,"{6481B880-0FE2-48FE-A15F-D8254FC98884}"
+HKCR,"CLSID\{E851CB66-C839-4E96-8363-8535EB16FE2C}\VersionIndependentProgID",,%REG_SZ%,"GamesConfigServer.SmartPower"
+HKCR,"CLSID\{E97DEC16-A50D-49bb-AE24-CF682282E08D}",,%REG_SZ%,"OpenGLShExt Class"
+HKCR,"CLSID\{E97DEC16-A50D-49bb-AE24-CF682282E08D}\InprocServer32",,%REG_SZ%,"%13%\nv3dappshext.dll"
+HKCR,"CLSID\{E97DEC16-A50D-49bb-AE24-CF682282E08D}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{E97DEC16-A50D-49bb-AE24-CF682282E08D}\ProgID",,%REG_SZ%,"Nv3DAppShExt.OpenGLShExt.1"
+HKCR,"CLSID\{E97DEC16-A50D-49bb-AE24-CF682282E08D}\TypeLib",,%REG_SZ%,"{FDBDDB6E-BA5F-41E3-9510-90F606999E91}"
+HKCR,"CLSID\{E97DEC16-A50D-49bb-AE24-CF682282E08D}\VersionIndependentProgID",,%REG_SZ%,"Nv3DAppShExt.OpenGLShExt"
+HKCR,"CLSID\{EDAC9CAA-4874-48C0-80DB-2D81B63EFE13}",,%REG_SZ%,"TVSizeMove Class"
+HKCR,"CLSID\{EDAC9CAA-4874-48C0-80DB-2D81B63EFE13}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{EDAC9CAA-4874-48C0-80DB-2D81B63EFE13}\InprocServer32",,%REG_SZ%,"%13%\nvvitvs.dll"
+HKCR,"CLSID\{EDAC9CAA-4874-48C0-80DB-2D81B63EFE13}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{EDAC9CAA-4874-48C0-80DB-2D81B63EFE13}\ProgID",,%REG_SZ%,"Video_TVServer.TVSizeMove.1"
+HKCR,"CLSID\{EDAC9CAA-4874-48C0-80DB-2D81B63EFE13}\TypeLib",,%REG_SZ%,"{56494266-49C1-4C68-8C11-5E1B7B878E02}"
+HKCR,"CLSID\{EDAC9CAA-4874-48C0-80DB-2D81B63EFE13}\VersionIndependentProgID",,%REG_SZ%,"Video_TVServer.TVSizeMove"
+HKCR,"CLSID\{EEF5290C-7F3D-4640-93F2-F189DC616510}",,%REG_SZ%,"VideoHDCPStatus Class"
+HKCR,"CLSID\{EEF5290C-7F3D-4640-93F2-F189DC616510}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{EEF5290C-7F3D-4640-93F2-F189DC616510}\InprocServer32",,%REG_SZ%,"%13%\nvdisps.dll"
+HKCR,"CLSID\{EEF5290C-7F3D-4640-93F2-F189DC616510}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{EEF5290C-7F3D-4640-93F2-F189DC616510}\ProgID",,%REG_SZ%,"DisplayServer.VideoHDCPStatus.1"
+HKCR,"CLSID\{EEF5290C-7F3D-4640-93F2-F189DC616510}\TypeLib",,%REG_SZ%,"{25EBA1D0-EB51-4CBE-8515-23E81DF77F97}"
+HKCR,"CLSID\{EEF5290C-7F3D-4640-93F2-F189DC616510}\VersionIndependentProgID",,%REG_SZ%,"DisplayServer.VideoHDCPStatus"
+HKCR,"CLSID\{EF884939-F1EA-4EFB-B676-D2F802177C5F}",,%REG_SZ%,"VideoImageSettings Class"
+HKCR,"CLSID\{EF884939-F1EA-4EFB-B676-D2F802177C5F}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{EF884939-F1EA-4EFB-B676-D2F802177C5F}\InprocServer32",,%REG_SZ%,"%13%\nvvitvs.dll"
+HKCR,"CLSID\{EF884939-F1EA-4EFB-B676-D2F802177C5F}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{EF884939-F1EA-4EFB-B676-D2F802177C5F}\ProgID",,%REG_SZ%,"Video_TVServer.VideoImageSetting.1"
+HKCR,"CLSID\{EF884939-F1EA-4EFB-B676-D2F802177C5F}\TypeLib",,%REG_SZ%,"{D1F48243-B994-45CD-8A55-03DBB33745BE}"
+HKCR,"CLSID\{EF884939-F1EA-4EFB-B676-D2F802177C5F}\VersionIndependentProgID",,%REG_SZ%,"Video_TVServer.VideoImageSettings"
+HKCR,"CLSID\{FC7AA68D-EAFB-4ce9-A012-9C33E7B02B49}",,%REG_SZ%,"ManageQuadroPlex Class"
+HKCR,"CLSID\{FC7AA68D-EAFB-4ce9-A012-9C33E7B02B49}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{FC7AA68D-EAFB-4ce9-A012-9C33E7B02B49}\InprocServer32",,%REG_SZ%,"%13%\nvwss.dll"
+HKCR,"CLSID\{FC7AA68D-EAFB-4ce9-A012-9C33E7B02B49}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{FC7AA68D-EAFB-4ce9-A012-9C33E7B02B49}\ProgID",,%REG_SZ%,"WorkStationServer.ManageQuadroPlex.1"
+HKCR,"CLSID\{FC7AA68D-EAFB-4ce9-A012-9C33E7B02B49}\TypeLib",,%REG_SZ%,"{D1F48243-B994-45CD-8A55-03DBB33745BE}"
+HKCR,"CLSID\{FC7AA68D-EAFB-4ce9-A012-9C33E7B02B49}\VersionIndependentProgID",,%REG_SZ%,"WorkStationServer.ManageQuadroPlex"
+HKCR,"DevToolsServer.CategoryDevTools",,%REG_SZ%,"CategoryDevTools Class"
+HKCR,"DevToolsServer.CategoryDevTools.1",,%REG_SZ%,"CategoryDevTools Class"
+HKCR,"DevToolsServer.CategoryDevTools.1\CLSID",,%REG_SZ%,"{704033A7-A100-403E-AD9E-D6FEC5FF457E}"
+HKCR,"DevToolsServer.CategoryDevTools\CLSID",,%REG_SZ%,"{704033A7-A100-403E-AD9E-D6FEC5FF457E}"
+HKCR,"DevToolsServer.CategoryDevTools\CurVer",,%REG_SZ%,"DevToolsServer.CategoryDevTools.1"
+HKCR,"DevToolsServer.MainServer",,%REG_SZ%,"MainServer Class"
+HKCR,"DevToolsServer.MainServer.1",,%REG_SZ%,"MainServer Class"
+HKCR,"DevToolsServer.MainServer.1\CLSID",,%REG_SZ%,"{02C68609-99E3-4A8F-9575-4973D401C06F}"
+HKCR,"DevToolsServer.MainServer\CLSID",,%REG_SZ%,"{02C68609-99E3-4A8F-9575-4973D401C06F}"
+HKCR,"DevToolsServer.MainServer\CurVer",,%REG_SZ%,"DevToolsServer.MainServer.1"
+HKCR,"DevToolsServer.ManageDevTools",,%REG_SZ%,"ManageDevTools Class"
+HKCR,"DevToolsServer.ManageDevTools.1",,%REG_SZ%,"ManageDevTools Class"
+HKCR,"DevToolsServer.ManageDevTools.1\CLSID",,%REG_SZ%,"{DB4CBE92-74B3-4027-8B37-7B67927A7034}"
+HKCR,"DevToolsServer.ManageDevTools\CLSID",,%REG_SZ%,"{DB4CBE92-74B3-4027-8B37-7B67927A7034}"
+HKCR,"DevToolsServer.ManageDevTools\CurVer",,%REG_SZ%,"DevToolsServer.ManageDevTools.1"
+HKCR,"Directory\Background\shellex\ContextMenuHandlers\NvCplDesktopContext",,%REG_SZ%,"{3D1975AF-48C6-4f8e-A182-BE0E08FA86A9}"
+HKCR,"DisplayServer.AdjustDesktopSizePos",,%REG_SZ%,"AdjustDesktopSizePos Class"
+HKCR,"DisplayServer.AdjustDesktopSizePos.1",,%REG_SZ%,"AdjustDesktopSizePos Class"
+HKCR,"DisplayServer.AdjustDesktopSizePos.1\CLSID",,%REG_SZ%,"{074BFFFD-4E50-42c1-A7EB-40D9D70F2471}"
+HKCR,"DisplayServer.AdjustDesktopSizePos\CLSID",,%REG_SZ%,"{074BFFFD-4E50-42c1-A7EB-40D9D70F2471}"
+HKCR,"DisplayServer.AdjustDesktopSizePos\CurVer",,%REG_SZ%,"DisplayServer.AdjustDesktopSizePos.1"
+HKCR,"DisplayServer.AdjustSizePosExt",,%REG_SZ%,"AdjustSizePosExt Class"
+HKCR,"DisplayServer.AdjustSizePosExt.1",,%REG_SZ%,"AdjustSizePosExt Class"
+HKCR,"DisplayServer.AdjustSizePosExt.1\CLSID",,%REG_SZ%,"{6539579C-2657-45E5-985F-835E197959C2}"
+HKCR,"DisplayServer.AdjustSizePosExt\CLSID",,%REG_SZ%,"{6539579C-2657-45E5-985F-835E197959C2}"
+HKCR,"DisplayServer.AdjustSizePosExt\CurVer",,%REG_SZ%,"DisplayServer.AdjustSizePosExt.1"
+HKCR,"DisplayServer.AppSettingsBasic",,%REG_SZ%,"AppSettingsBasic Class"
+HKCR,"DisplayServer.AppSettingsBasic.1",,%REG_SZ%,"AppSettingsBasic Class"
+HKCR,"DisplayServer.AppSettingsBasic.1\CLSID",,%REG_SZ%,"{9B5EC720-9A44-4811-8B9F-24BD53F2050D}"
+HKCR,"DisplayServer.AppSettingsBasic\CLSID",,%REG_SZ%,"{9B5EC720-9A44-4811-8B9F-24BD53F2050D}"
+HKCR,"DisplayServer.AppSettingsBasic\CurVer",,%REG_SZ%,"DisplayServer.AppSettingsBasic.1"
+HKCR,"DisplayServer.CategoryAppearance",,%REG_SZ%,"CategoryAppearance Class"
+HKCR,"DisplayServer.CategoryAppearance.1",,%REG_SZ%,"CategoryAppearance Class"
+HKCR,"DisplayServer.CategoryAppearance.1\CLSID",,%REG_SZ%,"{01367108-5EE2-4E1C-A8DE-24438065ABC9}"
+HKCR,"DisplayServer.CategoryAppearance\CLSID",,%REG_SZ%,"{01367108-5EE2-4E1C-A8DE-24438065ABC9}"
+HKCR,"DisplayServer.CategoryAppearance\CurVer",,%REG_SZ%,"DisplayServer.CategoryAppearance.1"
+HKCR,"DisplayServer.CategoryMultiMon",,%REG_SZ%,"CategoryMultiMon Class"
+HKCR,"DisplayServer.CategoryMultiMon.1",,%REG_SZ%,"CategoryMultiMon Class"
+HKCR,"DisplayServer.CategoryMultiMon.1\CLSID",,%REG_SZ%,"{88FC94D1-2ABB-42CF-8A07-4BC54F66EDDF}"
+HKCR,"DisplayServer.CategoryMultiMon\CLSID",,%REG_SZ%,"{88FC94D1-2ABB-42CF-8A07-4BC54F66EDDF}"
+HKCR,"DisplayServer.CategoryMultiMon\CurVer",,%REG_SZ%,"DisplayServer.CategoryMultiMon.1"
+HKCR,"DisplayServer.ChangeResExt",,%REG_SZ%,"ChangeResExt Class"
+HKCR,"DisplayServer.ChangeResExt.1",,%REG_SZ%,"ChangeResExt Class"
+HKCR,"DisplayServer.ChangeResExt.1\CLSID",,%REG_SZ%,"{91363F1E-E7CA-4959-85D6-963719EC79FC}"
+HKCR,"DisplayServer.ChangeResExt\CLSID",,%REG_SZ%,"{91363F1E-E7CA-4959-85D6-963719EC79FC}"
+HKCR,"DisplayServer.ChangeResExt\CurVer",,%REG_SZ%,"DisplayServer.ChangeResExt.1"
+HKCR,"DisplayServer.ColorCorrection",,%REG_SZ%,"ColorCorrection Class"
+HKCR,"DisplayServer.ColorCorrection.1",,%REG_SZ%,"ColorCorrection Class"
+HKCR,"DisplayServer.ColorCorrection.1\CLSID",,%REG_SZ%,"{CC0648AE-7E85-483C-B1DB-9335C9D6F8C7}"
+HKCR,"DisplayServer.ColorCorrection\CLSID",,%REG_SZ%,"{CC0648AE-7E85-483C-B1DB-9335C9D6F8C7}"
+HKCR,"DisplayServer.ColorCorrection\CurVer",,%REG_SZ%,"DisplayServer.ColorCorrection.1"
+HKCR,"DisplayServer.ColorSettingsAdv",,%REG_SZ%,"ColorSettingsAdv Class"
+HKCR,"DisplayServer.ColorSettingsAdv.1",,%REG_SZ%,"ColorSettingsAdv Class"
+HKCR,"DisplayServer.ColorSettingsAdv.1\CLSID",,%REG_SZ%,"{B53EBC0C-2251-4AE2-9818-FD6AAF843EC2}"
+HKCR,"DisplayServer.ColorSettingsAdv\CLSID",,%REG_SZ%,"{B53EBC0C-2251-4AE2-9818-FD6AAF843EC2}"
+HKCR,"DisplayServer.ColorSettingsAdv\CurVer",,%REG_SZ%,"DisplayServer.ColorSettingsAdv.1"
+HKCR,"DisplayServer.Config",,%REG_SZ%,"Config Class"
+HKCR,"DisplayServer.Config.1",,%REG_SZ%,"Config Class"
+HKCR,"DisplayServer.Config.1\CLSID",,%REG_SZ%,"{26A37DC6-935D-439B-80DD-C1006AE13D71}"
+HKCR,"DisplayServer.Config\CLSID",,%REG_SZ%,"{26A37DC6-935D-439B-80DD-C1006AE13D71}"
+HKCR,"DisplayServer.Config\CurVer",,%REG_SZ%,"DisplayServer.Config.1"
+HKCR,"DisplayServer.CustomRez",,%REG_SZ%,"CustomRez Class"
+HKCR,"DisplayServer.CustomRez.1",,%REG_SZ%,"CustomRez Class"
+HKCR,"DisplayServer.CustomRez.1\CLSID",,%REG_SZ%,"{49F585C0-CE12-4306-9100-B6A28857B10B}"
+HKCR,"DisplayServer.CustomRez\CLSID",,%REG_SZ%,"{49F585C0-CE12-4306-9100-B6A28857B10B}"
+HKCR,"DisplayServer.CustomRez\CurVer",,%REG_SZ%,"DisplayServer.CustomRez.1"
+HKCR,"DisplayServer.DualView",,%REG_SZ%,"DualView Class"
+HKCR,"DisplayServer.DualView.1",,%REG_SZ%,"DualView Class"
+HKCR,"DisplayServer.DualView.1\CLSID",,%REG_SZ%,"{7945F814-7BFB-4506-A113-2BD66CDC713A}"
+HKCR,"DisplayServer.DualView\CLSID",,%REG_SZ%,"{7945F814-7BFB-4506-A113-2BD66CDC713A}"
+HKCR,"DisplayServer.DualView\CurVer",,%REG_SZ%,"DisplayServer.DualView.1"
+HKCR,"DisplayServer.IdentifyDisp",,%REG_SZ%,"IdentifyDisp Class"
+HKCR,"DisplayServer.IdentifyDisp.1",,%REG_SZ%,"IdentifyDisp Class"
+HKCR,"DisplayServer.IdentifyDisp.1\CLSID",,%REG_SZ%,"{0FB41BD0-3107-40A5-8D49-456E585947B2}"
+HKCR,"DisplayServer.IdentifyDisp\CLSID",,%REG_SZ%,"{0FB41BD0-3107-40A5-8D49-456E585947B2}"
+HKCR,"DisplayServer.IdentifyDisp\CurVer",,%REG_SZ%,"DisplayServer.IdentifyDisp.1"
+HKCR,"DisplayServer.MultiMon",,%REG_SZ%,"MultiMon Class"
+HKCR,"DisplayServer.MultiMon.1",,%REG_SZ%,"MultiMon Class"
+HKCR,"DisplayServer.MultiMon.1\CLSID",,%REG_SZ%,"{6E4B938E-4BA1-4E8D-BCBA-8C51CE95F94F}"
+HKCR,"DisplayServer.MultiMon\CLSID",,%REG_SZ%,"{6E4B938E-4BA1-4E8D-BCBA-8C51CE95F94F}"
+HKCR,"DisplayServer.MultiMon\CurVer",,%REG_SZ%,"DisplayServer.MultiMon.1"
+HKCR,"DisplayServer.MultiView",,%REG_SZ%,"MultiView Class"
+HKCR,"DisplayServer.MultiView.1",,%REG_SZ%,"MultiView Class"
+HKCR,"DisplayServer.MultiView.1\CLSID",,%REG_SZ%,"{894BF76C-115F-44B7-9B32-ABFA7E6A804A}"
+HKCR,"DisplayServer.MultiView\CLSID",,%REG_SZ%,"{894BF76C-115F-44B7-9B32-ABFA7E6A804A}"
+HKCR,"DisplayServer.MultiView\CurVer",,%REG_SZ%,"DisplayServer.MultiView.1"
+HKCR,"DisplayServer.NameDisp",,%REG_SZ%,"NameDisp Class"
+HKCR,"DisplayServer.NameDisp.1",,%REG_SZ%,"NameDisp Class"
+HKCR,"DisplayServer.NameDisp.1\CLSID",,%REG_SZ%,"{6A22E68F-887C-4221-9DF1-EE0B3AC76497}"
+HKCR,"DisplayServer.NameDisp\CLSID",,%REG_SZ%,"{6A22E68F-887C-4221-9DF1-EE0B3AC76497}"
+HKCR,"DisplayServer.NameDisp\CurVer",,%REG_SZ%,"DisplayServer.NameDisp.1"
+HKCR,"DisplayServer.Power",,%REG_SZ%,"Power Class"
+HKCR,"DisplayServer.Power.1",,%REG_SZ%,"Power Class"
+HKCR,"DisplayServer.Power.1\CLSID",,%REG_SZ%,"{A158544D-66FA-4F19-8806-F3CA2E2A4C52}"
+HKCR,"DisplayServer.Power\CLSID",,%REG_SZ%,"{A158544D-66FA-4F19-8806-F3CA2E2A4C52}"
+HKCR,"DisplayServer.Power\CurVer",,%REG_SZ%,"DisplayServer.Power.1"
+HKCR,"DisplayServer.RotateDisplay",,%REG_SZ%,"RotateDisplay Class"
+HKCR,"DisplayServer.RotateDisplay.1",,%REG_SZ%,"RotateDisplay Class"
+HKCR,"DisplayServer.RotateDisplay.1\CLSID",,%REG_SZ%,"{6017A978-93AD-4F2F-9E2D-07CF8C8DEBC4}"
+HKCR,"DisplayServer.RotateDisplay\CLSID",,%REG_SZ%,"{6017A978-93AD-4F2F-9E2D-07CF8C8DEBC4}"
+HKCR,"DisplayServer.RotateDisplay\CurVer",,%REG_SZ%,"DisplayServer.RotateDisplay.1"
+HKCR,"DisplayServer.ScreenMove",,%REG_SZ%,"ScreenMove Class"
+HKCR,"DisplayServer.ScreenMove.1",,%REG_SZ%,"ScreenMove Class"
+HKCR,"DisplayServer.ScreenMove.1\CLSID",,%REG_SZ%,"{1BC39379-8D90-4F18-8817-795C57163770}"
+HKCR,"DisplayServer.ScreenMove\CLSID",,%REG_SZ%,"{1BC39379-8D90-4F18-8817-795C57163770}"
+HKCR,"DisplayServer.ScreenMove\CurVer",,%REG_SZ%,"DisplayServer.ScreenMove.1"
+HKCR,"DisplayServer.ScreenTimingDVI",,%REG_SZ%,"ScreenTimingDVI Class"
+HKCR,"DisplayServer.ScreenTimingDVI.1",,%REG_SZ%,"ScreenTimingDVI Class"
+HKCR,"DisplayServer.ScreenTimingDVI.1\CLSID",,%REG_SZ%,"{51840041-B26F-4843-B358-22ABB067396C}"
+HKCR,"DisplayServer.ScreenTimingDVI\CLSID",,%REG_SZ%,"{51840041-B26F-4843-B358-22ABB067396C}"
+HKCR,"DisplayServer.ScreenTimingDVI\CurVer",,%REG_SZ%,"DisplayServer.ScreenTimingDVI.1"
+HKCR,"DisplayServer.ServerMain",,%REG_SZ%,"ServerMain Class"
+HKCR,"DisplayServer.ServerMain.1",,%REG_SZ%,"ServerMain Class"
+HKCR,"DisplayServer.ServerMain.1\CLSID",,%REG_SZ%,"{73BCA54E-6AEB-4597-8F27-E1284FF12722}"
+HKCR,"DisplayServer.ServerMain\CLSID",,%REG_SZ%,"{73BCA54E-6AEB-4597-8F27-E1284FF12722}"
+HKCR,"DisplayServer.ServerMain\CurVer",,%REG_SZ%,"DisplayServer.ServerMain.1"
+HKCR,"DisplayServer.SetupDigitalAudio",,%REG_SZ%,"SetupDigitalAudio Class"
+HKCR,"DisplayServer.SetupDigitalAudio.1",,%REG_SZ%,"SetupDigitalAudio Class"
+HKCR,"DisplayServer.SetupDigitalAudio.1\CLSID",,%REG_SZ%,"{A3B877C7-83CA-4c9b-87FB-BE0D518C2441}"
+HKCR,"DisplayServer.SetupDigitalAudio\CLSID",,%REG_SZ%,"{A3B877C7-83CA-4c9b-87FB-BE0D518C2441}"
+HKCR,"DisplayServer.SetupDigitalAudio\CurVer",,%REG_SZ%,"DisplayServer.SetupDigitalAudio.1"
+HKCR,"DisplayServer.TVWizard",,%REG_SZ%,"TVWizard Class"
+HKCR,"DisplayServer.TVWizard.1",,%REG_SZ%,"TVWizard Class"
+HKCR,"DisplayServer.TVWizard.1\CLSID",,%REG_SZ%,"{63005CD0-8541-439c-A66A-617F4B1F2BCB}"
+HKCR,"DisplayServer.TVWizard\CLSID",,%REG_SZ%,"{63005CD0-8541-439c-A66A-617F4B1F2BCB}"
+HKCR,"DisplayServer.TVWizard\CurVer",,%REG_SZ%,"DisplayServer.TVWizard.1"
+HKCR,"DisplayServer.VariableRefreshRate",,%REG_SZ%,"VariableRefreshRate Class"
+HKCR,"DisplayServer.VariableRefreshRate.1",,%REG_SZ%,"VariableRefreshRate Class"
+HKCR,"DisplayServer.VariableRefreshRate.1\CLSID",,%REG_SZ%,"{80BA3813-908F-4D4C-A5FF-263640AD5B7A}"
+HKCR,"DisplayServer.VariableRefreshRate\CLSID",,%REG_SZ%,"{80BA3813-908F-4D4C-A5FF-263640AD5B7A}"
+HKCR,"DisplayServer.VariableRefreshRate\CurVer",,%REG_SZ%,"DisplayServer.VariableRefreshRate.1"
+HKCR,"DisplayServer.VideoAudioControl",,%REG_SZ%,"VideoAudioControl Class"
+HKCR,"DisplayServer.VideoAudioControl.1",,%REG_SZ%,"VideoAudioControl Class"
+HKCR,"DisplayServer.VideoAudioControl.1\CLSID",,%REG_SZ%,"{AAB8F985-EADA-428B-8636-270F58E1F1EF}"
+HKCR,"DisplayServer.VideoAudioControl\CLSID",,%REG_SZ%,"{AAB8F985-EADA-428B-8636-270F58E1F1EF}"
+HKCR,"DisplayServer.VideoAudioControl\CurVer",,%REG_SZ%,"DisplayServer.VideoAudioControl.1"
+HKCR,"DisplayServer.VideoHDCPStatus",,%REG_SZ%,"VideoHDCPStatus Class"
+HKCR,"DisplayServer.VideoHDCPStatus.1",,%REG_SZ%,"VideoHDCPStatus Class"
+HKCR,"DisplayServer.VideoHDCPStatus.1\CLSID",,%REG_SZ%,"{EEF5290C-7F3D-4640-93F2-F189DC616510}"
+HKCR,"DisplayServer.VideoHDCPStatus\CLSID",,%REG_SZ%,"{EEF5290C-7F3D-4640-93F2-F189DC616510}"
+HKCR,"DisplayServer.VideoHDCPStatus\CurVer",,%REG_SZ%,"DisplayServer.VideoHDCPStatus.1"
+HKCR,"GamesConfigServer.Cat1",,%REG_SZ%,"Cat1 Class"
+HKCR,"GamesConfigServer.Cat1.1",,%REG_SZ%,"Cat1 Class"
+HKCR,"GamesConfigServer.Cat1.1\CLSID",,%REG_SZ%,"{A8679087-E64A-413A-9CBF-F38BE510C46C}"
+HKCR,"GamesConfigServer.Cat1\CLSID",,%REG_SZ%,"{A8679087-E64A-413A-9CBF-F38BE510C46C}"
+HKCR,"GamesConfigServer.Cat1\CurVer",,%REG_SZ%,"GamesConfigServer.Cat1.1"
+HKCR,"GamesConfigServer.CategoryPerformance",,%REG_SZ%,"CategoryPerformance Class"
+HKCR,"GamesConfigServer.CategoryPerformance.1",,%REG_SZ%,"CategoryPerformance Class"
+HKCR,"GamesConfigServer.CategoryPerformance.1\CLSID",,%REG_SZ%,"{2FD96798-0D65-4D57-A095-B57679740E37}"
+HKCR,"GamesConfigServer.CategoryPerformance\CLSID",,%REG_SZ%,"{2FD96798-0D65-4D57-A095-B57679740E37}"
+HKCR,"GamesConfigServer.CategoryPerformance\CurVer",,%REG_SZ%,"GamesConfigServer.CategoryPerformance.1"
+HKCR,"GamesConfigServer.ECCSettings.1\CLSID",,%REG_SZ%,"{621E1D58-583A-45B6-B869-E3C53DE71B49}"
+HKCR,"GamesConfigServer.ECCSettings\CLSID",,%REG_SZ%,"{621E1D58-583A-45B6-B869-E3C53DE71B49}"
+HKCR,"GamesConfigServer.MainServer",,%REG_SZ%,"MainServer Class"
+HKCR,"GamesConfigServer.MainServer.1",,%REG_SZ%,"MainServer Class"
+HKCR,"GamesConfigServer.MainServer.1\CLSID",,%REG_SZ%,"{3156EC84-29BD-4EAA-AE0A-817ED606FA99}"
+HKCR,"GamesConfigServer.MainServer\CLSID",,%REG_SZ%,"{3156EC84-29BD-4EAA-AE0A-817ED606FA99}"
+HKCR,"GamesConfigServer.MainServer\CurVer",,%REG_SZ%,"GamesConfigServer.MainServer.1"
+HKCR,"GamesConfigServer.Manage3DSettings",,%REG_SZ%,"Manage3DSettings Class"
+HKCR,"GamesConfigServer.Manage3DSettings.1",,%REG_SZ%,"Manage3DSettings Class"
+HKCR,"GamesConfigServer.Manage3DSettings.1\CLSID",,%REG_SZ%,"{BBB7D605-8639-49D0-849E-32C4A5DBB9C3}"
+HKCR,"GamesConfigServer.Manage3DSettings\CLSID",,%REG_SZ%,"{BBB7D605-8639-49D0-849E-32C4A5DBB9C3}"
+HKCR,"GamesConfigServer.Manage3DSettings\CurVer",,%REG_SZ%,"GamesConfigServer.Manage3DSettings.1"
+HKCR,"GamesConfigServer.ManageACESettings",,%REG_SZ%,"ManageACESettings Class"
+HKCR,"GamesConfigServer.ManageACESettings.1",,%REG_SZ%,"ManageACESettings Class"
+HKCR,"GamesConfigServer.ManageACESettings.1\CLSID",,%REG_SZ%,"{CBD600D7-2256-4ADB-8E3A-185F56EA9353}"
+HKCR,"GamesConfigServer.ManageACESettings\CLSID",,%REG_SZ%,"{CBD600D7-2256-4ADB-8E3A-185F56EA9353}"
+HKCR,"GamesConfigServer.ManageACESettings\CurVer",,%REG_SZ%,"GamesConfigServer.ManageACESettings.1"
+HKCR,"GamesConfigServer.SliBasic",,%REG_SZ%,"SliBasic Class"
+HKCR,"GamesConfigServer.SliBasic.1",,%REG_SZ%,"SliBasic Class"
+HKCR,"GamesConfigServer.SliBasic.1\CLSID",,%REG_SZ%,"{DE0549BD-F34D-4748-AD94-0F2F22749F4F}"
+HKCR,"GamesConfigServer.SliBasic\CLSID",,%REG_SZ%,"{DE0549BD-F34D-4748-AD94-0F2F22749F4F}"
+HKCR,"GamesConfigServer.SliBasic\CurVer",,%REG_SZ%,"GamesConfigServer.SliBasic.1"
+HKCR,"GamesConfigServer.SliPhysXExt",,%REG_SZ%,"SliPhysXExt Class"
+HKCR,"GamesConfigServer.SliPhysXExt.1",,%REG_SZ%,"SliPhysXExt Class"
+HKCR,"GamesConfigServer.SliPhysXExt.1\CLSID",,%REG_SZ%,"{C8F113AE-A2C9-47CB-8DAE-9376C64665AD}"
+HKCR,"GamesConfigServer.SliPhysXExt\CLSID",,%REG_SZ%,"{C8F113AE-A2C9-47CB-8DAE-9376C64665AD}"
+HKCR,"GamesConfigServer.SliPhysXExt\CurVer",,%REG_SZ%,"GamesConfigServer.SliPhysXExt.1"
+HKCR,"GamesConfigServer.SmartPower",,%REG_SZ%,"SmartPower Class"
+HKCR,"GamesConfigServer.SmartPower.1",,%REG_SZ%,"SmartPower Class"
+HKCR,"GamesConfigServer.SmartPower.1\CLSID",,%REG_SZ%,"{E851CB66-C839-4E96-8363-8535EB16FE2C}"
+HKCR,"GamesConfigServer.SmartPower\CLSID",,%REG_SZ%,"{E851CB66-C839-4E96-8363-8535EB16FE2C}"
+HKCR,"GamesConfigServer.SmartPower\CurVer",,%REG_SZ%,"GamesConfigServer.SmartPower.1"
+HKCR,"Interface\{4473E3A7-C2AD-4075-A1F8-935A584740A9}",,%REG_SZ%,"IStateEvents"
+HKCR,"Interface\{4473E3A7-C2AD-4075-A1F8-935A584740A9}\NumMethods",,%REG_SZ%,"5"
+HKCR,"Interface\{4473E3A7-C2AD-4075-A1F8-935A584740A9}\ProxyStubClsid32",,%REG_SZ%,"{DC09760E-9FDA-454A-B9D2-7E663E58C39D}"
+HKCR,"Interface\{501F9389-11F2-43BE-BA11-73D55F9D1963}",,%REG_SZ%,"IPipelineElement"
+HKCR,"Interface\{501F9389-11F2-43BE-BA11-73D55F9D1963}\NumMethods",,%REG_SZ%,"7"
+HKCR,"Interface\{501F9389-11F2-43BE-BA11-73D55F9D1963}\ProxyStubClsid32",,%REG_SZ%,"{DC09760E-9FDA-454A-B9D2-7E663E58C39D}"
+HKCR,"Interface\{5ACD4B1B-185E-4904-B67B-1497BACF7C36}",,%REG_SZ%,"IUxdService"
+HKCR,"Interface\{5ACD4B1B-185E-4904-B67B-1497BACF7C36}\NumMethods",,%REG_SZ%,"4"
+HKCR,"Interface\{5ACD4B1B-185E-4904-B67B-1497BACF7C36}\ProxyStubClsid32",,%REG_SZ%,"{DC09760E-9FDA-454A-B9D2-7E663E58C39D}"
+HKCR,"Interface\{8D90B48B-060F-40FB-8279-F6E024003A0B}",,%REG_SZ%,"INamedElement"
+HKCR,"Interface\{8D90B48B-060F-40FB-8279-F6E024003A0B}\NumMethods",,%REG_SZ%,"5"
+HKCR,"Interface\{8D90B48B-060F-40FB-8279-F6E024003A0B}\ProxyStubClsid32",,%REG_SZ%,"{DC09760E-9FDA-454A-B9D2-7E663E58C39D}"
+HKCR,"Interface\{A3116D99-0A9B-400D-851E-84B3E387DBCC}",,%REG_SZ%,"IStateDataReadOnly"
+HKCR,"Interface\{A3116D99-0A9B-400D-851E-84B3E387DBCC}\NumMethods",,%REG_SZ%,"5"
+HKCR,"Interface\{A3116D99-0A9B-400D-851E-84B3E387DBCC}\ProxyStubClsid32",,%REG_SZ%,"{DC09760E-9FDA-454A-B9D2-7E663E58C39D}"
+HKCR,"Interface\{A337941A-B552-4409-AB68-5F869D1E83BA}",,%REG_SZ%,"IPipelineRegistrar"
+HKCR,"Interface\{A337941A-B552-4409-AB68-5F869D1E83BA}\NumMethods",,%REG_SZ%,"5"
+HKCR,"Interface\{A337941A-B552-4409-AB68-5F869D1E83BA}\ProxyStubClsid32",,%REG_SZ%,"{DC09760E-9FDA-454A-B9D2-7E663E58C39D}"
+HKCR,"Interface\{B4302116-2703-4AFC-92B4-FF23FDA51814}",,%REG_SZ%,"IEmulation"
+HKCR,"Interface\{B4302116-2703-4AFC-92B4-FF23FDA51814}\NumMethods",,%REG_SZ%,"4"
+HKCR,"Interface\{B4302116-2703-4AFC-92B4-FF23FDA51814}\ProxyStubClsid32",,%REG_SZ%,"{DC09760E-9FDA-454A-B9D2-7E663E58C39D}"
+HKCR,"Interface\{CB95F3C9-2853-4DCD-ADD6-6F65D9389CEC}",,%REG_SZ%,"IApiTranslation"
+HKCR,"Interface\{CB95F3C9-2853-4DCD-ADD6-6F65D9389CEC}\NumMethods",,%REG_SZ%,"6"
+HKCR,"Interface\{CB95F3C9-2853-4DCD-ADD6-6F65D9389CEC}\ProxyStubClsid32",,%REG_SZ%,"{DC09760E-9FDA-454A-B9D2-7E663E58C39D}"
+HKCR,"Interface\{DC09760E-9FDA-454A-B9D2-7E663E58C39D}",,%REG_SZ%,"ISyncProxy"
+HKCR,"Interface\{DC09760E-9FDA-454A-B9D2-7E663E58C39D}\NumMethods",,%REG_SZ%,"6"
+HKCR,"Interface\{DC09760E-9FDA-454A-B9D2-7E663E58C39D}\ProxyStubClsid32",,%REG_SZ%,"{DC09760E-9FDA-454A-B9D2-7E663E58C39D}"
+HKCR,"Interface\{E1A87F97-EC2C-4F55-867A-A2781571DE8E}",,%REG_SZ%,"IStateCacheProvider"
+HKCR,"Interface\{E1A87F97-EC2C-4F55-867A-A2781571DE8E}\NumMethods",,%REG_SZ%,"5"
+HKCR,"Interface\{E1A87F97-EC2C-4F55-867A-A2781571DE8E}\ProxyStubClsid32",,%REG_SZ%,"{DC09760E-9FDA-454A-B9D2-7E663E58C39D}"
+HKCR,"Interface\{E58819CC-BC48-4D48-BB21-1F7B4138A604}",,%REG_SZ%,"IOperationInterceptor"
+HKCR,"Interface\{E58819CC-BC48-4D48-BB21-1F7B4138A604}\NumMethods",,%REG_SZ%,"4"
+HKCR,"Interface\{E58819CC-BC48-4D48-BB21-1F7B4138A604}\ProxyStubClsid32",,%REG_SZ%,"{DC09760E-9FDA-454A-B9D2-7E663E58C39D}"
+HKCR,"Interface\{E6AB4158-38B8-4FDF-85CF-ADC2E9870970}",,%REG_SZ%,"IStateData"
+HKCR,"Interface\{E6AB4158-38B8-4FDF-85CF-ADC2E9870970}\NumMethods",,%REG_SZ%,"7"
+HKCR,"Interface\{E6AB4158-38B8-4FDF-85CF-ADC2E9870970}\ProxyStubClsid32",,%REG_SZ%,"{DC09760E-9FDA-454A-B9D2-7E663E58C39D}"
+HKCR,"Interface\{EA8E8D90-F1BB-499F-93B2-AE1EB8DCD9A6}",,%REG_SZ%,"ITransactionController"
+HKCR,"Interface\{EA8E8D90-F1BB-499F-93B2-AE1EB8DCD9A6}\NumMethods",,%REG_SZ%,"10"
+HKCR,"Interface\{EA8E8D90-F1BB-499F-93B2-AE1EB8DCD9A6}\ProxyStubClsid32",,%REG_SZ%,"{DC09760E-9FDA-454A-B9D2-7E663E58C39D}"
+HKCR,"LicensingServer.CategoryLicense",,%REG_SZ%,"CategoryLicense Class"
+HKCR,"LicensingServer.CategoryLicense.1",,%REG_SZ%,"CategoryLicense Class"
+HKCR,"LicensingServer.CategoryLicense.1\CLSID",,%REG_SZ%,"{55C27CA1-022A-4381-AE5E-3412BF3D31C9}"
+HKCR,"LicensingServer.CategoryLicense\CLSID",,%REG_SZ%,"{55C27CA1-022A-4381-AE5E-3412BF3D31C9}"
+HKCR,"LicensingServer.CategoryLicense\CurVer",,%REG_SZ%,"LicensingServer.CategoryLicense.1"
+HKCR,"LicensingServer.MainServer",,%REG_SZ%,"MainServer Class"
+HKCR,"LicensingServer.MainServer.1",,%REG_SZ%,"MainServer Class"
+HKCR,"LicensingServer.MainServer.1\CLSID",,%REG_SZ%,"{47AADF36-BA70-4E24-BBDE-20EC9FC139FD}"
+HKCR,"LicensingServer.MainServer\CLSID",,%REG_SZ%,"{47AADF36-BA70-4E24-BBDE-20EC9FC139FD}"
+HKCR,"LicensingServer.MainServer\CurVer",,%REG_SZ%,"LicensingServer.MainServer.1"
+HKCR,"LicensingServer.ManageLicense",,%REG_SZ%,"ManageLicense Class"
+HKCR,"LicensingServer.ManageLicense.1",,%REG_SZ%,"ManageLicense Class"
+HKCR,"LicensingServer.ManageLicense.1\CLSID",,%REG_SZ%,"{DFA226E7-D28D-407D-95ED-5A79D9745BB5}"
+HKCR,"LicensingServer.ManageLicense\CLSID",,%REG_SZ%,"{DFA226E7-D28D-407D-95ED-5A79D9745BB5}"
+HKCR,"LicensingServer.ManageLicense\CurVer",,%REG_SZ%,"LicensingServer.ManageLicense.1"
+HKCR,"NVXDApiX.NvApixEngine",,%REG_SZ%,"NvApixEngine Class"
+HKCR,"NVXDApiX.NvApixEngine.1",,%REG_SZ%,"NvApixEngine Class"
+HKCR,"NVXDApiX.NvApixEngine.1\CLSID",,%REG_SZ%,"{5DF4E7C5-78E3-4CCA-93CD-DF1639E165FB}"
+HKCR,"NVXDApiX.NvApixEngine\CLSID",,%REG_SZ%,"{5DF4E7C5-78E3-4CCA-93CD-DF1639E165FB}"
+HKCR,"NVXDApiX.NvApixEngine\CurVer",,%REG_SZ%,"NVXDApiX.NvApixEngine.1"
+HKCR,"NVXDBat.NvXDBatchEngine",,%REG_SZ%,"NvXDBatchEngine Class"
+HKCR,"NVXDBat.NvXDBatchEngine.1",,%REG_SZ%,"NvXDBatchEngine Class"
+HKCR,"NVXDBat.NvXDBatchEngine.1\CLSID",,%REG_SZ%,"{1DC715B2-9126-4671-8086-299A44543E0F}"
+HKCR,"NVXDBat.NvXDBatchEngine\CLSID",,%REG_SZ%,"{1DC715B2-9126-4671-8086-299A44543E0F}"
+HKCR,"NVXDBat.NvXDBatchEngine\CurVer",,%REG_SZ%,"NVXDBat.NvXDBatchEngine.1"
+HKCR,"NVXDBatdll.NvXDSerializer",,%REG_SZ%,"NvXDSerializer Class"
+HKCR,"NVXDBatdll.NvXDSerializer.1",,%REG_SZ%,"NvXDSerializer Class"
+HKCR,"NVXDBatdll.NvXDSerializer.1\CLSID",,%REG_SZ%,"{4FC7F090-041C-4730-BD24-AF4BA8A2A5E0}"
+HKCR,"NVXDBatdll.NvXDSerializer\CLSID",,%REG_SZ%,"{4FC7F090-041C-4730-BD24-AF4BA8A2A5E0}"
+HKCR,"NVXDBatdll.NvXDSerializer\CurVer",,%REG_SZ%,"NVXDBatdll.NvXDSerializer.1"
+HKCR,"NVXDBatdll.OperationInterceptor",,%REG_SZ%,"OperationInterceptor Class"
+HKCR,"NVXDBatdll.OperationInterceptor.1",,%REG_SZ%,"OperationInterceptor Class"
+HKCR,"NVXDBatdll.OperationInterceptor.1\CLSID",,%REG_SZ%,"{33C89616-F807-4957-BF34-A1C91D7A1A2E}"
+HKCR,"NVXDBatdll.OperationInterceptor\CLSID",,%REG_SZ%,"{33C89616-F807-4957-BF34-A1C91D7A1A2E}"
+HKCR,"NVXDBatdll.OperationInterceptor\CurVer",,%REG_SZ%,"NVXDBatdll.OperationInterceptor.1"
+HKCR,"NVXDBatdll.StateDataSessionFilter",,%REG_SZ%,"StateDataSessionFilter Class"
+HKCR,"NVXDBatdll.StateDataSessionFilter.1",,%REG_SZ%,"StateDataSessionFilter Class"
+HKCR,"NVXDBatdll.StateDataSessionFilter.1\CLSID",,%REG_SZ%,"{5387A36B-6F55-4C66-B085-E18393FCEA87}"
+HKCR,"NVXDBatdll.StateDataSessionFilter\CLSID",,%REG_SZ%,"{5387A36B-6F55-4C66-B085-E18393FCEA87}"
+HKCR,"NVXDBatdll.StateDataSessionFilter\CurVer",,%REG_SZ%,"NVXDBatdll.StateDataSessionFilter.1"
+HKCR,"NVXDPlcy.NvXDPlcyEngine",,%REG_SZ%,"NvXDPlcyEngine Class"
+HKCR,"NVXDPlcy.NvXDPlcyEngine.1",,%REG_SZ%,"NvXDPlcyEngine Class"
+HKCR,"NVXDPlcy.NvXDPlcyEngine.1\CLSID",,%REG_SZ%,"{AD374A9E-D7FC-453A-A146-16535FE9ECC1}"
+HKCR,"NVXDPlcy.NvXDPlcyEngine\CLSID",,%REG_SZ%,"{AD374A9E-D7FC-453A-A146-16535FE9ECC1}"
+HKCR,"NVXDPlcy.NvXDPlcyEngine\CurVer",,%REG_SZ%,"NVXDPlcy.NvXDPlcyEngine.1"
+HKCR,"Nv3DAppShExt.NvAppShExt",,%REG_SZ%,"NvAppShExt Class"
+HKCR,"Nv3DAppShExt.NvAppShExt.1",,%REG_SZ%,"NvAppShExt Class"
+HKCR,"Nv3DAppShExt.NvAppShExt.1\CLSID",,%REG_SZ%,"{A929C4CE-FD36-4270-B4F5-34ECAC5BD63C}"
+HKCR,"Nv3DAppShExt.NvAppShExt\CLSID",,%REG_SZ%,"{A929C4CE-FD36-4270-B4F5-34ECAC5BD63C}"
+HKCR,"Nv3DAppShExt.NvAppShExt\CurVer",,%REG_SZ%,"Nv3DAppShExt.NvAppShExt.1"
+HKCR,"Nv3DAppShExt.OpenGLShExt",,%REG_SZ%,"OpenGLShExt Class"
+HKCR,"Nv3DAppShExt.OpenGLShExt.1",,%REG_SZ%,"OpenGLShExt Class"
+HKCR,"Nv3DAppShExt.OpenGLShExt.1\CLSID",,%REG_SZ%,"{E97DEC16-A50D-49bb-AE24-CF682282E08D}"
+HKCR,"Nv3DAppShExt.OpenGLShExt\CLSID",,%REG_SZ%,"{E97DEC16-A50D-49bb-AE24-CF682282E08D}"
+HKCR,"Nv3DAppShExt.OpenGLShExt\CurVer",,%REG_SZ%,"Nv3DAppShExt.OpenGLShExt.1"
+HKCR,"NvCpl.DesktopContext",,%REG_SZ%,"DesktopContext Class"
+HKCR,"NvCpl.DesktopContext.1",,%REG_SZ%,"DesktopContext Class"
+HKCR,"NvCpl.DesktopContext.1\CLSID",,%REG_SZ%,"{A70C977A-BF00-412C-90B7-034C51DA2439}"
+HKCR,"NvCpl.DesktopContext\CLSID",,%REG_SZ%,"{A70C977A-BF00-412C-90B7-034C51DA2439}"
+HKCR,"NvCpl.DesktopContext\CurVer",,%REG_SZ%,"NvCpl.DesktopContext.1"
+HKCR,"StereoVisionServer.Category_Video",,%REG_SZ%,"Category_Video Class"
+HKCR,"StereoVisionServer.Category_Video.1",,%REG_SZ%,"Category_Video Class"
+HKCR,"StereoVisionServer.Category_Video.1\CLSID",,%REG_SZ%,"{9C7684B5-FC31-4e57-A852-282D907911CC}"
+HKCR,"StereoVisionServer.Category_Video\CLSID",,%REG_SZ%,"{9C7684B5-FC31-4e57-A852-282D907911CC}"
+HKCR,"StereoVisionServer.Category_Video\CurVer",,%REG_SZ%,"StereoVisionServer.Category_Video.1"
+HKCR,"StereoVisionServer.GamesCompatibility",,%REG_SZ%,"GamesCompatibility Class"
+HKCR,"StereoVisionServer.GamesCompatibility\CLSID",,%REG_SZ%,"{2DF0ACC2-6D97-491b-9581-70A6001FD25A}"
+HKCR,"StereoVisionServer.GamesCompatibility\CurVer",,%REG_SZ%,"StereoVisionServer.GamesCompatibility.1"
+HKCR,"StereoVisionServer.MainServer",,%REG_SZ%,"MainServer Class"
+HKCR,"StereoVisionServer.MainServer.1",,%REG_SZ%,"MainServer Class"
+HKCR,"StereoVisionServer.MainServer.1\CLSID",,%REG_SZ%,"{C4A29158-1A7E-425f-B25E-80FA382AAA14}"
+HKCR,"StereoVisionServer.MainServer\CLSID",,%REG_SZ%,"{C4A29158-1A7E-425f-B25E-80FA382AAA14}"
+HKCR,"StereoVisionServer.MainServer\CurVer",,%REG_SZ%,"StereoVisionServer.MainServer.1"
+HKCR,"StereoVisionServer.SetUpStereoVision",,%REG_SZ%,"SetUpStereoVision Class"
+HKCR,"StereoVisionServer.SetUpStereoVision.1",,%REG_SZ%,"SetUpStereoVision Class"
+HKCR,"StereoVisionServer.SetUpStereoVision.1\CLSID",,%REG_SZ%,"{50125552-EC89-4049-B1B7-5FDBE38C8509}"
+HKCR,"StereoVisionServer.SetUpStereoVision\CLSID",,%REG_SZ%,"{50125552-EC89-4049-B1B7-5FDBE38C8509}"
+HKCR,"StereoVisionServer.SetUpStereoVision\CurVer",,%REG_SZ%,"StereoVisionServer.SetUpStereoVision.1"
+HKCR,"StereoVisionServer.Stereoscopic3DSettings",,%REG_SZ%,"Stereoscopic3DSettings Class"
+HKCR,"StereoVisionServer.Stereoscopic3DSettings.1",,%REG_SZ%,"Stereoscopic3DSettings Class"
+HKCR,"StereoVisionServer.Stereoscopic3DSettings.1\CLSID",,%REG_SZ%,"{00E80F18-EC5B-4FCF-A417-7348991A8D32}"
+HKCR,"StereoVisionServer.Stereoscopic3DSettings\CLSID",,%REG_SZ%,"{00E80F18-EC5B-4FCF-A417-7348991A8D32}"
+HKCR,"StereoVisionServer.Stereoscopic3DSettings\CurVer",,%REG_SZ%,"StereoVisionServer.Stereoscopic3DSettings.1"
+HKCR,"StereoVisionServer.VideoQualitySetting.1",,%REG_SZ%,"GamesCompatibility Class"
+HKCR,"StereoVisionServer.VideoQualitySetting.1\CLSID",,%REG_SZ%,"{2DF0ACC2-6D97-491b-9581-70A6001FD25A}"
+HKCR,"Video_TVServer.Category_Video",,%REG_SZ%,"Category_Video Class"
+HKCR,"Video_TVServer.Category_Video.1",,%REG_SZ%,"Category_Video Class"
+HKCR,"Video_TVServer.Category_Video.1\CLSID",,%REG_SZ%,"{3020E6D8-7D1A-4D3C-8B62-C4D4B8F28434}"
+HKCR,"Video_TVServer.Category_Video\CLSID",,%REG_SZ%,"{3020E6D8-7D1A-4D3C-8B62-C4D4B8F28434}"
+HKCR,"Video_TVServer.Category_Video\CurVer",,%REG_SZ%,"Video_TVServer.Category_Video.1"
+HKCR,"Video_TVServer.FullScreenVideo",,%REG_SZ%,"FullScreenVideo Class"
+HKCR,"Video_TVServer.FullScreenVideo.1",,%REG_SZ%,"FullScreenVideo Class"
+HKCR,"Video_TVServer.FullScreenVideo.1\CLSID",,%REG_SZ%,"{6F3F133D-61E3-4153-8AAE-056031E2B597}"
+HKCR,"Video_TVServer.FullScreenVideo\CLSID",,%REG_SZ%,"{6F3F133D-61E3-4153-8AAE-056031E2B597}"
+HKCR,"Video_TVServer.FullScreenVideo\CurVer",,%REG_SZ%,"Video_TVServer.FullScreenVideo.1"
+HKCR,"Video_TVServer.MainServer",,%REG_SZ%,"MainServer Class"
+HKCR,"Video_TVServer.MainServer.1",,%REG_SZ%,"MainServer Class"
+HKCR,"Video_TVServer.MainServer.1\CLSID",,%REG_SZ%,"{3E500C0C-5D15-4610-8095-7CEBD4C43F24}"
+HKCR,"Video_TVServer.MainServer\CLSID",,%REG_SZ%,"{3E500C0C-5D15-4610-8095-7CEBD4C43F24}"
+HKCR,"Video_TVServer.MainServer\CurVer",,%REG_SZ%,"Video_TVServer.MainServer.1"
+HKCR,"Video_TVServer.TVFormat",,%REG_SZ%,"TVFormat Class"
+HKCR,"Video_TVServer.TVFormat.1",,%REG_SZ%,"TVFormat Class"
+HKCR,"Video_TVServer.TVFormat.1\CLSID",,%REG_SZ%,"{89B53798-9A96-4758-9571-93B72CAA5381}"
+HKCR,"Video_TVServer.TVFormat\CLSID",,%REG_SZ%,"{89B53798-9A96-4758-9571-93B72CAA5381}"
+HKCR,"Video_TVServer.TVFormat\CurVer",,%REG_SZ%,"Video_TVServer.TVFormat.1"
+HKCR,"Video_TVServer.TVHDMIColor",,%REG_SZ%,"TVHDMIColor Class"
+HKCR,"Video_TVServer.TVHDMIColor.1",,%REG_SZ%,"TVHDMIColor Class"
+HKCR,"Video_TVServer.TVHDMIColor.1\CLSID",,%REG_SZ%,"{81667C73-F396-44a3-923B-3749C0840A58}"
+HKCR,"Video_TVServer.TVHDMIColor\CLSID",,%REG_SZ%,"{81667C73-F396-44a3-923B-3749C0840A58}"
+HKCR,"Video_TVServer.TVHDMIColor\CurVer",,%REG_SZ%,"Video_TVServer.TVHDMIColor.1"
+HKCR,"Video_TVServer.TVImage",,%REG_SZ%,"TVImage Class"
+HKCR,"Video_TVServer.TVImage.1",,%REG_SZ%,"TVImage Class"
+HKCR,"Video_TVServer.TVImage.1\CLSID",,%REG_SZ%,"{87CDE238-C2D9-4E31-99D7-DCD6A7E15F19}"
+HKCR,"Video_TVServer.TVImage\CLSID",,%REG_SZ%,"{87CDE238-C2D9-4E31-99D7-DCD6A7E15F19}"
+HKCR,"Video_TVServer.TVImage\CurVer",,%REG_SZ%,"Video_TVServer.TVImage.1"
+HKCR,"Video_TVServer.TVSizeMove",,%REG_SZ%,"TVSizeMove Class"
+HKCR,"Video_TVServer.TVSizeMove.1",,%REG_SZ%,"TVSizeMove Class"
+HKCR,"Video_TVServer.TVSizeMove.1\CLSID",,%REG_SZ%,"{63005CD0-8541-439c-A66A-617F4B1F2BCB}"
+HKCR,"Video_TVServer.TVSizeMove\CurVer",,%REG_SZ%,"Video_TVServer.TVSizeMove.1"
+HKCR,"Video_TVServer.VideoColorSettings",,%REG_SZ%,"VideoColorSettings Class"
+HKCR,"Video_TVServer.VideoColorSettings.1",,%REG_SZ%,"VideoColorSettings Class"
+HKCR,"Video_TVServer.VideoColorSettings.1\CLSID",,%REG_SZ%,"{055A7699-EAFF-47DF-8E55-41F4C0612BF3}"
+HKCR,"Video_TVServer.VideoColorSettings\CLSID",,%REG_SZ%,"{055A7699-EAFF-47DF-8E55-41F4C0612BF3}"
+HKCR,"Video_TVServer.VideoColorSettings\CurVer",,%REG_SZ%,"Video_TVServer.VideoColorSettings.1"
+HKCR,"Video_TVServer.VideoImageSettings",,%REG_SZ%,"VideoImageSettings Class"
+HKCR,"Video_TVServer.VideoImageSettings\CLSID",,%REG_SZ%,"{EF884939-F1EA-4EFB-B676-D2F802177C5F}"
+HKCR,"Video_TVServer.VideoImageSettings\CurVer",,%REG_SZ%,"Video_TVServer.VideoQualitySetting.1"
+HKCR,"Video_TVServer.VideoQualitySetting.1",,%REG_SZ%,"VideoImageSettings Class"
+HKCR,"Video_TVServer.VideoQualitySetting.1\CLSID",,%REG_SZ%,"{EF884939-F1EA-4EFB-B676-D2F802177C5F}"
+HKCR,"Video_TVServer.VideoZoom",,%REG_SZ%,"VideoZoom Class"
+HKCR,"Video_TVServer.VideoZoom.1",,%REG_SZ%,"VideoZoom Class"
+HKCR,"Video_TVServer.VideoZoom.1\CLSID",,%REG_SZ%,"{D385E909-3F89-4ECD-B38F-AC11F9FE6F1C}"
+HKCR,"Video_TVServer.VideoZoom\CLSID",,%REG_SZ%,"{D385E909-3F89-4ECD-B38F-AC11F9FE6F1C}"
+HKCR,"Video_TVServer.VideoZoom\CurVer",,%REG_SZ%,"Video_TVServer.VideoZoom.1"
+HKCR,"WMVFile\shellex\ContextMenuHandlers\NvPlayOnMyTV",,%REG_SZ%,""
+HKCR,"WorkStationServer.CategoryFS",,%REG_SZ%,"CategoryFS Class"
+HKCR,"WorkStationServer.CategoryFS.1",,%REG_SZ%,"CategoryFS Class"
+HKCR,"WorkStationServer.CategoryFS.1\CLSID",,%REG_SZ%,"{D8A8B20F-98D2-4EFF-8CE1-EF094F1A8043}"
+HKCR,"WorkStationServer.CategoryFS\CLSID",,%REG_SZ%,"{D8A8B20F-98D2-4EFF-8CE1-EF094F1A8043}"
+HKCR,"WorkStationServer.CategoryFS\CurVer",,%REG_SZ%,"WorkStationServer.CategoryFS.1"
+HKCR,"WorkStationServer.CategoryGfxSys",,%REG_SZ%,"CategoryGfxSys Class"
+HKCR,"WorkStationServer.CategoryGfxSys.1",,%REG_SZ%,"CategoryGfxSys Class"
+HKCR,"WorkStationServer.CategoryGfxSys.1\CLSID",,%REG_SZ%,"{7BB17C5A-3176-4B40-A3F9-39D4A64D7E83}"
+HKCR,"WorkStationServer.CategoryGfxSys\CLSID",,%REG_SZ%,"{7BB17C5A-3176-4B40-A3F9-39D4A64D7E83}"
+HKCR,"WorkStationServer.CategoryGfxSys\CurVer",,%REG_SZ%,"WorkStationServer.CategoryGfxSys.1"
+HKCR,"WorkStationServer.CategorySDI",,%REG_SZ%,"CategorySDI Class"
+HKCR,"WorkStationServer.CategorySDI.1",,%REG_SZ%,"CategorySDI Class"
+HKCR,"WorkStationServer.CategorySDI.1\CLSID",,%REG_SZ%,"{75BDD7A1-1224-41DA-90B4-457ACD874F12}"
+HKCR,"WorkStationServer.CategorySDI\CLSID",,%REG_SZ%,"{75BDD7A1-1224-41DA-90B4-457ACD874F12}"
+HKCR,"WorkStationServer.CategorySDI\CurVer",,%REG_SZ%,"WorkStationServer.CategorySDI.1"
+HKCR,"WorkStationServer.ECCSettings",,%REG_SZ%,"ECCSettings Class"
+HKCR,"WorkStationServer.ECCSettings.1",,%REG_SZ%,"ECCSettings Class"
+HKCR,"WorkStationServer.ECCSettings.1\CLSID",,%REG_SZ%,"{07333BBD-64AF-4206-899D-2809660C61C7}"
+HKCR,"WorkStationServer.ECCSettings\CLSID",,%REG_SZ%,"{07333BBD-64AF-4206-899D-2809660C61C7}"
+HKCR,"WorkStationServer.ECCSettings\CurVer",,%REG_SZ%,"WorkStationServer.ECCSettings.1"
+HKCR,"WorkStationServer.FSSettings",,%REG_SZ%,"FSSettings Class"
+HKCR,"WorkStationServer.FSSettings.1",,%REG_SZ%,"FSSettings Class"
+HKCR,"WorkStationServer.FSSettings.1\CLSID",,%REG_SZ%,"{86193C76-0DCA-4B33-83CA-6D7DCCA48D0B}"
+HKCR,"WorkStationServer.FSSettings\CLSID",,%REG_SZ%,"{86193C76-0DCA-4B33-83CA-6D7DCCA48D0B}"
+HKCR,"WorkStationServer.FSSettings\CurVer",,%REG_SZ%,"WorkStationServer.FSSettings.1"
+HKCR,"WorkStationServer.MainServer",,%REG_SZ%,"MainServer Class"
+HKCR,"WorkStationServer.MainServer.1",,%REG_SZ%,"MainServer Class"
+HKCR,"WorkStationServer.MainServer.1\CLSID",,%REG_SZ%,"{0EEC1AF6-7664-4D17-88A5-B71EF18A93BC}"
+HKCR,"WorkStationServer.MainServer\CLSID",,%REG_SZ%,"{0EEC1AF6-7664-4D17-88A5-B71EF18A93BC}"
+HKCR,"WorkStationServer.MainServer\CurVer",,%REG_SZ%,"WorkStationServer.MainServer.1"
+HKCR,"WorkStationServer.ManageMaximusSettings",,%REG_SZ%,"ManageMaximusSettings Class"
+HKCR,"WorkStationServer.ManageMaximusSettings.1",,%REG_SZ%,"ManageMaximusSettings Class"
+HKCR,"WorkStationServer.ManageMaximusSettings.1\CLSID",,%REG_SZ%,"{9BC49CE1-EFA7-4C49-8BB2-5355FEA6C170}"
+HKCR,"WorkStationServer.ManageMaximusSettings\CLSID",,%REG_SZ%,"{9BC49CE1-EFA7-4C49-8BB2-5355FEA6C170}"
+HKCR,"WorkStationServer.ManageMaximusSettings\CurVer",,%REG_SZ%,"WorkStationServer.ManageMaximusSettings.1"
+HKCR,"WorkStationServer.ManageQuadroPlex",,%REG_SZ%,"ManageQuadroPlex Class"
+HKCR,"WorkStationServer.ManageQuadroPlex.1",,%REG_SZ%,"ManageQuadroPlex Class"
+HKCR,"WorkStationServer.ManageQuadroPlex.1\CLSID",,%REG_SZ%,"{FC7AA68D-EAFB-4ce9-A012-9C33E7B02B49}"
+HKCR,"WorkStationServer.ManageQuadroPlex\CLSID",,%REG_SZ%,"{FC7AA68D-EAFB-4ce9-A012-9C33E7B02B49}"
+HKCR,"WorkStationServer.ManageQuadroPlex\CurVer",,%REG_SZ%,"WorkStationServer.ManageQuadroPlex.1"
+HKCR,"WorkStationServer.ManageSdiOutput",,%REG_SZ%,"ManageSdiOutput Class"
+HKCR,"WorkStationServer.ManageSdiOutput.1",,%REG_SZ%,"ManageSdiOutput Class"
+HKCR,"WorkStationServer.ManageSdiOutput.1\CLSID",,%REG_SZ%,"{DDEF97F5-723E-47D2-87B1-14C39EFBAE11}"
+HKCR,"WorkStationServer.ManageSdiOutput\CLSID",,%REG_SZ%,"{DDEF97F5-723E-47D2-87B1-14C39EFBAE11}"
+HKCR,"WorkStationServer.ManageSdiOutput\CurVer",,%REG_SZ%,"WorkStationServer.ManageSdiOutput.1"
+HKCR,"WorkStationServer.Overlap",,%REG_SZ%,"Overlap Class"
+HKCR,"WorkStationServer.Overlap.1",,%REG_SZ%,"Overlap Class"
+HKCR,"WorkStationServer.Overlap.1\CLSID",,%REG_SZ%,"{9B0C8B3B-8CA5-46cb-B0DD-64542BBA21DC}"
+HKCR,"WorkStationServer.Overlap\CLSID",,%REG_SZ%,"{9B0C8B3B-8CA5-46cb-B0DD-64542BBA21DC}"
+HKCR,"WorkStationServer.Overlap\CurVer",,%REG_SZ%,"WorkStationServer.Overlap.1"
+HKCR,"WorkStationServer.Panoramic",,%REG_SZ%,"Panoramic Class"
+HKCR,"WorkStationServer.Panoramic.1",,%REG_SZ%,"Panoramic Class"
+HKCR,"WorkStationServer.Panoramic.1\CLSID",,%REG_SZ%,"{294EC7E3-94B7-4A6C-8636-09B33674D58F}"
+HKCR,"WorkStationServer.Panoramic\CLSID",,%REG_SZ%,"{294EC7E3-94B7-4A6C-8636-09B33674D58F}"
+HKCR,"WorkStationServer.Panoramic\CurVer",,%REG_SZ%,"WorkStationServer.Panoramic.1"
+HKCR,"WorkStationServer.SDISettings",,%REG_SZ%,"SDISettings Class"
+HKCR,"WorkStationServer.SDISettings.1",,%REG_SZ%,"SDISettings Class"
+HKCR,"WorkStationServer.SDISettings.1\CLSID",,%REG_SZ%,"{7735B86B-2EAB-43EF-B5DE-31A15F767C14}"
+HKCR,"WorkStationServer.SDISettings\CLSID",,%REG_SZ%,"{7735B86B-2EAB-43EF-B5DE-31A15F767C14}"
+HKCR,"WorkStationServer.SDISettings\CurVer",,%REG_SZ%,"WorkStationServer.SDISettings.1"
+HKCR,"WorkStationServer.SetupMosaic",,%REG_SZ%,"SetupMosaic Class"
+HKCR,"WorkStationServer.SetupMosaic.1",,%REG_SZ%,"SetupMosaic Class"
+HKCR,"WorkStationServer.SetupMosaic.1\CLSID",,%REG_SZ%,"{9C1878FA-A0CB-4F01-8762-A6BF18021C94}"
+HKCR,"WorkStationServer.SetupMosaicEx",,%REG_SZ%,"SetupMosaicEx Class"
+HKCR,"WorkStationServer.SetupMosaicEx.1",,%REG_SZ%,"SetupMosaicEx Class"
+HKCR,"WorkStationServer.SetupMosaicEx.1\CLSID",,%REG_SZ%,"{1618348E-35B3-4631-8C04-2AB15AF5007D}"
+HKCR,"WorkStationServer.SetupMosaicEx\CLSID",,%REG_SZ%,"{1618348E-35B3-4631-8C04-2AB15AF5007D}"
+HKCR,"WorkStationServer.SetupMosaicEx\CurVer",,%REG_SZ%,"WorkStationServer.SetupMosaicEx.1"
+HKCR,"WorkStationServer.SetupMosaic\CLSID",,%REG_SZ%,"{9C1878FA-A0CB-4F01-8762-A6BF18021C94}"
+HKCR,"WorkStationServer.SetupMosaic\CurVer",,%REG_SZ%,"WorkStationServer.SetupMosaic.1"
+HKCR,"WorkStationServer.SynchronizeDisplays",,%REG_SZ%,"SynchronizeDisplays Class"
+HKCR,"WorkStationServer.SynchronizeDisplays.1",,%REG_SZ%,"SynchronizeDisplays Class"
+HKCR,"WorkStationServer.SynchronizeDisplays.1\CLSID",,%REG_SZ%,"{6A10CEAB-0813-48BA-9769-BD98F03F3EB8}"
+HKCR,"WorkStationServer.SynchronizeDisplays\CLSID",,%REG_SZ%,"{6A10CEAB-0813-48BA-9769-BD98F03F3EB8}"
+HKCR,"WorkStationServer.SynchronizeDisplays\CurVer",,%REG_SZ%,"WorkStationServer.SynchronizeDisplays.1"
+HKCR,"WorkStationServer.TopologyViewer",,%REG_SZ%,"TopologyViewer Class"
+HKCR,"WorkStationServer.TopologyViewer.1",,%REG_SZ%,"TopologyViewer Class"
+HKCR,"WorkStationServer.TopologyViewer.1\CLSID",,%REG_SZ%,"{5135A9C0-F05A-4FBD-8EC6-6B920CD387F6}"
+HKCR,"WorkStationServer.TopologyViewerEx",,%REG_SZ%,"TopologyViewerEx Class"
+HKCR,"WorkStationServer.TopologyViewerEx.1",,%REG_SZ%,"TopologyViewerEx Class"
+HKCR,"WorkStationServer.TopologyViewerEx.1\CLSID",,%REG_SZ%,"{D474EBC0-2851-4389-893D-030D2B6BCED1}"
+HKCR,"WorkStationServer.TopologyViewerEx\CLSID",,%REG_SZ%,"{D474EBC0-2851-4389-893D-030D2B6BCED1}"
+HKCR,"WorkStationServer.TopologyViewerEx\CurVer",,%REG_SZ%,"WorkStationServer.TopologyViewerEx.1"
+HKCR,"WorkStationServer.TopologyViewerVista",,%REG_SZ%,"TopologyViewerVista Class"
+HKCR,"WorkStationServer.TopologyViewerVista.1",,%REG_SZ%,"TopologyViewerVista Class"
+HKCR,"WorkStationServer.TopologyViewerVista.1\CLSID",,%REG_SZ%,"{54CEE07E-E1C8-45DB-B550-417E75C4CA58}"
+HKCR,"WorkStationServer.TopologyViewerVista\CLSID",,%REG_SZ%,"{54CEE07E-E1C8-45DB-B550-417E75C4CA58}"
+HKCR,"WorkStationServer.TopologyViewerVista\CurVer",,%REG_SZ%,"WorkStationServer.TopologyViewerVista.1"
+HKCR,"WorkStationServer.TopologyViewer\CLSID",,%REG_SZ%,"{5135A9C0-F05A-4FBD-8EC6-6B920CD387F6}"
+HKCR,"WorkStationServer.TopologyViewer\CurVer",,%REG_SZ%,"WorkStationServer.TopologyViewer.1"
+HKCR,"batfile\ShellEx\ContextMenuHandlers\OpenGLShExt",,%REG_SZ%,"{E97DEC16-A50D-49bb-AE24-CF682282E08D}"
+HKCR,"cmdfile\ShellEx\ContextMenuHandlers\OpenGLShExt",,%REG_SZ%,"{E97DEC16-A50D-49bb-AE24-CF682282E08D}"
+HKCR,"comfile\ShellEx\ContextMenuHandlers\OpenGLShExt",,%REG_SZ%,"{E97DEC16-A50D-49bb-AE24-CF682282E08D}"
+HKCR,"exefile\ShellEx\ContextMenuHandlers\NvAppShExt",,%REG_SZ%,"{A929C4CE-FD36-4270-B4F5-34ECAC5BD63C}"
+HKCR,"exefile\ShellEx\ContextMenuHandlers\OpenGLShExt",,%REG_SZ%,"{E97DEC16-A50D-49bb-AE24-CF682282E08D}"
+HKCR,"jsefile\ShellEx\ContextMenuHandlers\OpenGLShExt",,%REG_SZ%,"{E97DEC16-A50D-49bb-AE24-CF682282E08D}"
+HKCR,"jsfile\ShellEx\ContextMenuHandlers\OpenGLShExt",,%REG_SZ%,"{E97DEC16-A50D-49bb-AE24-CF682282E08D}"
+HKCR,"lnkfile\ShellEx\ContextMenuHandlers\NvAppShExt",,%REG_SZ%,"{A929C4CE-FD36-4270-B4F5-34ECAC5BD63C}"
+HKCR,"lnkfile\ShellEx\ContextMenuHandlers\OpenGLShExt",,%REG_SZ%,"{E97DEC16-A50D-49bb-AE24-CF682282E08D}"
+HKCR,"mpegfile\shellex\ContextMenuHandlers\NvPlayOnMyTV",,%REG_SZ%,""
+HKCR,"mscfile\ShellEx\ContextMenuHandlers\OpenGLShExt",,%REG_SZ%,"{E97DEC16-A50D-49bb-AE24-CF682282E08D}"
+HKCR,"vbefile\ShellEx\ContextMenuHandlers\OpenGLShExt",,%REG_SZ%,"{E97DEC16-A50D-49bb-AE24-CF682282E08D}"
+HKCR,"vbsfile\ShellEx\ContextMenuHandlers\OpenGLShExt",,%REG_SZ%,"{E97DEC16-A50D-49bb-AE24-CF682282E08D}"
+HKCR,"wsffile\ShellEx\ContextMenuHandlers\OpenGLShExt",,%REG_SZ%,"{E97DEC16-A50D-49bb-AE24-CF682282E08D}"
+HKCR,"wshfile\ShellEx\ContextMenuHandlers\OpenGLShExt",,%REG_SZ%,"{E97DEC16-A50D-49bb-AE24-CF682282E08D}"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Explorer",GlobalAssocChangedCounter,%REG_DWORD%,0x00000001
+HKR,"Global\NVTweak",FirstRunAfterDriverInstallation,%REG_DWORD%,0x1
+HKR,"Global\NVTweak",NvCplTvLocaleAutoDetect,%REG_DWORD%,1
+HKR,"Global\NVTweak",OptimusProfilesInstalled,%REG_DWORD%,0x0
+HKR,"Global\NvCplApi\Policies",ContextUIPolicy,%REG_DWORD%,2
+HKR,"Global\NvTweak",InstalledDisplayServers,%REG_SZ%,"%13%\"
+HKR,"Global\Startup\AcePersistenceOnDriverLoad",,%REG_DWORD%,0x0
+HKR,"Global\Startup\AcePersistenceOnInstall",,%REG_DWORD%,0x0
+HKR,"Global\Startup\AcePersistenceStartup",,%REG_DWORD%,0x0
+HKR,"Global\Startup\AceResumeFromSuspend",,%REG_DWORD%,0x0
+HKR,"Global\Startup\AdjustPRROnLogin",,%REG_DWORD%,0x0
+HKR,"Global\Startup\AdjustPRROnServiceStart",,%REG_DWORD%,0x0
+HKR,"Global\Startup\AdjustSmoothScalingOnInstall",,%REG_DWORD%,0x0
+HKR,"Global\Startup\ApplyCommandLineMode",,%REG_DWORD%,0x0
+HKR,"Global\Startup\ApplyScalingOverride",,%REG_DWORD%,0x0
+HKR,"Global\Startup\DisableMSStereo",,%REG_DWORD%,0x0
+HKR,"Global\Startup\EnableSli",,%REG_DWORD%,0x0
+HKR,"Global\Startup\GSyncOverinstallPersistence",,%REG_DWORD%,0x0
+HKR,"Global\Startup\GetUserDataOnInstall",,%REG_DWORD%,0x0
+HKR,"Global\Startup\IDMColors",,%REG_DWORD%,0x0
+HKR,"Global\Startup\IDMInitialize",,%REG_DWORD%,0x0
+HKR,"Global\Startup\ReEnumAudioDevicesOnBoot",,%REG_DWORD%,0x0
+HKR,"Global\Startup\RefreshHDMIAudioDriver",,%REG_DWORD%,0x0
+HKR,"Global\Startup\RemoveControlPanelClientr",,%REG_DWORD%,0x0
+HKR,"Global\Startup\RestoreSpanConfig",,%REG_DWORD%,0x0
+HKR,"Global\Startup\RestoreSpanConfigOnReboot",,%REG_DWORD%,0x0
+HKR,"Global\Startup\SdiPersistence",,%REG_DWORD%,0x0
+HKR,"Global\Startup\SdiPersistenceUpgrade",,%REG_DWORD%,0x0
+HKR,"Global\Startup\SendNonNvDisplayDetails",,%REG_DWORD%,0x0
+HKR,"Global\Startup\SendTelemetryData",,%REG_DWORD%,0x0
+HKR,"Global\Startup\SetVRRModeValueForASyncDisplay",,%REG_DWORD%,0x0
+HKR,"Global\Startup\ShowStoreNvcplNotification",,%REG_DWORD%,0x0
+HKR,"Global\Startup\ShowVRRBalloonNotification",,%REG_DWORD%,0x0
+HKR,"Global\Startup\ShowVideoBridgeOnWrongFingerNotification",,%REG_DWORD%,0x0
+HKR,"Global\Startup\StartS3SR",,%REG_DWORD%,0x0
+HKR,"Global\Startup\SwapSLIMasterGpuOnStart",,%REG_DWORD%,0x0
+HKR,"Global\Startup\TVLocaleBoot",,%REG_DWORD%,0x0
+HKR,"Global\Startup\UpdateRegistryModeSettings",,%REG_DWORD%,0x0
+HKR,"Global\Startup\UpgradeBezelPeekHotkey",,%REG_DWORD%,0x0
+HKR,"Global\Startup\UpgradeGsyncPersistence",,%REG_DWORD%,0x0
+HKR,"Global\Startup\UpgradeSpanPersistence",,%REG_DWORD%,0x0
+HKR,"Global\Startup\WinSATAssessment",,%REG_DWORD%,0x0
+HKR,"NVControlPanel2\RegisteredServers",DevtoolsServer,%REG_SZ%,"{02C68609-99E3-4A8F-9575-4973D401C06F}"
+HKR,"NVControlPanel2\RegisteredServers",DisplayPanelServer,%REG_SZ%,"{73BCA54E-6AEB-4597-8F27-E1284FF12722}"
+HKR,"NVControlPanel2\RegisteredServers",GamesConfigServer,%REG_SZ%,"{3156EC84-29BD-4EAA-AE0A-817ED606FA99}"
+HKR,"NVControlPanel2\RegisteredServers",LicensingServer,%REG_SZ%,"{47AADF36-BA70-4E24-BBDE-20EC9FC139FD}"
+HKR,"NVControlPanel2\RegisteredServers",StereoVisionServer,%REG_SZ%,"{C4A29158-1A7E-425f-B25E-80FA382AAA14}"
+HKR,"NVControlPanel2\RegisteredServers",Video_TVServer,%REG_SZ%,"{3E500C0C-5D15-4610-8095-7CEBD4C43F24}"
+HKR,"NVControlPanel2\RegisteredServers",WorkStationServer,%REG_SZ%,"{0EEC1AF6-7664-4D17-88A5-B71EF18A93BC}"
+HKR,"NvControlPanel2",HelpfileURL,%REG_SZ%,"https://www.nvidia.com/content/drivers/redirect.asp"
+HKR,"NvControlPanel2\RegisteredServers\Overrides",{01504157-8839-4BF6-9B5B-51165A967B2B},%REG_DWORD%,0x0
+HKR,"NvControlPanel2\RegisteredServers\Overrides",{63005CD0-8541-439c-A66A-617F4B1F2BCB},%REG_DWORD%,0x0
+HKR,"NvControlPanel2\RegisteredServers\Overrides",{684FA5EB-5222-47eb-8448-C14391005105},%REG_DWORD%,0x0
+
+[nv_cplSetup_copy_nvcpl_dll]
+nvcpl.dll,,,0x00004000
+
+[nv_cplSetup_copyfiles]
+nv3dappshext.dll,,,0x00000010
+nv3dappshextr.dll,,,0x00000010
+nvcoproc.bin,,,0x00000010
+nvcpl.dll,,,0x00000010
+nvdevtools.dll,,,0x00000010
+nvdevtoolsr.dll,,,0x00000010
+nvdisps.dll,,,0x00000010
+nvdispsr.dll,,,0x00000010
+nvgames.dll,,,0x00000010
+nvgamesr.dll,,,0x00000010
+nvlicensings.dll,,,0x00000010
+nvlicensingsr.dll,,,0x00000010
+nvshext.dll,,,0x00000010
+nvsmartmax.dll,,,0x00000010
+nvsmartmax64.dll,,,0x00000010
+nvsmartmaxapp.exe,,,0x00000010
+nvsmartmaxapp64.exe,,,0x00000010
+nvsvc64.dll,,,0x00000010
+nvsvcr.dll,,,0x00000010
+nvsvs.dll,,,0x00000010
+nvsvsr.dll,,,0x00000010
+nvui.dll,,,0x00000010
+nvuir.dll,,,0x00000010
+nvvitvs.dll,,,0x00000010
+nvvitvsr.dll,,,0x00000010
+nvwss.dll,,,0x00000010
+nvwssr.dll,,,0x00000010
+nvxdapix.dll,,,0x00000010
+nvxdbat.dll,,,0x00000010
+nvxdplcy.dll,,,0x00000010
+
+[nv_dch_delreg]
+HKLM,"Software\Khronos\OpenCL\Vendors","nvopencl.dll"
+HKLM,"Software\Wow6432Node\Khronos\OpenCL\Vendors","nvopencl.dll"
+HKLM,"System\CurrentControlSet\Control\GraphicsDrivers\MemoryManager",Period.EnableEvictionThresholdForWrite
+HKLM,"System\CurrentControlSet\Services\nv\Performance",Close
+HKLM,"System\CurrentControlSet\Services\nv\Performance",Collect
+HKLM,"System\CurrentControlSet\Services\nv\Performance",Library
+HKLM,"System\CurrentControlSet\Services\nv\Performance",Open
+HKR,"",RMUseAggressiveGC6
+HKR,"",WDMDriver
+HKR,,"CX875.HD480i.default.overscan"
+HKR,,"CX875.HD576i.default.overscan"
+HKR,,"NV36ZORAN.525@60Hz.saturation"
+HKR,,"NV36ZORAN.625@50Hz.saturation"
+HKR,,"NV36ZORAN.connector"
+HKR,,"NVZORAN.connector"
+HKR,,"NVZORAN.laststdSDTV"
+HKR,,"NVZORAN.standard"
+HKR,,"RMGpuSurpriseRemoval"
+HKR,,APMSupport
+HKR,,AllowAutoAudioInfoFrame
+HKR,,AllowMaxPerf
+HKR,,AllowNonDFPAsPrimary
+HKR,,AvailWin2kDualview
+HKR,,CH7009.default.flickerfilter
+HKR,,COLORCOMPRESSENABLE
+HKR,,CUST_MODE
+HKR,,CX25875.HD480i.0720x0480.flickerfilter
+HKR,,CX875.HD480i.0720x0480.flickerfilter
+HKR,,CX875.HD480p.overscanshift
+HKR,,CX875.HD576p.overscanshift
+HKR,,CapabilityOverride
+HKR,,DCBOverride0
+HKR,,DCBOverride1
+HKR,,DecodeCtl
+HKR,,DellSwitch1
+HKR,,DevicesConnected
+HKR,,DrvOptions
+HKR,,EdgeBlendingData
+HKR,,EnableBrightnessControl
+HKR,,EnableCoreVoltage
+HKR,,EnableOverDrive
+HKR,,EnableOverdriveDataFromEdidInfo
+HKR,,EnableOverdriveEditPort0
+HKR,,EnableOverdriveEditPort1
+HKR,,EnableOverdriveEditPort2
+HKR,,EnableSystemMemoryTiling
+HKR,,ExposePrimaryDeviceOnly
+HKR,,ExtTempHighLimit
+HKR,,FSDOSHotKeyPolicy
+HKR,,FailAttachment
+HKR,,FailNonPrimaryDevice
+HKR,,FastResume
+HKR,,ForceExtOnS3Resume
+HKR,,GlitchFreeMClk
+HKR,,GridLicensedFeatures
+HKR,,HAA
+HKR,,HotKeyOptions
+HKR,,HotKeyUseOSResolution
+HKR,,LVDSReduceFreq
+HKR,,LidBehavior
+HKR,,LidStaysOffOnOpen
+HKR,,LimitedVideoSystem
+HKR,,LocalTempHighLimit
+HKR,,MB_Enable
+HKR,,MVNumKeys
+HKR,,MapOSD3ToNV
+HKR,,MapOSD4ToNV
+HKR,,Max16x12
+HKR,,MaxPerfWithPerfmon
+HKR,,MinPstateForHDVideo
+HKR,,MinPstateForSDVideo
+HKR,,Mobile
+HKR,,MultiFunctionSupported
+HKR,,MutuallyExDevs
+HKR,,NT4MultiDevEnable
+HKR,,NV36ZORAN.connector
+HKR,,NVIF0000000100000000
+HKR,,NVIF0000000B00000000
+HKR,,NVIF0000000B00000001
+HKR,,NVIF0000000B00000005
+HKR,,NVREGSWITCHES
+HKR,,NVZORAN.connector
+HKR,,OEMRandomModeFilter
+HKR,,OVERDRIVE
+HKR,,OverDriveData0
+HKR,,OverDriveData1
+HKR,,OverDriveData2
+HKR,,OverDriveData3
+HKR,,OverDriveData5
+HKR,,OverDriveData8
+HKR,,OverDriveData9
+HKR,,OverDriveDataA
+HKR,,OverDriveDataC
+HKR,,OverDriveDataD
+HKR,,OverScan720Level
+HKR,,OverScanFSVMLevel
+HKR,,OverdrivePanelProductCode0
+HKR,,Override1400x1050
+HKR,,OverrideDisRM4High
+HKR,,OverrideEdidFlags0
+HKR,,OverrideEdidFlags1
+HKR,,OverrideEdidFlags2
+HKR,,OverrideEdidFlags3
+HKR,,OverrideEdidFlags4
+HKR,,OverrideSBIOSDevs
+HKR,,PSSwitch1
+HKR,,PanScanSelection
+HKR,,Panel00
+HKR,,Panel01
+HKR,,Panel02
+HKR,,Panel03
+HKR,,Panel04
+HKR,,Panel05
+HKR,,Panel06
+HKR,,Panel07
+HKR,,Panel08
+HKR,,Panel09
+HKR,,Panel0A
+HKR,,Panel0B
+HKR,,Panel0C
+HKR,,Panel0D
+HKR,,Panel0E
+HKR,,Panel0F
+HKR,,PanelBrightnessLimits
+HKR,,PanelPWMDutyRange
+HKR,,PanelPWMFrequency
+HKR,,PerfLevelSrc
+HKR,,PowerMizerDefault
+HKR,,PowerMizerDefaultAC
+HKR,,PowerMizerEnable
+HKR,,PowerMizerLevel
+HKR,,PowerMizerLevelAC
+HKR,,PowerMizerSelected
+HKR,,PowerMizerSelectedAC
+HKR,,PowerSaverHsyncOn
+HKR,,PreferSbiosFpMode
+HKR,,PrevTwinViewInfo
+HKR,,PruningMode
+HKR,,PushBufferMemorySpace
+HKR,,RM200026907
+HKR,,RM496596
+HKR,,ReBootedNowForceMode
+HKR,,RmAcpiDdcBug400359WAR
+HKR,,RmAvoidBusyReadingTimer
+HKR,,RmCacheLoc
+HKR,,RmCrtHotplug
+HKR,,RmDisableACPI
+HKR,,RmDisableCompression
+HKR,,RmDisableInst2Sys
+HKR,,RmDisablePteCoalesce
+HKR,,RmDisableRpSerrWorkarounds
+HKR,,RmDynamicSLIAllowed
+HKR,,RmEnableBiosDevSelect
+HKR,,RmEnableMPSync
+HKR,,RmEnablePbi
+HKR,,RmEnablePowerSupplyCapacity
+HKR,,RmEnableTVFormatNotify
+HKR,,RmFixTcVcMap
+HKR,,RmForcePerfLevelOnD3Cold
+HKR,,RmI2cValidatedPortMask
+HKR,,RmInduceDeviceScan
+HKR,,RmMaintainDevs
+HKR,,RmMaintainScaling
+HKR,,RmMaintainTVStandard
+HKR,,RmNVIFFunctions
+HKR,,RmOnDemandVBlank
+HKR,,RmPowerSupplyCapacity
+HKR,,RmSecPrivContWar
+HKR,,RmThermalConversionRate
+HKR,,RmThermalProviderInfo
+HKR,,RmThermalProviderNum
+HKR,,RmTilingFormatMode
+HKR,,RmTvoAlwaysDetectEIAJCVBS
+HKR,,RmTvoDisableComponentOverscanHDTV
+HKR,,RmTvoPedestalMS
+HKR,,RmTvoPreferredDetectionHDTV
+HKR,,RmTvoWhitepointOverride
+HKR,,SaveSettings
+HKR,,SoftEDIDs
+HKR,,TestAnalogLoadAlways
+HKR,,ThermalPolicySW1
+HKR,,TwinViewDisabled
+HKR,,TwinViewInfo
+HKR,,UseGDIRefreshRate
+HKR,,UseHWSelectedDevice
+HKR,,UseHotKeySameMode
+HKR,,UseUncachedPCIMappings
+HKR,,UserModeDriverGUID
+HKR,,UserModeDriverName
+HKR,,VBIOSGpioTableUsageMask
+HKR,,VPVer
+HKR,,VarBusLinkWidth
+HKR,,VgaCompatible
+HKR,,WidePanelBehavior
+HKR,,ZCOMPRESSENABLE
+HKR,,_Default_Global_XALG_Color_Range
+HKR,,_Default_Global_XEN_Blue_Stretch
+HKR,,_Default_Global_XEN_Color_Range
+HKR,,_Default_Global_XEN_Dynamic_Contrast
+HKR,,_Default_Global_XEN_Green_Stretch
+HKR,,_Default_Global_XEN_Skin_Tone
+HKR,,_User_DFP0_XALG_Deinterlace
+HKR,,_User_DFP0_XEN_Deinterlace
+HKR,,nvEDIDPruning
+
+[nv_dchu_service_addreg]
+HKR,,DCHUVen,%REG_DWORD%,0x10DE
+
+[nv_global_addreg]
+HKR,,VgaCompatible,%REG_DWORD%,0
+
+[nv_libcuda_copyfiles]
+libcuda.so,libcuda_loader.so,,0x00004000
+libcuda.so.1,libcuda_loader.so,,0x00004000
+libcuda.so.1.1,libcuda_loader.so,,0x00004000
+libcudadebugger.so.1,,,
+libnvcuvid.so,libnvcuvid.so.1,0x00004000
+libnvcuvid.so.1,,0x00004000
+libnvdxdlkernels.so,,0x00004000
+libnvidia-encode.so,libnvidia-encode.so.1,0x00004000
+libnvidia-encode.so.1,,0x00004000
+libnvidia-gpucomp.so,,,0x00004000
+libnvidia-ml.so.1,libnvidia-ml_loader.so,,0x00004000
+libnvidia-ngx.so.1,,0x00004000
+libnvidia-opticalflow.so,libnvidia-opticalflow.so.1,0x00004000
+libnvidia-opticalflow.so.1,,0x00004000
+libnvoptix.so.1,libnvoptix_loader.so.1,0x00004000
+libnvwgf2umx.so,,0x00004000
+nvidia-ngx-updater,,0x00004000
+nvidia-smi,,,
+
+[nv_license_copyfiles]
+license.txt,,,0x00004000
+
+[nv_miscBase_addreg]
+HKCR,"CLSID\{60F44560-5A20-4857-BFEF-D29773CB8040}",,%REG_SZ%,"NVIDIA H.264 Encoder MFT"
+HKCR,"CLSID\{60F44560-5A20-4857-BFEF-D29773CB8040}\InProcServer32",,%REG_EXPAND_SZ%,"%13%\nvEncMFTH264x.dll"
+HKCR,"CLSID\{60F44560-5A20-4857-BFEF-D29773CB8040}\InProcServer32",ThreadingModel,%REG_SZ%,"Both"
+HKCR,"CLSID\{70F36578-2741-454F-B494-E8563DDD1CB4}",,%REG_SZ%,"NVIDIA MJPEG Video Decoder MFT"
+HKCR,"CLSID\{70F36578-2741-454F-B494-E8563DDD1CB4}\InProcServer32",,%REG_EXPAND_SZ%,"%13%\nvDecMFTMjpegx.dll"
+HKCR,"CLSID\{70F36578-2741-454F-B494-E8563DDD1CB4}\InProcServer32",ThreadingModel,%REG_SZ%,"Both"
+HKCR,"CLSID\{966F107C-8EA2-425D-B822-E4A71BEF01D7}",,%REG_SZ%,"NVIDIA HEVC Encoder MFT"
+HKCR,"CLSID\{966F107C-8EA2-425D-B822-E4A71BEF01D7}\InProcServer32",,%REG_EXPAND_SZ%,"%13%\nvEncMFThevcx.dll"
+HKCR,"CLSID\{966F107C-8EA2-425D-B822-E4A71BEF01D7}\InProcServer32",ThreadingModel,%REG_SZ%,"Both"
+HKCR,"MediaFoundation\Transforms\60F44560-5A20-4857-BFEF-D29773CB8040",,%REG_SZ%,"NVIDIA H.264 Encoder MFT"
+HKCR,"MediaFoundation\Transforms\60F44560-5A20-4857-BFEF-D29773CB8040",Attributes,%REG_BINARY%,41,46,4d,49,06,00,00,00,ac,66,b8,2f,78,b0,42,49,ab,6c,00,3d,05,cd,a6,74,1f,00,00,00,00,00,00,00,32,00,00,00,c8,00,00,00,ae,fb,4f,31,41,5b,95,4c,9c,19,4e,7d,58,6f,ac,e3,1f,00,00,00,00,00,00,00,32,00,00,00,fa,00,00,00,cc,b0,ec,3a,5b,03,cc,4b,81,85,2b,8d,55,1e,f3,af,1f,00,00,00,00,00,00,00,12,00,00,00,2c,01,00,00,15,cb,a7,88,07,7b,34,4a,91,28,e6,4c,67,03,c4,d3,13,00,00,00,00,00,00,00,08,00,00,00,00,00,00,00,93,90,4b,f3,e0,05,16,4b,99,3d,3e,2a,2c,de,6a,d3,15,00,00,00,00,00,00,00,54,14,0d,00,12,00,09,00,9a,69,1a,f8,9a,64,7d,49,8c,73,29,f8,fe,d6,ad,7a,13,00,00,00,00,00,00,00,01,00,00,00,00,00,00,00,4e,00,56,00,49,00,44,00,49,00,41,00,20,00,48,00,2e,00,32,00,36,00,34,00,20,00,45,00,6e,00,63,00,6f,00,64,00,65,00,72,00,20,00,4d,00,46,00,54,00,00,00,4e,00,56,00,49,00,44,00,49,00,41,00,20,00,48,00,2e,00,32,00,36,00,34,00,20,00,45,00,6e,00,63,00,6f,00,64,00,65,00,72,00,20,00,4d,00,46,00,54,00,00,00,56,00,45,00,4e,00,5f,00,31,00,30,00,44,00,45,00,00,00
+HKCR,"MediaFoundation\Transforms\60F44560-5A20-4857-BFEF-D29773CB8040",InputTypes,%REG_BINARY%,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,34,32,30,4f,00,00,10,00,80,00,00,aa,00,38,9b,71,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,4e,56,31,32,00,00,10,00,80,00,00,aa,00,38,9b,71,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,15,00,00,00,00,00,10,00,80,00,00,aa,00,38,9b,71
+HKCR,"MediaFoundation\Transforms\60F44560-5A20-4857-BFEF-D29773CB8040",MFTFlags,%REG_DWORD%,0x00000004
+HKCR,"MediaFoundation\Transforms\60F44560-5A20-4857-BFEF-D29773CB8040",OutputTypes,%REG_BINARY%,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,48,32,36,34,00,00,10,00,80,00,00,aa,00,38,9b,71,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00
+HKCR,"MediaFoundation\Transforms\70F36578-2741-454F-B494-E8563DDD1CB4",,%REG_SZ%,"NVIDIA MJPEG Video Decoder MFT"
+HKCR,"MediaFoundation\Transforms\70F36578-2741-454F-B494-E8563DDD1CB4",Attributes,%REG_BINARY%,41,46,4d,49,05,00,00,00,ac,66,b8,2f,78,b0,42,49,ab,6c,00,3d,05,cd,a6,74,1f,00,00,00,00,00,00,00,3e,00,00,00,a8,00,00,00,ae,fb,4f,31,41,5b,95,4c,9c,19,4e,7d,58,6f,ac,e3,1f,00,00,00,00,00,00,00,3e,00,00,00,e6,00,00,00,cc,b0,ec,3a,5b,03,cc,4b,81,85,2b,8d,55,1e,f3,af,1f,00,00,00,00,00,00,00,12,00,00,00,24,01,00,00,15,cb,a7,88,07,7b,34,4a,91,28,e6,4c,67,03,c4,d3,13,00,00,00,00,00,00,00,08,00,00,00,00,00,00,00,9a,69,1a,f8,9a,64,7d,49,8c,73,29,f8,fe,d6,ad,7a,13,00,00,00,00,00,00,00,01,00,00,00,00,00,00,00,4e,00,56,00,49,00,44,00,49,00,41,00,20,00,4d,00,4a,00,50,00,45,00,47,00,20,00,56,00,69,00,64,00,65,00,6f,00,20,00,44,00,65,00,63,00,6f,00,64,00,65,00,72,00,20,00,4d,00,46,00,54,00,00,00,4e,00,56,00,49,00,44,00,49,00,41,00,20,00,4d,00,4a,00,50,00,45,00,47,00,20,00,56,00,69,00,64,00,65,00,6f,00,20,00,44,00,65,00,63,00,6f,00,64,00,65,00,72,00,20,00,4d,00,46,00,54,00,00,00,56,00,45,00,4e,00,5f,00,31,00,30,00,44,00,45,00,00,00
+HKCR,"MediaFoundation\Transforms\70F36578-2741-454F-B494-E8563DDD1CB4",InputTypes,%REG_BINARY%,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,4d,4a,50,47,00,00,10,00,80,00,00,aa,00,38,9b,71
+HKCR,"MediaFoundation\Transforms\70F36578-2741-454F-B494-E8563DDD1CB4",MFTFlags,%REG_DWORD%,0x00000004
+HKCR,"MediaFoundation\Transforms\70F36578-2741-454F-B494-E8563DDD1CB4",OutputTypes,%REG_BINARY%,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,59,55,59,32,00,00,10,00,80,00,00,aa,00,38,9b,71,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,4e,56,31,32,00,00,10,00,80,00,00,aa,00,38,9b,71
+HKCR,"MediaFoundation\Transforms\966F107C-8EA2-425D-B822-E4A71BEF01D7",,%REG_SZ%,"NVIDIA HEVC Encoder MFT"
+HKCR,"MediaFoundation\Transforms\966F107C-8EA2-425D-B822-E4A71BEF01D7",Attributes,%REG_BINARY%,41,46,4d,49,05,00,00,00,ac,66,b8,2f,78,b0,42,49,ab,6c,00,3d,05,cd,a6,74,1f,00,00,00,00,00,00,00,30,00,00,00,a8,00,00,00,ae,fb,4f,31,41,5b,95,4c,9c,19,4e,7d,58,6f,ac,e3,1f,00,00,00,00,00,00,00,30,00,00,00,d8,00,00,00,cc,b0,ec,3a,5b,03,cc,4b,81,85,2b,8d,55,1e,f3,af,1f,00,00,00,00,00,00,00,12,00,00,00,08,01,00,00,15,cb,a7,88,07,7b,34,4a,91,28,e6,4c,67,03,c4,d3,13,00,00,00,00,00,00,00,08,00,00,00,00,00,00,00,9a,69,1a,f8,9a,64,7d,49,8c,73,29,f8,fe,d6,ad,7a,13,00,00,00,00,00,00,00,01,00,00,00,00,00,00,00,4e,00,56,00,49,00,44,00,49,00,41,00,20,00,48,00,45,00,56,00,43,00,20,00,45,00,6e,00,63,00,6f,00,64,00,65,00,72,00,20,00,4d,00,46,00,54,00,00,00,4e,00,56,00,49,00,44,00,49,00,41,00,20,00,48,00,45,00,56,00,43,00,20,00,45,00,6e,00,63,00,6f,00,64,00,65,00,72,00,20,00,4d,00,46,00,54,00,00,00,56,00,45,00,4e,00,5f,00,31,00,30,00,44,00,45,00,00,00
+HKCR,"MediaFoundation\Transforms\966F107C-8EA2-425D-B822-E4A71BEF01D7",InputTypes,%REG_BINARY%,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,34,32,30,4f,00,00,10,00,80,00,00,aa,00,38,9b,71,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,4e,56,31,32,00,00,10,00,80,00,00,aa,00,38,9b,71,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,50,30,31,30,00,00,10,00,80,00,00,aa,00,38,9b,71,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,15,00,00,00,00,00,10,00,80,00,00,aa,00,38,9b,71,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,1F,00,00,00,00,00,10,00,80,00,00,aa,00,38,9b,71,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,71,00,00,00,00,00,10,00,80,00,00,aa,00,38,9b,71,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,41,59,55,56,00,00,10,00,80,00,00,aa,00,38,9b,71,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,59,34,31,30,00,00,10,00,80,00,00,aa,00,38,9b,71
+HKCR,"MediaFoundation\Transforms\966F107C-8EA2-425D-B822-E4A71BEF01D7",MFTFlags,%REG_DWORD%,0x00000004
+HKCR,"MediaFoundation\Transforms\966F107C-8EA2-425D-B822-E4A71BEF01D7",OutputTypes,%REG_BINARY%,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,48,45,56,43,00,00,10,00,80,00,00,aa,00,38,9b,71,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,48,32,36,35,00,00,10,00,80,00,00,aa,00,38,9b,71
+HKCR,"MediaFoundation\Transforms\Categories\D6C02D4B-6833-45B4-971A-05A4B04BAB91\70F36578-2741-454F-B494-E8563DDD1CB4",,%REG_SZ%,""
+HKCR,"MediaFoundation\Transforms\Categories\F79EAC7D-E545-4387-BDEE-D647D7BDE42A\60F44560-5A20-4857-BFEF-D29773CB8040",,%REG_SZ%,""
+HKCR,"MediaFoundation\Transforms\Categories\F79EAC7D-E545-4387-BDEE-D647D7BDE42A\966F107C-8EA2-425D-B822-E4A71BEF01D7",,%REG_SZ%,""
+HKCR,"SOFTWARE\NVIDIA Corporation\Global\OEM",NVFordPath,%REG_EXPAND_SZ%,"%%ProgramFiles%%\Dassault Systemes"
+HKCR,"Software\NVIDIA Corporation\Global\MCU",InstallPath,%REG_EXPAND_SZ%,"%%ProgramFiles%%\NVIDIA Corporation\NVSMI\MCU.exe"
+HKCR,"Wow6432Node\CLSID\{60F44560-5A20-4857-BFEF-D29773CB8040}",,%REG_SZ%,"NVIDIA H.264 Encoder MFT"
+HKCR,"Wow6432Node\CLSID\{60F44560-5A20-4857-BFEF-D29773CB8040}\InProcServer32",,%REG_EXPAND_SZ%,"%13%\nvEncMFTH264.dll"
+HKCR,"Wow6432Node\CLSID\{60F44560-5A20-4857-BFEF-D29773CB8040}\InProcServer32",ThreadingModel,%REG_SZ%,"Both"
+HKCR,"Wow6432Node\CLSID\{70F36578-2741-454F-B494-E8563DDD1CB4}",,%REG_SZ%,"NVIDIA MJPEG Video Decoder MFT"
+HKCR,"Wow6432Node\CLSID\{70F36578-2741-454F-B494-E8563DDD1CB4}\InProcServer32",,%REG_EXPAND_SZ%,"%13%\nvDecMFTMjpeg.dll"
+HKCR,"Wow6432Node\CLSID\{70F36578-2741-454F-B494-E8563DDD1CB4}\InProcServer32",ThreadingModel,%REG_SZ%,"Both"
+HKCR,"Wow6432Node\CLSID\{966F107C-8EA2-425D-B822-E4A71BEF01D7}",,%REG_SZ%,"NVIDIA HEVC Encoder MFT"
+HKCR,"Wow6432Node\CLSID\{966F107C-8EA2-425D-B822-E4A71BEF01D7}\InProcServer32",,%REG_EXPAND_SZ%,"%13%\nvEncMFThevc.dll"
+HKCR,"Wow6432Node\CLSID\{966F107C-8EA2-425D-B822-E4A71BEF01D7}\InProcServer32",ThreadingModel,%REG_SZ%,"Both"
+HKCR,"Wow6432Node\MediaFoundation\Transforms\60F44560-5A20-4857-BFEF-D29773CB8040",,%REG_SZ%,"NVIDIA H.264 Encoder MFT"
+HKCR,"Wow6432Node\MediaFoundation\Transforms\60F44560-5A20-4857-BFEF-D29773CB8040",Attributes,%REG_BINARY%,41,46,4d,49,06,00,00,00,ac,66,b8,2f,78,b0,42,49,ab,6c,00,3d,05,cd,a6,74,1f,00,00,00,00,00,00,00,32,00,00,00,c8,00,00,00,ae,fb,4f,31,41,5b,95,4c,9c,19,4e,7d,58,6f,ac,e3,1f,00,00,00,00,00,00,00,32,00,00,00,fa,00,00,00,cc,b0,ec,3a,5b,03,cc,4b,81,85,2b,8d,55,1e,f3,af,1f,00,00,00,00,00,00,00,12,00,00,00,2c,01,00,00,15,cb,a7,88,07,7b,34,4a,91,28,e6,4c,67,03,c4,d3,13,00,00,00,00,00,00,00,08,00,00,00,00,00,00,00,93,90,4b,f3,e0,05,16,4b,99,3d,3e,2a,2c,de,6a,d3,15,00,00,00,00,00,00,00,54,14,0d,00,12,00,09,00,9a,69,1a,f8,9a,64,7d,49,8c,73,29,f8,fe,d6,ad,7a,13,00,00,00,00,00,00,00,01,00,00,00,00,00,00,00,4e,00,56,00,49,00,44,00,49,00,41,00,20,00,48,00,2e,00,32,00,36,00,34,00,20,00,45,00,6e,00,63,00,6f,00,64,00,65,00,72,00,20,00,4d,00,46,00,54,00,00,00,4e,00,56,00,49,00,44,00,49,00,41,00,20,00,48,00,2e,00,32,00,36,00,34,00,20,00,45,00,6e,00,63,00,6f,00,64,00,65,00,72,00,20,00,4d,00,46,00,54,00,00,00,56,00,45,00,4e,00,5f,00,31,00,30,00,44,00,45,00,00,00
+HKCR,"Wow6432Node\MediaFoundation\Transforms\60F44560-5A20-4857-BFEF-D29773CB8040",InputTypes,%REG_BINARY%,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,34,32,30,4f,00,00,10,00,80,00,00,aa,00,38,9b,71,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,4e,56,31,32,00,00,10,00,80,00,00,aa,00,38,9b,71,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,15,00,00,00,00,00,10,00,80,00,00,aa,00,38,9b,71
+HKCR,"Wow6432Node\MediaFoundation\Transforms\60F44560-5A20-4857-BFEF-D29773CB8040",MFTFlags,%REG_DWORD%,0x00000004
+HKCR,"Wow6432Node\MediaFoundation\Transforms\60F44560-5A20-4857-BFEF-D29773CB8040",OutputTypes,%REG_BINARY%,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,48,32,36,34,00,00,10,00,80,00,00,aa,00,38,9b,71,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00
+HKCR,"Wow6432Node\MediaFoundation\Transforms\70F36578-2741-454F-B494-E8563DDD1CB4",,%REG_SZ%,"NVIDIA MJPEG Video Decoder MFT"
+HKCR,"Wow6432Node\MediaFoundation\Transforms\70F36578-2741-454F-B494-E8563DDD1CB4",Attributes,%REG_BINARY%,41,46,4d,49,05,00,00,00,ac,66,b8,2f,78,b0,42,49,ab,6c,00,3d,05,cd,a6,74,1f,00,00,00,00,00,00,00,3e,00,00,00,a8,00,00,00,ae,fb,4f,31,41,5b,95,4c,9c,19,4e,7d,58,6f,ac,e3,1f,00,00,00,00,00,00,00,3e,00,00,00,e6,00,00,00,cc,b0,ec,3a,5b,03,cc,4b,81,85,2b,8d,55,1e,f3,af,1f,00,00,00,00,00,00,00,12,00,00,00,24,01,00,00,15,cb,a7,88,07,7b,34,4a,91,28,e6,4c,67,03,c4,d3,13,00,00,00,00,00,00,00,08,00,00,00,00,00,00,00,9a,69,1a,f8,9a,64,7d,49,8c,73,29,f8,fe,d6,ad,7a,13,00,00,00,00,00,00,00,01,00,00,00,00,00,00,00,4e,00,56,00,49,00,44,00,49,00,41,00,20,00,4d,00,4a,00,50,00,45,00,47,00,20,00,56,00,69,00,64,00,65,00,6f,00,20,00,44,00,65,00,63,00,6f,00,64,00,65,00,72,00,20,00,4d,00,46,00,54,00,00,00,4e,00,56,00,49,00,44,00,49,00,41,00,20,00,4d,00,4a,00,50,00,45,00,47,00,20,00,56,00,69,00,64,00,65,00,6f,00,20,00,44,00,65,00,63,00,6f,00,64,00,65,00,72,00,20,00,4d,00,46,00,54,00,00,00,56,00,45,00,4e,00,5f,00,31,00,30,00,44,00,45,00,00,00
+HKCR,"Wow6432Node\MediaFoundation\Transforms\70F36578-2741-454F-B494-E8563DDD1CB4",InputTypes,%REG_BINARY%,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,4d,4a,50,47,00,00,10,00,80,00,00,aa,00,38,9b,71
+HKCR,"Wow6432Node\MediaFoundation\Transforms\70F36578-2741-454F-B494-E8563DDD1CB4",MFTFlags,%REG_DWORD%,0x00000004
+HKCR,"Wow6432Node\MediaFoundation\Transforms\70F36578-2741-454F-B494-E8563DDD1CB4",OutputTypes,%REG_BINARY%,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,59,55,59,32,00,00,10,00,80,00,00,aa,00,38,9b,71,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,4e,56,31,32,00,00,10,00,80,00,00,aa,00,38,9b,71
+HKCR,"Wow6432Node\MediaFoundation\Transforms\966F107C-8EA2-425D-B822-E4A71BEF01D7",,%REG_SZ%,"NVIDIA HEVC Encoder MFT"
+HKCR,"Wow6432Node\MediaFoundation\Transforms\966F107C-8EA2-425D-B822-E4A71BEF01D7",Attributes,%REG_BINARY%,41,46,4d,49,05,00,00,00,ac,66,b8,2f,78,b0,42,49,ab,6c,00,3d,05,cd,a6,74,1f,00,00,00,00,00,00,00,30,00,00,00,a8,00,00,00,ae,fb,4f,31,41,5b,95,4c,9c,19,4e,7d,58,6f,ac,e3,1f,00,00,00,00,00,00,00,30,00,00,00,d8,00,00,00,cc,b0,ec,3a,5b,03,cc,4b,81,85,2b,8d,55,1e,f3,af,1f,00,00,00,00,00,00,00,12,00,00,00,08,01,00,00,15,cb,a7,88,07,7b,34,4a,91,28,e6,4c,67,03,c4,d3,13,00,00,00,00,00,00,00,08,00,00,00,00,00,00,00,9a,69,1a,f8,9a,64,7d,49,8c,73,29,f8,fe,d6,ad,7a,13,00,00,00,00,00,00,00,01,00,00,00,00,00,00,00,4e,00,56,00,49,00,44,00,49,00,41,00,20,00,48,00,45,00,56,00,43,00,20,00,45,00,6e,00,63,00,6f,00,64,00,65,00,72,00,20,00,4d,00,46,00,54,00,00,00,4e,00,56,00,49,00,44,00,49,00,41,00,20,00,48,00,45,00,56,00,43,00,20,00,45,00,6e,00,63,00,6f,00,64,00,65,00,72,00,20,00,4d,00,46,00,54,00,00,00,56,00,45,00,4e,00,5f,00,31,00,30,00,44,00,45,00,00,00
+HKCR,"Wow6432Node\MediaFoundation\Transforms\966F107C-8EA2-425D-B822-E4A71BEF01D7",InputTypes,%REG_BINARY%,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,34,32,30,4f,00,00,10,00,80,00,00,aa,00,38,9b,71,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,4e,56,31,32,00,00,10,00,80,00,00,aa,00,38,9b,71,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,50,30,31,30,00,00,10,00,80,00,00,aa,00,38,9b,71,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,15,00,00,00,00,00,10,00,80,00,00,aa,00,38,9b,71,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,1F,00,00,00,00,00,10,00,80,00,00,aa,00,38,9b,71,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,71,00,00,00,00,00,10,00,80,00,00,aa,00,38,9b,71,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,41,59,55,56,00,00,10,00,80,00,00,aa,00,38,9b,71,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,59,34,31,30,00,00,10,00,80,00,00,aa,00,38,9b,71
+HKCR,"Wow6432Node\MediaFoundation\Transforms\966F107C-8EA2-425D-B822-E4A71BEF01D7",MFTFlags,%REG_DWORD%,0x00000004
+HKCR,"Wow6432Node\MediaFoundation\Transforms\966F107C-8EA2-425D-B822-E4A71BEF01D7",OutputTypes,%REG_BINARY%,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,48,45,56,43,00,00,10,00,80,00,00,aa,00,38,9b,71,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,48,32,36,35,00,00,10,00,80,00,00,aa,00,38,9b,71
+HKCR,"Wow6432Node\MediaFoundation\Transforms\Categories\D6C02D4B-6833-45B4-971A-05A4B04BAB91\70F36578-2741-454F-B494-E8563DDD1CB4",,%REG_SZ%,""
+HKCR,"Wow6432Node\MediaFoundation\Transforms\Categories\F79EAC7D-E545-4387-BDEE-D647D7BDE42A\60F44560-5A20-4857-BFEF-D29773CB8040",,%REG_SZ%,""
+HKCR,"Wow6432Node\MediaFoundation\Transforms\Categories\F79EAC7D-E545-4387-BDEE-D647D7BDE42A\966F107C-8EA2-425D-B822-E4A71BEF01D7",,%REG_SZ%,""
+HKLM,"Software\Microsoft\Windows Media Foundation\HardwareMFT",EnableDecoders,%REG_DWORD%,0x00000001
+HKLM,"Software\Microsoft\Windows Media Foundation\HardwareMFT",EnableEncoders,%REG_DWORD%,0x00000001
+HKLM,"Software\Wow6432Node\Microsoft\Windows Media Foundation\HardwareMFT",EnableDecoders,%REG_DWORD%,0x00000001
+HKLM,"Software\Wow6432Node\Microsoft\Windows Media Foundation\HardwareMFT",EnableEncoders,%REG_DWORD%,0x00000001
+HKR,,DXCoreAttributes,%REG_MULTI_SZ%,"{B69EB219-3DED-4464-979F-A00BD4687006}","{0C9ECE4D-2F6E-4F01-8C96-E89E331B47B1}","{8C47866B-7583-450D-F0F0-6BADA895AF4B}","{248E2800-A793-4724-ABAA-23A6DE1BE090}","{B71B0D41-1088-422F-A27C-0250B7D3A988}","{8EB2C848-82F6-4B49-AA87-AECFCF0174C6}"
+HKR,,DesktopStereoShortcuts,%REG_DWORD%,0
+HKR,,DisableStereoDesktopLinks,%REG_DWORD%,1
+HKR,,DriverSupportModules,%REG_MULTI_SZ%,"nvapi64.dll"
+HKR,,DriverSupportModules,%REG_SZ_APPEND%,"nvcompiler.dll"
+HKR,,DriverSupportModules,%REG_SZ_APPEND%,"nvcuda.dll"
+HKR,,DriverSupportModules,%REG_SZ_APPEND%,"nvcuvid.dll"
+HKR,,DriverSupportModules,%REG_SZ_APPEND%,"nvDecMFTMjpeg.dll"
+HKR,,DriverSupportModules,%REG_SZ_APPEND%,"NvFBC64.dll"
+HKR,,DriverSupportModules,%REG_SZ_APPEND%,"NvIFR64.dll"
+HKR,,DriverSupportModules,%REG_SZ_APPEND%,"nvptxJitCompiler.dll"
+HKR,,DriverSupportModules,%REG_SZ_APPEND%,"%13%\nvopencl64.dll"
+HKR,,DriverSupportModules,%REG_SZ_APPEND%,"nvEncMFTH264x.dll"
+HKR,,DriverSupportModules,%REG_SZ_APPEND%,"nvEncMFThevcx.dll"
+HKR,,DriverSupportModules,%REG_SZ_APPEND%,"nvEncodeAPI64.dll"
+HKR,,DriverSupportModules,%REG_SZ_APPEND%,"nvcudadebugger.dll"
+HKR,,DriverSupportModulesWow,%REG_MULTI_SZ%,"nvapi.dll"
+HKR,,DriverSupportModulesWow,%REG_SZ_APPEND%,"nvcompiler.dll"
+HKR,,DriverSupportModulesWow,%REG_SZ_APPEND%,"nvcuda.dll"
+HKR,,DriverSupportModulesWow,%REG_SZ_APPEND%,"nvcuvid.dll"
+HKR,,DriverSupportModulesWow,%REG_SZ_APPEND%,"nvDecMFTMjpeg.dll"
+HKR,,DriverSupportModulesWow,%REG_SZ_APPEND%,"NvFBC.dll"
+HKR,,DriverSupportModulesWow,%REG_SZ_APPEND%,"NvIFR.dll"
+HKR,,DriverSupportModulesWow,%REG_SZ_APPEND%,"nvptxJitCompiler.dll"
+HKR,,DriverSupportModulesWow,%REG_SZ_APPEND%,"%13%\nvopencl32.dll"
+HKR,,DriverSupportModulesWow,%REG_SZ_APPEND%,"nvEncMFTH264.dll"
+HKR,,DriverSupportModulesWow,%REG_SZ_APPEND%,"nvEncMFThevc.dll"
+HKR,,DriverSupportModulesWow,%REG_SZ_APPEND%,"nvEncodeAPI.dll"
+HKR,,MonitorCapabilityList,%REG_MULTI_SZ%,"ACR,2A1,71;"
+HKR,,MonitorCapabilityList,%REG_SZ_APPEND%,"7204,2F1,71,0,0,0,0;"
+HKR,,MonitorCapabilityList,%REG_SZ_APPEND%,"ACR,0126,70;"
+HKR,,OpenCLDriverName,%REG_SZ%,"%13%\nvopencl64.dll"
+HKR,,OpenCLDriverNameWow,%REG_SZ%,"%13%\nvopencl32.dll"
+HKR,,RmFbsrPagedDMA,%REG_DWORD%,0x1
+HKR,,RmMaintainDevs,%REG_DWORD%,1
+HKR,,RmMaintainTVStandard,%REG_DWORD%,1
+HKR,,RmPowerFeature,%REG_DWORD%,0x100
+HKR,,UserModeDListDriverName,%REG_MULTI_SZ%,"%13%\nvdlistx.dll"
+HKR,,UserModeDListDriverNameWow,%REG_MULTI_SZ%,"%13%\nvdlist.dll"
+HKR,,UserModeDriverGUID,%REG_SZ%,"{9A516B97-E7C1-451B-9165-C5035994A3F5}"
+
+[nv_miscBase_service_addreg]
+HKR,"Global\CoprocManager_1",ShowContextMenu,%REG_DWORD%,1
+HKR,"Global\NVTweak",SRS1673,%REG_DWORD%,1
+HKR,"Global\NVTweak",SRS1700,%REG_DWORD%,1
+HKR,"Global\NVTweak_1",NoPages,%REG_DWORD%,0x40120558
+HKR,"Parameters",DmaRemappingCompatible,0x00010001,3
+HKR,,NvProfileUpdateFirstRun,%REG_DWORD%,1
+
+[nv_msiSupport_addreg]
+HKR,"Interrupt Management",,0x00000010
+HKR,"Interrupt Management\MessageSignaledInterruptProperties",,0x00000010
+HKR,"Interrupt Management\MessageSignaledInterruptProperties",MSISupported,0x00010001, 1
+HKR,"Interrupt Management\MessageSignaledInterruptProperties",MessageNumberLimit,0x00010001, 1
+
+[nv_ngx_copyfiles]
+_nvngx.dll,,,
+nvdirectsr.dll,,,
+nvngx.dll,,,
+nvngx_update.exe,,,
+
+[nv_ngx_service_addreg]
+HKR,"NGXCore",NGXPath,%REG_SZ%,%13%
+
+[nv_nvcamera_copyfiles]
+FreqTransfer32.exe,,,
+FreqTransfer64.exe,,,
+GreenScreenBG01.jpg,,,
+GreenScreenBG02.jpg,,,
+HighresBlender32.exe,,,
+HighresBlender64.exe,,,
+NvCamera32.dll,,,
+NvCamera64.dll,,,
+NvCameraEnable.exe,,,
+NvImageConvert32.exe,,,
+NvImageConvert64.exe,,,
+ReShadeFXC32.exe,,,
+ReShadeFXC64.exe,,,
+ShotWithGeforce518x32.rgba,,,
+SphericalEquirect32.exe,,,
+SphericalEquirect64.exe,,,
+Sticker01.png,,,
+Sticker02.png,,,
+Sticker03.png,,,
+Sticker04.png,,,
+Sticker05.png,,,
+Sticker06.png,,,
+Sticker07.png,,,
+Sticker08.png,,,
+d3dcompiler_47_32.dll,,,
+d3dcompiler_47_64.dll,,,
+scratches.jpg,,,
+tools_licenses.txt,,,
+ui.tga,,,
+
+[nv_nvcamera_service_addreg]
+HKR,"NvCamera",NvCameraPath,%REG_EXPAND_SZ%,"%13%\NvCamera"
+
+[nv_nvlddmkm_RS_eventlogging]
+AddReg = nv_nvlddmkm_eventlogging_RS_addreg
+
+[nv_nvlddmkm_eventlogging_RS_addreg]
+
+[nv_nvlddmkm_serviceInstallRS]
+AddReg = nv_DRS_addreg
+AddReg = nv_FTS_addreg
+AddReg = nv_controlPanel_addreg
+AddReg = nv_dchu_service_addreg
+AddReg = nv_miscBase_service_addreg
+AddReg = nv_ngx_service_addreg
+AddReg = nv_nvcamera_service_addreg
+ErrorControl = 0
+LoadOrderGroup = Video
+ServiceBinary = %13%\nvlddmkm.sys
+ServiceType = 1
+StartType = 3
+
+[nv_nvsmi_copyfiles]
+MCU.exe,,,0x00004000
+nvdebugdump.exe,,,0x00004000
+nvidia-smi.exe,,,0x00004000
+
+[nv_openCL_copyfiles]
+nvopencl32.dll,,,
+nvopencl64.dll,,,
+
+[nv_opengl_addreg]
+HKR,,OpenGLDriverName,%REG_MULTI_SZ%,"%13%\nvoglv64.dll"
+HKR,,OpenGLDriverNameWoW,%REG_MULTI_SZ%,"%13%\nvoglv32.dll"
+HKR,,OpenGLFlags,%REG_DWORD%,0x00000003
+HKR,,OpenGLFlagsWoW,%REG_DWORD%,0x00000003
+HKR,,OpenGLVersion,%REG_DWORD%,0x00001000
+HKR,,OpenGLVersionWoW,%REG_DWORD%,0x00001000
+
+[nv_software_install64]
+SoftwareType = 1
+SoftwareBinary = %13%\nvdispco64.exe
+SoftwareArguments = -deviceId:<<DeviceInstanceID>>, -pkgName:Display.Driver
+SoftwareVersion = 32.0.15.9026
+
+[nv_store_software_cpl_install64]
+SoftwareType = 2
+SoftwareVersion=8.1.944.0
+SoftwareID=pfn://NVIDIACorp.NVIDIAControlPanel_56jybvy8sckqj
+
+[nv_sysDrivers_RS_copyfiles]
+nvlddmkm.sys,,,
+nvvm32.dll,,,
+nvvm64.dll,,,
+nvvm70.dll,,,
+
+[nv_sysDrivers_copyfiles]
+
+[nv_system32_RS_copyfiles]
+NvMemMapStorage.dll,,,
+NvMemMapStorageax.dll,,,
+NvMemMapStorageaxec.dll,,,
+NvMemMapStoragex.dll,,,
+NvPresent64.dll,,,
+OscTool.exe,,,
+gsp_ga10x.bin,,,
+gsp_tu10x.bin,,,
+libcuda.so.1.1,,,
+libcuda_loader.so,,,
+libcudadebugger.so.1,,,
+libnvcuvid.so.1,,,
+libnvdxdlkernels.so,,,
+libnvdxgdmal.so.1,,,
+libnvidia-encode.so.1,,,
+libnvidia-gpucomp.so,,,
+libnvidia-ml.so.1,,,
+libnvidia-ml_loader.so,,,
+libnvidia-nvvm.so.4,,,
+libnvidia-nvvm70.so.4,,,
+libnvidia-opticalflow.so.1,,,
+libnvidia-ptxjitcompiler.so.1,,,
+libnvoptix_loader.so.1,,,
+libnvwgf2umx.so,,,
+nv-vk64.json,,,
+nv-vksc64.json,,,
+nvAIDVC.dll,,,
+nvAIDVCx.dll,,,
+nvAIHDR.dll,,,
+nvAIHDRx.dll,,,
+nvAIVPx.dll,,,
+nvDecMFTMjpeg.dll,,,
+nvDecMFTMjpegx.dll,,,
+nvEncMFTH264.dll,,,
+nvEncMFTH264x.dll,,,
+nvEncMFThevc.dll,,,
+nvEncMFThevcx.dll,,,
+nvcubins.bin,,,
+nvcuda32.dll,,,
+nvcuda64.dll,,,
+nvcudaETW.xml,,,
+nvcudart_hybrid64.dll,,,
+nvd3dumx.dll,,,
+nvdlistx.dll,,,
+nvdlppx.dll,,,
+nvdxdlkernels.dll,,,
+nvdxgdmal32.dll,,,
+nvdxgdmal64.dll,,,
+nvgpucomp32.dll,,,
+nvgpucomp64.dll,,,
+nvidia-smi,,,
+nvldumdx.dll,,,
+nvml.dll,,,
+nvoglv64.dll,,,
+nvoptix.bin,,,
+nvoptix.dll,,,
+nvppe.dll,,,
+nvppex.dll,,,
+nvptxJitCompiler32.dll,,,
+nvptxJitCompiler64.dll,,,
+nvrtum64.dll,,,
+nvvkscv64.dll,,,
+nvwgf2umx.dll,,,
+
+[nv_system32_VGPU_copyfiles]
+
+[nv_system32_copyfiles]
+NvFBC64.dll,,,0x00004000
+NvIFR64.dll,,,0x00004000
+OpenCL.dll,OpenCL64.dll,,0x00004020
+nvEncodeAPI64.dll,,,0x00004000
+nvapi64.dll,,,0x00004000
+nvcuda.dll,nvcuda_loader64.dll,,0x00004000
+nvcudadebugger.dll,,,0x00004000
+nvcuvid.dll,nvcuvid64.dll,,0x00004000
+nvidia-pcc.exe,,,0x00004000
+nvinfo.pb,,,0x00004000
+nvml.dll,nvml_loader.dll,,0x00004000
+nvofapi64.dll,,,0x00004000
+vulkan-1-999-0-0-0.dll,vulkan-1-x64.dll,,0x00004020
+vulkan-1.dll,vulkan-1-x64.dll,,0x00004020
+vulkaninfo-1-999-0-0-0.exe,vulkaninfo-x64.exe,,0x00004020
+vulkaninfo.exe,vulkaninfo-x64.exe,,0x00004020
+
+[nv_syswow64_RS_copyfiles]
+nv-vk32.json,,,
+nvIccAdvancedColorIdentity.icm,,,
+nvd3dum.dll,,,
+nvdispco64.exe,,,
+nvdlist.dll,,,
+nvldumd.dll,,,
+nvoglv32.dll,,,
+nvwgf2um.dll,,,
+
+[nv_syswow64_VGPU_copyfiles]
+
+[nv_syswow64_copyfiles]
+NvFBC.dll,,,0x00004000
+NvIFR.dll,,,0x00004000
+OpenCL.dll,OpenCL32.dll,,0x00004020
+nvEncodeAPI.dll,,,0x00004000
+nvapi.dll,,,0x00004000
+nvcuda.dll,nvcuda_loader32.dll,,0x00004000
+nvcuvid.dll,nvcuvid32.dll,,0x00004000
+nvofapi.dll,,,0x00004000
+vulkan-1-999-0-0-0.dll,vulkan-1-x86.dll,,0x00004020
+vulkan-1.dll,vulkan-1-x86.dll,,0x00004020
+vulkaninfo-1-999-0-0-0.exe,vulkaninfo-x86.exe,,0x00004020
+vulkaninfo.exe,vulkaninfo-x86.exe,,0x00004020
+
+[nv_telemetry_copyfiles]
+NvTelemetry64.dll,,,0x00000010
+
+[nv_timingRestrictions_addreg]
+HKR,,NV_R&T,%REG_MULTI_SZ%,"R&T0000=1920,1080,*,30,*,CRTX,OEM,7425,2200,48,56,562,2,5,++I"
+HKR,,NV_R&T,%REG_SZ_APPEND%,"R&T0000=1920,1080,*,60,*,BNQ766A,OEM,13850,2080,48,32,1111,3,5,+-"
+HKR,,NV_R&T,%REG_SZ_APPEND%,"R&T0000=1920,1200,*,60,*,BNQ766A,OEM,15399,2080,48,32,1235,3,6,+-"
+HKR,,NV_R&T,%REG_SZ_APPEND%,"R&T0000=1920,1200,*,60,009D,*,OEM,15399,2080,48,32,1235,3,6,+-"
+HKR,,NV_R&T,%REG_SZ_APPEND%,"R&T0000=2561-,1601-,*,*,0190-019E,DFPX.CRTX.TVX,NONE"
+HKR,,NV_R&T,%REG_SZ_APPEND%,"R&T0000=800-,600-,*,61-,*,BNQ76DB,NONE"
+HKR,,NV_R&T,%REG_SZ_APPEND%,"R&T0000=1280,1024,*,*,*,BNQ76DB,NONE"
+HKR,,NV_R&T,%REG_SZ_APPEND%,"R&T0000=1920,1080,*,60,*,HWP26F5.MEL31C1,OEM,14835,2200,88,44,1125,4,5,++"
+HKR,,NV_R&T,%REG_SZ_APPEND%,"R&T0000=1280,800,*,60,*,AOC1580,CVT"
+HKR,,NV_R&T,%REG_SZ_APPEND%,"R&T0000=-*,481-719,*,*,*,MEL31C4,NONE"
+HKR,,NV_R&T,%REG_SZ_APPEND%,"R&T0000=2560,1440,*,144,*,BNQ7F45,OEM,54082,2592,4,16,1449,1,1,++"
+HKR,,NV_R&T,%REG_SZ_APPEND%,"R&T0000=7680,4320,*,*,1382-1431,DEL4147,NONE"
+HKR,,NV_R&T,%REG_SZ_APPEND%,"R&T0001=3840,4320,*,*,1382-1431,DEL4147,NONE"
+HKR,,NV_R&T,%REG_SZ_APPEND%,"R&T0000=480,1080,*,480,*,*,OEM,29700,550,30,20,1125,25,10,+-"
+HKR,,NV_R&T,%REG_SZ_APPEND%,"R&T0000=4096,2160,*,100,*,GSM76FE,NONE"
+HKR,,NV_R&T,%REG_SZ_APPEND%,"R&T0000=3840,1600,*,30,*,DELA17D,NONE"
+
+[Strings]
+DiskID1 = "NVIDIA Windows 10 (64 bit) Driver Library Installation Disk 1"
+FLG_ADDREG_KEYONLY = 0x00000010
+FLG_ADDREG_NOCLOBBER = 0x00000002
+NVIDIA = "NVIDIA"
+NVIDIA_A = "NVIDIA"
+NVIDIA_DEV.1F95.3E2E.1EC9 = "NVIDIA GeForce GTX 1650 Ti"
+NVIDIA_DEV.1F95.3E2E.6745 = "NVIDIA GeForce GTX 1650 Ti"
+NVIDIA_DEV.1F99.3E2E.1EC9 = "NVIDIA GeForce GTX 1650"
+NVIDIA_DEV.1F99.3E2E.6745 = "NVIDIA GeForce GTX 1650"
+REG_BINARY = 0x00000001
+REG_DWORD = 0x00010001
+REG_DWORD_NO_CLOBBER = 0x00010003
+REG_EXPAND_SZ = 0x00020000
+REG_MULTI_SZ = 0x00010000
+REG_SZ = 0x00000000
+REG_SZ_APPEND = 0x00010008
+amd_dpfc.SVCDESC = "AMD_DPFC Service"
+
