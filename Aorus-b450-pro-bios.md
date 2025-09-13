@@ -1,0 +1,5 @@
+- fully power off MOBO
+- extract CPU (otherwise clock is tighted to GND)
+- connect programmer GND
+- use 1.8V levels ft2232_spi with default divisor=4
+- flash M_BIOS
