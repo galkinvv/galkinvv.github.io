@@ -1,0 +1,252 @@
+;Copyright (C) NVIDIA Corporation. All rights reserved.
+;
+;Module Name:
+;   nvvad.inf
+;
+;Abstract:
+;    INF file for installing NVIDIA Virtual Audio driver
+
+[Version]
+Signature="$CHICAGO$"
+Class=MEDIA
+Provider=%NV%
+ClassGUID={4d36e96c-e325-11ce-bfc1-08002be10318}
+DriverVer = 02/28/2024, 4.65.0.3
+PnpLockdown=1
+CatalogFile = nvvad.cat
+
+[SourceDisksNames]
+222=%DiskDescription%,"",222
+
+[SourceDisksFiles]
+;nvvad32.sys=222
+;nvvad64.sys=222
+nvvad32v.sys=222
+nvvad64v.sys=222
+
+;;This syntax is only recognized on Windows XP and above- it is needed to install 64-bit drivers on
+;;Windows Server 2003 Service Pack 1 and above.
+
+[Manufacturer]
+%MfgName%=NVIDIA,NTx86,NTamd64
+
+;;  For Windows Server 2003 Service Pack 1 and above, a 64-bit OS will not install a driver
+;;  unless the Manufacturer and Models Sections explicitly show it is a driver for that platform
+;;  But the individual model section decorations (or lack thereof) work as they always have.
+;;  All of the model sections referred to are undecorated or NT-decorated, hence work on all platforms
+
+[NVIDIA]
+%NVVAD_WaveExtensible.DeviceDesc%=NVVAD_WaveExtensible, USB\VID_0955&PID_9000 
+
+;; This section enables installing on x64 systems
+[NVIDIA.NTamd64]
+%NVVAD_WaveExtensible.DeviceDesc%=NVVAD_WaveExtensible64, USB\VID_0955&PID_9000
+
+;; This section enables installing on x86 systems
+[NVIDIA.NTx86]
+%NVVAD_WaveExtensible.DeviceDesc%=NVVAD_WaveExtensible, USB\VID_0955&PID_9000
+
+
+[DestinationDirs]
+NVVAD_WaveExtensible.CopyList=10,system32\drivers
+NVVAD_WaveExtensible64.CopyList=10,system32\drivers
+
+;======================================================
+; NVVAD_WaveExtensible
+;======================================================
+[NVVAD_WaveExtensible]
+Include=ks.inf,wdmaudio.inf
+Needs=KS.Registration,WDMAUDIO.Registration
+CopyFiles=NVVAD_WaveExtensible.CopyList
+AddReg=NVVAD_WaveExtensible.AddReg,NVVAD32.AddReg
+
+[NVVAD_WaveExtensible.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Wave%,NVVAD.I.Wave
+AddInterface=%KSCATEGORY_RENDER%,%KSNAME_Wave%,NVVAD.I.Wave
+AddInterface=%KSCATEGORY_CAPTURE%,%KSNAME_Wave%,NVVAD.I.Wave
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Topology%,NVVAD.I.Topo
+
+[NVVAD_WaveExtensible.AddReg]
+HKR,,AssociatedFilters,,"wdmaud,swmidi,redbook"
+HKR,,Driver,,nvvad32v.sys
+HKR,,NTMPDriver,,"nvvad32v.sys,sbemul.sys"
+
+HKR,Drivers,SubClasses,,"wave,midi,mixer"
+
+HKR,Drivers\wave\wdmaud.drv,Driver,,wdmaud.drv
+HKR,Drivers\midi\wdmaud.drv,Driver,,wdmaud.drv
+HKR,Drivers\mixer\wdmaud.drv,Driver,,wdmaud.drv
+
+HKR,Drivers\wave\wdmaud.drv,Description,,%NVVAD_WaveExtensible.DeviceDesc%
+HKR,Drivers\midi\wdmaud.drv,Description,,%NVVAD_MIDI%
+HKR,Drivers\mixer\wdmaud.drv,Description,,%NVVAD_WaveExtensible.DeviceDesc%
+
+;======================================================
+; NVVAD_WaveExtensible64
+;======================================================
+[NVVAD_WaveExtensible64]
+Include=ks.inf,wdmaudio.inf
+Needs=KS.Registration,WDMAUDIO.Registration
+CopyFiles=NVVAD_WaveExtensible64.CopyList
+AddReg=NVVAD_WaveExtensible64.AddReg, NVVAD64.AddReg
+
+[NVVAD_WaveExtensible64.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Wave%,NVVAD.I.Wave
+AddInterface=%KSCATEGORY_RENDER%,%KSNAME_Wave%,NVVAD.I.Wave
+AddInterface=%KSCATEGORY_CAPTURE%,%KSNAME_Wave%,NVVAD.I.Wave
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Topology%,NVVAD.I.Topo
+
+[NVVAD_WaveExtensible64.AddReg]
+HKR,,AssociatedFilters,,"wdmaud,swmidi,redbook"
+HKR,,Driver,,nvvad64v.sys
+HKR,,NTMPDriver,,"nvvad64v.sys,sbemul.sys"
+                                        
+HKR,Drivers,SubClasses,,"wave,midi,mixer"
+
+HKR,Drivers\wave\wdmaud.drv,Driver,,wdmaud.drv
+HKR,Drivers\midi\wdmaud.drv,Driver,,wdmaud.drv
+HKR,Drivers\mixer\wdmaud.drv,Driver,,wdmaud.drv
+
+HKR,Drivers\wave\wdmaud.drv,Description,,%NVVAD_WaveExtensible.DeviceDesc%
+HKR,Drivers\midi\wdmaud.drv,Description,,%NVVAD_MIDI%
+HKR,Drivers\mixer\wdmaud.drv,Description,,%NVVAD_WaveExtensible.DeviceDesc%
+
+;======================================================
+; COMMON
+;======================================================
+[NVVAD.I.Wave]
+AddReg=NVVAD.I.Wave.AddReg
+[NVVAD.I.Wave.AddReg]
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,FriendlyName,,%NVVAD.Wave.szPname%
+
+[NVVAD.I.Topo]
+AddReg=NVVAD.I.Topo.AddReg
+[NVVAD.I.Topo.AddReg]
+HKR,,CLSID,,%Proxy.CLSID%
+HKR,,FriendlyName,,%NVVAD.Topo.szPname%
+
+
+;======================================================
+; NVVAD_Extensible
+;======================================================
+[NVVAD_WaveExtensible.NT]
+Include=ks.inf,wdmaudio.inf
+Needs=KS.Registration, WDMAUDIO.Registration
+CopyFiles=NVVAD_WaveExtensible.CopyList
+AddReg=NVVAD_WaveExtensible.AddReg,NVVAD32.AddReg
+
+[NVVAD_WaveExtensible.NT.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Wave%,NVVAD.I.Wave
+AddInterface=%KSCATEGORY_RENDER%,%KSNAME_Wave%,NVVAD.I.Wave
+AddInterface=%KSCATEGORY_CAPTURE%,%KSNAME_Wave%,NVVAD.I.Wave
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Topology%,NVVAD.I.Topo
+
+[NVVAD32.AddReg]
+HKR,Settings,PropertyFL,0x10001,0x00000000
+
+[NVVAD_WaveExtensible.NT.Services]
+AddService=nvvad_WaveExtensible,0x00000002,nvvad_WaveExtensible_Service_Inst
+
+[nvvad_WaveExtensible_Service_Inst]
+DisplayName=%nvvad_WaveExtensible.SvcDesc%
+ServiceType=1
+StartType=3
+ErrorControl=1
+ServiceBinary=%10%\system32\drivers\nvvad32v.sys
+
+;======================================================
+; NVVAD_Extensible64
+;======================================================
+[NVVAD_WaveExtensible64.NT]
+Include=ks.inf,wdmaudio.inf
+Needs=KS.Registration, WDMAUDIO.Registration
+CopyFiles=NVVAD_WaveExtensible64.CopyList
+AddReg=NVVAD_WaveExtensible64.AddReg,NVVAD64.AddReg
+
+[NVVAD_WaveExtensible64.NT.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Wave%,NVVAD.I.Wave
+AddInterface=%KSCATEGORY_RENDER%,%KSNAME_Wave%,NVVAD.I.Wave
+AddInterface=%KSCATEGORY_CAPTURE%,%KSNAME_Wave%,NVVAD.I.Wave
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Wave00%,NVVAD.I.Wave
+AddInterface=%KSCATEGORY_RENDER%,%KSNAME_Wave00%,NVVAD.I.Wave
+AddInterface=%KSCATEGORY_CAPTURE%,%KSNAME_Wave00%,NVVAD.I.Wave
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Wave01%,NVVAD.I.Wave
+AddInterface=%KSCATEGORY_RENDER%,%KSNAME_Wave01%,NVVAD.I.Wave
+AddInterface=%KSCATEGORY_CAPTURE%,%KSNAME_Wave01%,NVVAD.I.Wave
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Wave02%,NVVAD.I.Wave
+AddInterface=%KSCATEGORY_RENDER%,%KSNAME_Wave02%,NVVAD.I.Wave
+AddInterface=%KSCATEGORY_CAPTURE%,%KSNAME_Wave02%,NVVAD.I.Wave
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Wave03%,NVVAD.I.Wave
+AddInterface=%KSCATEGORY_RENDER%,%KSNAME_Wave03%,NVVAD.I.Wave
+AddInterface=%KSCATEGORY_CAPTURE%,%KSNAME_Wave03%,NVVAD.I.Wave
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Wave04%,NVVAD.I.Wave
+AddInterface=%KSCATEGORY_RENDER%,%KSNAME_Wave04%,NVVAD.I.Wave
+AddInterface=%KSCATEGORY_CAPTURE%,%KSNAME_Wave04%,NVVAD.I.Wave
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Topology%,NVVAD.I.Topo
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Topo00%,NVVAD.I.Topo
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Topo01%,NVVAD.I.Topo
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Topo02%,NVVAD.I.Topo
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Topo03%,NVVAD.I.Topo
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Topo04%,NVVAD.I.Topo
+
+
+[NVVAD64.AddReg]
+HKR,Settings,PropertyFL,0x10001,0x00000000
+
+[NVVAD_WaveExtensible64.NT.Services]
+AddService=nvvad_WaveExtensible,0x00000002,nvvad_WaveExtensible64_Service_Inst
+
+[nvvad_WaveExtensible64_Service_Inst]
+DisplayName=%nvvad_WaveExtensible.SvcDesc%
+ServiceType=1
+StartType=3
+ErrorControl=1
+ServiceBinary=%10%\system32\drivers\nvvad64v.sys
+
+
+[NVVAD_WaveExtensible.CopyList]
+nvvad32v.sys,,,0x00004000
+
+[NVVAD_WaveExtensible64.CopyList]
+nvvad64v.sys,,,0x00004000
+
+
+;======================================================
+; COMMON
+;======================================================
+[Strings]
+NV="NVIDIA"
+MfgName="NVIDIA"
+DiskDescription="NVVAD Driver Disk"
+NVVAD_WaveExtensible.DeviceDesc="NVIDIA Virtual Audio Device (Wave Extensible) (WDM)"
+
+NVVAD.Wave.szPname="NVVAD Wave"
+NVVAD.Topo.szPname="NVVAD Topology"
+NVVAD_MIDI="NVVAD -> WDM Midi Device"
+
+Proxy.CLSID="{17CCA71B-ECD7-11D0-B908-00A0C9223196}"
+KSCATEGORY_AUDIO="{6994AD04-93EF-11D0-A3CC-00A0C9223196}"
+KSCATEGORY_RENDER="{65E8773E-8F56-11D0-A3B9-00A0C9223196}"
+KSCATEGORY_CAPTURE="{65E8773D-8F56-11D0-A3B9-00A0C9223196}"
+
+KSNAME_Wave="Wave"
+KSNAME_Topology="Topology"
+KSNAME_Wave00="Wave00"
+KSNAME_Wave01="Wave01"
+KSNAME_Wave02="Wave02"
+KSNAME_Wave03="Wave03"
+KSNAME_Wave04="Wave04"
+
+KSNAME_Topo00="Topo00"
+KSNAME_Topo01="Topo01"
+KSNAME_Topo02="Topo02"
+KSNAME_Topo03="Topo03"
+KSNAME_Topo04="Topo04"
+
+NVVAD_WaveExtensible.SvcDesc="NVIDIA Virtual Audio Device (Wave Extensible) (WDM)"
+
+MediaCategories="SYSTEM\CurrentControlSet\Control\MediaCategories"
+
+Simple.NameGuid="{946A7B1A-EBBC-422a-A81F-F07C8D40D3B4}"
+Simple.Name="NVVAD (Simple)"
